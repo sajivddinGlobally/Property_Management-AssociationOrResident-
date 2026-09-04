@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:property_association_or_resident/AssociationScreen/AssociationProperty/AssociationOccupancePropertyStatus.dart';
+import 'package:property_association_or_resident/AssociationScreen/Mantenance&Service/MantenanceService.dart';
 import 'package:property_association_or_resident/Core/Constant/appColor.dart';
 
 class AssociationPropertyUnitDetails extends StatefulWidget {
@@ -652,24 +653,35 @@ class _AssociationPropertyUnitDetailsState
                     title: "Inspection",
                     description: "View inspection records and findings.",
                     buttonText: "View Records →",
+                    onTap: () {},
                   ),
                   _recordCard(
                     icon: "⚒",
                     title: "Maintenance",
                     description: "View maintenance activity and history.",
                     buttonText: "View Records →",
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        CupertinoPageRoute(
+                          builder: (context) => MantenanceService(),
+                        ),
+                      );
+                    },
                   ),
                   _recordCard(
                     icon: "◌",
                     title: "Complaints",
                     description: "View property-related complaints and issues.",
                     buttonText: "View Records →",
+                    onTap: () {},
                   ),
                   _recordCard(
                     icon: "▤",
                     title: "Documents",
                     description: "Access documents linked to this property.",
                     buttonText: "View Documents →",
+                    onTap: () {},
                   ),
                 ],
               ),
@@ -1012,64 +1024,68 @@ class _AssociationPropertyUnitDetailsState
     required String title,
     required String description,
     required String buttonText,
+    required VoidCallback onTap,
   }) {
-    return Container(
-      padding: EdgeInsets.all(10),
-      decoration: BoxDecoration(
-        border: Border.all(color: Color(0xFF171717), width: 1.w),
-        borderRadius: BorderRadius.circular(8.r),
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Container(
-            height: 30.h,
-            width: 30.w,
-            decoration: BoxDecoration(
-              border: Border.all(color: Color(0xFF000000), width: 1.w),
-              borderRadius: BorderRadius.circular(4.r),
+    return InkWell(
+      onTap: onTap,
+      child: Container(
+        padding: EdgeInsets.all(10),
+        decoration: BoxDecoration(
+          border: Border.all(color: Color(0xFF171717), width: 1.w),
+          borderRadius: BorderRadius.circular(8.r),
+        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Container(
+              height: 30.h,
+              width: 30.w,
+              decoration: BoxDecoration(
+                border: Border.all(color: Color(0xFF000000), width: 1.w),
+                borderRadius: BorderRadius.circular(4.r),
+              ),
+              alignment: Alignment.center,
+              child: Text(
+                icon,
+                style: GoogleFonts.outfit(
+                  fontSize: 14.sp,
+                  fontWeight: FontWeight.w700,
+                  color: Color(0xFF000000),
+                ),
+              ),
             ),
-            alignment: Alignment.center,
-            child: Text(
-              icon,
+            SizedBox(height: 6.h),
+            Text(
+              title,
               style: GoogleFonts.outfit(
                 fontSize: 14.sp,
                 fontWeight: FontWeight.w700,
                 color: Color(0xFF000000),
+                letterSpacing: -0.2,
               ),
             ),
-          ),
-          SizedBox(height: 6.h),
-          Text(
-            title,
-            style: GoogleFonts.outfit(
-              fontSize: 14.sp,
-              fontWeight: FontWeight.w700,
-              color: Color(0xFF000000),
-              letterSpacing: -0.2,
+            SizedBox(height: 4.h),
+            Text(
+              description,
+              style: GoogleFonts.outfit(
+                fontSize: 11.sp,
+                fontWeight: FontWeight.w500,
+                color: Color.fromRGBO(42, 41, 51, 0.7),
+                letterSpacing: -0.2,
+              ),
             ),
-          ),
-          SizedBox(height: 4.h),
-          Text(
-            description,
-            style: GoogleFonts.outfit(
-              fontSize: 11.sp,
-              fontWeight: FontWeight.w500,
-              color: Color.fromRGBO(42, 41, 51, 0.7),
-              letterSpacing: -0.2,
+            Spacer(),
+            Text(
+              buttonText,
+              style: GoogleFonts.outfit(
+                fontSize: 13.sp,
+                fontWeight: FontWeight.w500,
+                color: Color(0xFF101C16),
+                letterSpacing: -0.2,
+              ),
             ),
-          ),
-          Spacer(),
-          Text(
-            buttonText,
-            style: GoogleFonts.outfit(
-              fontSize: 13.sp,
-              fontWeight: FontWeight.w500,
-              color: Color(0xFF101C16),
-              letterSpacing: -0.2,
-            ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

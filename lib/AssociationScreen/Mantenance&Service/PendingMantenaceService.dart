@@ -2,27 +2,24 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:property_association_or_resident/AssociationScreen/AssociationServiceMagagement/AssociationServiceManageDetails.dart';
 import 'package:property_association_or_resident/Core/Constant/appColor.dart';
 
-class AssociationServiceManagement extends StatefulWidget {
-  const AssociationServiceManagement({super.key});
+class PendingMantenaceService extends StatefulWidget {
+  const PendingMantenaceService({super.key});
 
   @override
-  State<AssociationServiceManagement> createState() =>
-      _AssociationServiceManagementState();
+  State<PendingMantenaceService> createState() =>
+      _PendingMantenaceServiceState();
 }
 
-class _AssociationServiceManagementState
-    extends State<AssociationServiceManagement> {
+class _PendingMantenaceServiceState extends State<PendingMantenaceService> {
   int selectedFilter = 0;
   final List<String> filters = [
-    "All Services · 06",
-    "Housekeeping · 02",
-    "Security · 02",
-    "Equipment · 02",
+    "All · 12",
+    "High · 03",
+    "Medium · 06",
+    "Low · 03",
   ];
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -64,7 +61,7 @@ class _AssociationServiceManagementState
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        "Service Management",
+                        "Pending Maintenance",
                         style: GoogleFonts.outfit(
                           fontSize: 18.sp,
                           fontWeight: FontWeight.w500,
@@ -74,7 +71,7 @@ class _AssociationServiceManagementState
                       ),
                       SizedBox(height: 2.h),
                       Text(
-                        "Association Operations",
+                        "Maintenance Management",
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
                         style: GoogleFonts.outfit(
@@ -96,6 +93,31 @@ class _AssociationServiceManagementState
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            SizedBox(height: 16.h),
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 20.w),
+              child: Text(
+                "Maintenance Overview",
+                style: GoogleFonts.outfit(
+                  fontSize: 16.sp,
+                  fontWeight: FontWeight.w500,
+                  color: Colors.black,
+                  letterSpacing: -0.2,
+                ),
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 20.w),
+              child: Text(
+                "Review and track maintenance requests across the complex.",
+                style: GoogleFonts.outfit(
+                  fontSize: 14.sp,
+                  fontWeight: FontWeight.w500,
+                  color: Color(0xFF000000),
+                  letterSpacing: -0.2,
+                ),
+              ),
+            ),
             SizedBox(height: 20.h),
             Container(
               margin: EdgeInsets.symmetric(horizontal: 20.w),
@@ -109,98 +131,75 @@ class _AssociationServiceManagementState
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Expanded(
-                        child: Text(
-                          "COMPLEX SERVICE OVERVIEW",
-                          style: GoogleFonts.outfit(
-                            fontSize: 13.sp,
-                            fontWeight: FontWeight.w500,
-                            color: Color(0xFF000000),
-                            letterSpacing: -0.2,
-                          ),
+                      Text(
+                        "PENDING MAINTENANCE",
+                        style: GoogleFonts.outfit(
+                          fontSize: 14.sp,
+                          fontWeight: FontWeight.w500,
+                          color: Color(0xFF000000),
+                          letterSpacing: -0.2,
                         ),
                       ),
-                      Row(
-                        mainAxisSize: MainAxisSize.min,
-                        children: [
-                          Container(
-                            height: 6.h,
-                            width: 6.w,
-                            decoration: const BoxDecoration(
-                              shape: BoxShape.circle,
-                              color: Color(0xFF12A65A),
-                            ),
-                          ),
-                          SizedBox(width: 4.w),
-                          Text(
-                            "LIVE STATUS",
-                            style: GoogleFonts.outfit(
-                              fontSize: 13.sp,
-                              fontWeight: FontWeight.w700,
-                              color: Color(0xFF24B06A),
-                              letterSpacing: -0.2,
-                            ),
-                          ),
-                        ],
+                      Text(
+                        "Needs Attention",
+                        style: GoogleFonts.outfit(
+                          fontSize: 14.sp,
+                          fontWeight: FontWeight.w500,
+                          color: Color.fromRGBO(184, 134, 11, 0.9),
+                          letterSpacing: -0.2,
+                        ),
                       ),
                     ],
                   ),
-
+                  SizedBox(height: 18.h),
+                  Row(
+                    children: [
+                      Text(
+                        "12",
+                        style: GoogleFonts.outfit(
+                          fontSize: 16.sp,
+                          fontWeight: FontWeight.w500,
+                          color: Color(0xFF000000),
+                          letterSpacing: -0.2,
+                          height: 1.h,
+                        ),
+                      ),
+                      SizedBox(width: 5.w),
+                      Text(
+                        "open maintenance items",
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                        style: GoogleFonts.outfit(
+                          fontSize: 12.sp,
+                          fontWeight: FontWeight.w500,
+                          color: Color.fromRGBO(42, 41, 51, 0.7),
+                          height: 1.h,
+                        ),
+                      ),
+                    ],
+                  ),
                   SizedBox(height: 20.h),
-                  Text(
-                    "Service Operations",
-                    style: GoogleFonts.outfit(
-                      fontSize: 16.sp,
-                      fontWeight: FontWeight.w500,
-                      color: Color(0xFF000000),
-                      letterSpacing: -0.2,
-                      height: 1.h,
-                    ),
-                  ),
-                  SizedBox(height: 7.h),
-                  Text(
-                    "Monitor active services, providers, schedules and performance.",
-                    maxLines: 1,
-                    overflow: TextOverflow.ellipsis,
-                    style: GoogleFonts.outfit(
-                      fontSize: 13.sp,
-                      fontWeight: FontWeight.w500,
-                      color: Color.fromRGBO(0, 0, 0, 0.7),
-                      height: 1.h,
-                    ),
-                  ),
-                  SizedBox(height: 13.h),
                   Divider(
                     height: 1,
                     thickness: 0.8,
                     color: Color.fromRGBO(16, 28, 22, 0.5),
                   ),
-                  SizedBox(height: 13.h),
+                  SizedBox(height: 10.h),
                   Row(
                     children: [
                       Expanded(
                         child: _serviceStat(
-                          label: "Active Services",
+                          label: "High Prioritys",
                           value: "06",
-                          status: "running",
                         ),
                       ),
-
                       Expanded(
-                        child: _serviceStat(
-                          label: "Providers",
-                          value: "04",
-                          status: "assigned",
-                        ),
+                        child: _serviceStat(label: "Providers", value: "04"),
                       ),
-
                       Expanded(
-                        child: _serviceStat(
-                          label: "Performance",
-                          value: "92%",
-                          status: "good",
-                        ),
+                        child: _serviceStat(label: "Performance", value: "92%"),
                       ),
                     ],
                   ),
@@ -266,8 +265,8 @@ class _AssociationServiceManagementState
                       child: AnimatedContainer(
                         duration: const Duration(milliseconds: 200),
                         padding: EdgeInsets.symmetric(
-                          vertical: 8.h,
-                          horizontal: 25.w,
+                          vertical: 5.h,
+                          horizontal: 13.w,
                         ),
                         decoration: BoxDecoration(
                           color: isSelected
@@ -302,7 +301,7 @@ class _AssociationServiceManagementState
             SizedBox(height: 16.h),
             ListView.builder(
               shrinkWrap: true,
-              physics: NeverScrollableScrollPhysics(),
+              physics: const NeverScrollableScrollPhysics(),
               padding: EdgeInsets.zero,
               itemCount: 3,
               itemBuilder: (context, index) {
@@ -312,19 +311,20 @@ class _AssociationServiceManagementState
                     vertical: 10.h,
                   ),
                   child: ServiceCard(
-                    icon: Icons.cleaning_services_outlined,
-                    title: 'Housekeeping',
-                    subtitle: 'Common area cleaning & upkeep',
-                    providerLabel: 'Assigned Provider',
-                    providerName: 'CleanCare Services',
-                    scheduleLabel: 'Service Schedule',
-                    schedule: 'Daily · 7:00 AM',
-                    issueLabel: 'Reported Issues',
-                    issues: '02 Open',
-                    lastServiceLabel: 'Last Service',
-                    lastService: '28 Aug 2026',
-                    performance: '94%',
-                    isSecurity: false,
+                    icon: Icons.edit_outlined,
+                    title: 'Water Leakage Repair',
+                    subtitle: 'Maintenance Request · Plumbing',
+                    priority: 'HIGH',
+                    propertyUnit: 'A-204',
+                    raisedDate: 'Raised 20 Aug 2026',
+                    category: 'Plumbing',
+                    status: 'In Progress',
+                    expectedCompletion: '24 Aug 2026',
+                    costReference: '₹ 8,500',
+                    assignedLabel: 'Assigned Person / Vendor',
+                    assignedPerson: 'Raj Kumar · Plumbing',
+                    onTap: () {
+                    },
                   ),
                 );
               },
@@ -338,7 +338,7 @@ class _AssociationServiceManagementState
                 border: Border.all(color: Color.fromRGBO(184, 134, 11, 0.9)),
               ),
               child: Text(
-                "Services are monitored by category with their current status, assigned provider, service schedule, reported issues and performance. OEM / equipment services can also include service history and equipment-level information.",
+                "Maintenance records can include category, priority, assigned person/vendor, expected and actual completion, status, cost/reference information, supporting documents and before/after images.",
                 style: GoogleFonts.outfit(
                   fontSize: 10.sp,
                   fontWeight: FontWeight.w500,
@@ -354,20 +354,16 @@ class _AssociationServiceManagementState
     );
   }
 
-  Widget _serviceStat({
-    required String label,
-    required String value,
-    required String status,
-  }) {
+  Widget _serviceStat({required String label, required String value}) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
           label,
           style: GoogleFonts.outfit(
-            fontSize: 11.sp,
+            fontSize: 13.sp,
             fontWeight: FontWeight.w500,
-            color: Color.fromRGBO(42, 41, 51, 0.6),
+            color: Color.fromRGBO(0, 0, 0, 0.7),
             letterSpacing: -0.2,
           ),
         ),
@@ -380,16 +376,6 @@ class _AssociationServiceManagementState
             color: Color(0xFF000000),
           ),
         ),
-        SizedBox(height: 4.h),
-        Text(
-          status,
-          style: GoogleFonts.outfit(
-            fontSize: 12.sp,
-            fontWeight: FontWeight.w500,
-            color: Color(0xFFB8860B),
-            height: 1,
-          ),
-        ),
       ],
     );
   }
@@ -400,46 +386,47 @@ class ServiceCard extends StatelessWidget {
   final String title;
   final String subtitle;
 
-  final String providerLabel;
-  final String providerName;
+  final String priority;
 
-  final String scheduleLabel;
-  final String schedule;
+  final String propertyUnit;
+  final String raisedDate;
 
-  final String issueLabel;
-  final String issues;
+  final String category;
+  final String status;
 
-  final String lastServiceLabel;
-  final String lastService;
+  final String expectedCompletion;
+  final String costReference;
 
-  final String performance;
-  final bool isSecurity;
+  final String assignedLabel;
+  final String assignedPerson;
+
+  final VoidCallback? onTap;
 
   const ServiceCard({
     super.key,
     required this.icon,
     required this.title,
     required this.subtitle,
-    required this.providerLabel,
-    required this.providerName,
-    required this.scheduleLabel,
-    required this.schedule,
-    required this.issueLabel,
-    required this.issues,
-    required this.lastServiceLabel,
-    required this.lastService,
-    required this.performance,
-    required this.isSecurity,
+    required this.priority,
+    required this.propertyUnit,
+    required this.raisedDate,
+    required this.category,
+    required this.status,
+    required this.expectedCompletion,
+    required this.costReference,
+    required this.assignedLabel,
+    required this.assignedPerson,
+    this.onTap,
   });
 
   @override
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 20.h),
+      padding: EdgeInsets.fromLTRB(21.w, 20.h, 21.w, 18.h),
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(14.r),
-        border: Border.all(color: Color(0xFF000000), width: 1.w),
+        borderRadius: BorderRadius.circular(10.r),
+        border: Border.all(color: Colors.black, width: 1.w),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -448,15 +435,15 @@ class ServiceCard extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
-                width: 30.w,
-                height: 30.w,
+                width: 35.w,
+                height: 35.w,
                 decoration: BoxDecoration(
-                  color: Color.fromRGBO(255, 242, 165, 0.6),
-                  borderRadius: BorderRadius.circular(4.r),
+                  color: const Color.fromRGBO(255, 242, 165, 0.55),
+                  borderRadius: BorderRadius.circular(5.r),
                 ),
-                child: Icon(icon, size: 18.sp, color: const Color(0xFFB8860B)),
+                child: Icon(icon, size: 19.sp, color: const Color(0xFF9D8422)),
               ),
-              SizedBox(width: 16.w),
+              SizedBox(width: 14.w),
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -468,97 +455,123 @@ class ServiceCard extends StatelessWidget {
                       style: GoogleFonts.outfit(
                         fontSize: 16.sp,
                         fontWeight: FontWeight.w500,
-                        color: Color(0xFF000000),
-                        height: 1.h,
-                        letterSpacing: -0.2,
+                        color: Colors.black,
+                        height: 1.05,
+                        letterSpacing: -0.3,
                       ),
                     ),
-                    SizedBox(height: 4.h),
+                    SizedBox(height: 3.h),
                     Text(
                       subtitle,
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                       style: GoogleFonts.outfit(
-                        fontSize: 13.sp,
-                        fontWeight: FontWeight.w500,
-                        color: Color.fromRGBO(0, 0, 0, 0.6),
-                        height: 1.1,
-                        letterSpacing: -0.2,
+                        fontSize: 12.sp,
+                        fontWeight: FontWeight.w400,
+                        color: const Color(0xFF4A4A4A),
+                        height: 1.05,
+                        letterSpacing: -0.15,
                       ),
                     ),
                   ],
                 ),
               ),
-              SizedBox(width: 10.w),
-              // ACTIVE
-              Container(
-                padding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 4.h),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(34.r),
-                  border: Border.all(
-                    color: const Color(0xFF24B06A),
-                    width: 1.w,
-                  ),
+              SizedBox(width: 8.w),
+              _PriorityBadge(priority: priority),
+            ],
+          ),
+          SizedBox(height: 14.h),
+          _divider(),
+          SizedBox(height: 10.h),
+          Row(
+            children: [
+              Icon(
+                Icons.home_outlined,
+                size: 14.sp,
+                color: const Color(0xFFB8860B),
+              ),
+              SizedBox(width: 6.w),
+              Text(
+                'Property / Unit',
+                style: GoogleFonts.outfit(
+                  fontSize: 10.5.sp,
+                  fontWeight: FontWeight.w400,
+                  color: const Color(0xFF222222),
                 ),
+              ),
+              SizedBox(width: 18.w),
+              Expanded(
                 child: Text(
-                  'ACTIVE',
+                  propertyUnit,
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
                   style: GoogleFonts.outfit(
-                    fontSize: 13.sp,
+                    fontSize: 10.5.sp,
                     fontWeight: FontWeight.w500,
-                    color: const Color(0xFF24B06A),
-                    letterSpacing: -0.2,
+                    color: Colors.black,
                   ),
+                ),
+              ),
+              SizedBox(width: 8.w),
+              Text(
+                raisedDate,
+                style: GoogleFonts.outfit(
+                  fontSize: 9.5.sp,
+                  fontWeight: FontWeight.w400,
+                  color: Colors.black,
+                ),
+              ),
+            ],
+          ),
+          SizedBox(height: 10.h),
+          _divider(),
+          SizedBox(height: 14.h),
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Expanded(
+                child: _InfoItem(label: 'Category', value: category),
+              ),
+              SizedBox(width: 20.w),
+              Expanded(
+                child: _InfoItem(
+                  label: 'Status',
+                  value: status,
+                  valueColor: const Color(0xFFC18A00),
+                ),
+              ),
+            ],
+          ),
+          SizedBox(height: 12.h),
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Expanded(
+                child: _InfoItem(
+                  label: 'Expected Completion',
+                  value: expectedCompletion,
+                ),
+              ),
+              SizedBox(width: 20.w),
+              Expanded(
+                child: _InfoItem(
+                  label: 'Cost / Reference',
+                  value: costReference,
                 ),
               ),
             ],
           ),
           SizedBox(height: 14.h),
-          Divider(
-            height: 1,
-            thickness: 1,
-            color: Color.fromRGBO(16, 28, 22, 0.5),
-          ),
-          SizedBox(height: 14.h),
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Expanded(
-                child: _InfoItem(label: providerLabel, value: providerName),
-              ),
-              SizedBox(width: 20.w),
-              Expanded(
-                child: _InfoItem(label: scheduleLabel, value: schedule),
-              ),
-            ],
-          ),
-          SizedBox(height: 17.h),
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Expanded(
-                child: _InfoItem(label: issueLabel, value: issues),
-              ),
-              SizedBox(width: 20.w),
-              Expanded(
-                child: _InfoItem(label: lastServiceLabel, value: lastService),
-              ),
-            ],
-          ),
-          SizedBox(height: 14.h),
-          Divider(
-            height: 1,
-            thickness: 1,
-            color: Color.fromRGBO(16, 28, 22, 0.5),
-          ),
+          _divider(),
           SizedBox(height: 10.h),
           Row(
             children: [
               Container(
-                width: 30.w,
-                height: 30.h,
+                width: 31.w,
+                height: 31.w,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
-                  border: Border.all(color: Color(0xFF000000), width: 1.w),
+                  border: Border.all(color: Colors.black, width: 1.w),
                 ),
                 child: ClipOval(
                   child: Image.asset(
@@ -574,51 +587,46 @@ class ServiceCard extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(width: 10.w),
+              SizedBox(width: 9.w),
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'Service Provider',
+                      assignedLabel,
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
                       style: GoogleFonts.outfit(
-                        fontSize: 11.sp,
-                        fontWeight: FontWeight.w500,
-                        color: Color.fromRGBO(0, 0, 0, 0.8),
+                        fontSize: 10.sp,
+                        fontWeight: FontWeight.w400,
+                        color: const Color(0xFF333333),
                         height: 1,
-                        letterSpacing: -0.1,
                       ),
                     ),
                     SizedBox(height: 2.h),
                     Text(
-                      providerName,
+                      assignedPerson,
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                       style: GoogleFonts.outfit(
-                        fontSize: 14.sp,
+                        fontSize: 13.sp,
                         fontWeight: FontWeight.w500,
-                        color: Color(0xFF000000),
-                        letterSpacing: -0.1,
+                        color: Colors.black,
+                        height: 1,
                       ),
                     ),
                   ],
                 ),
               ),
-              SizedBox(width: 10.w),
+              SizedBox(width: 8.w),
               InkWell(
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    CupertinoPageRoute(
-                      builder: (context) => AssociationServiceManageDetails(),
-                    ),
-                  );
-                },
+                onTap: onTap,
+                borderRadius: BorderRadius.circular(20.r),
                 child: Container(
-                  height: 27.h,
-                  padding: EdgeInsets.symmetric(horizontal: 14.w),
+                  height: 24.h,
+                  padding: EdgeInsets.symmetric(horizontal: 12.w),
                   decoration: BoxDecoration(
-                    color: Color.fromRGBO(255, 242, 165, 0.3),
+                    color: const Color.fromRGBO(255, 242, 165, 0.25),
                     borderRadius: BorderRadius.circular(20.r),
                     border: Border.all(color: Colors.black, width: 1.w),
                   ),
@@ -626,10 +634,10 @@ class ServiceCard extends StatelessWidget {
                     child: Text(
                       'View Details →',
                       style: GoogleFonts.outfit(
-                        fontSize: 10.sp,
+                        fontSize: 9.5.sp,
                         fontWeight: FontWeight.w500,
-                        color: Color(0xFF000000),
-                        letterSpacing: -0.2,
+                        color: Colors.black,
+                        letterSpacing: -0.15,
                       ),
                     ),
                   ),
@@ -637,50 +645,16 @@ class ServiceCard extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(height: 16.h),
-          Row(
-            children: [
-              Expanded(
-                child: Text(
-                  'Service Performance',
-                  style: GoogleFonts.outfit(
-                    fontSize: 13.sp,
-                    fontWeight: FontWeight.w500,
-                    color: Color(0xFF101C16),
-                    letterSpacing: -0.2,
-                  ),
-                ),
-              ),
-              Text(
-                performance,
-                style: GoogleFonts.outfit(
-                  fontSize: 13.sp,
-                  fontWeight: FontWeight.w500,
-                  color: Color(0xFF101C16),
-                  letterSpacing: -0.2,
-                ),
-              ),
-            ],
-          ),
-          SizedBox(height: 12.h),
-          ClipRRect(
-            borderRadius: BorderRadius.circular(10.r),
-            child: Stack(
-              children: [
-                Container(
-                  height: 3.h,
-                  width: double.infinity,
-                  color: const Color(0xFF919191),
-                ),
-                FractionallySizedBox(
-                  widthFactor: 0.94,
-                  child: Container(height: 3.h, color: const Color(0xFF195B3A)),
-                ),
-              ],
-            ),
-          ),
         ],
       ),
+    );
+  }
+
+  Widget _divider() {
+    return Divider(
+      height: 1.h,
+      thickness: 0.8.w,
+      color: const Color.fromRGBO(16, 28, 22, 0.45),
     );
   }
 }
@@ -688,8 +662,9 @@ class ServiceCard extends StatelessWidget {
 class _InfoItem extends StatelessWidget {
   final String label;
   final String value;
+  final Color? valueColor;
 
-  const _InfoItem({required this.label, required this.value});
+  const _InfoItem({required this.label, required this.value, this.valueColor});
 
   @override
   Widget build(BuildContext context) {
@@ -701,14 +676,16 @@ class _InfoItem extends StatelessWidget {
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.outfit(
-            fontSize: 12.sp,
-            fontWeight: FontWeight.w500,
-            color: Color.fromRGBO(42, 41, 51, 0.6),
-            height: 1.1,
-            letterSpacing: -0.2,
+            fontSize: 11.sp,
+            fontWeight: FontWeight.w400,
+            color: const Color.fromRGBO(42, 41, 51, 0.60),
+            height: 1,
+            letterSpacing: -0.15,
           ),
         ),
-        SizedBox(height: 4.h),
+
+        SizedBox(height: 5.h),
+
         Text(
           value,
           maxLines: 1,
@@ -716,12 +693,57 @@ class _InfoItem extends StatelessWidget {
           style: GoogleFonts.outfit(
             fontSize: 16.sp,
             fontWeight: FontWeight.w500,
-            color: Color(0xFF000000),
-            height: 1.1,
-            letterSpacing: -0.2,
+            color: valueColor ?? Colors.black,
+            height: 1,
+            letterSpacing: -0.3,
           ),
         ),
       ],
+    );
+  }
+}
+
+class _PriorityBadge extends StatelessWidget {
+  final String priority;
+
+  const _PriorityBadge({required this.priority});
+
+  @override
+  Widget build(BuildContext context) {
+    Color borderColor;
+
+    switch (priority.toUpperCase()) {
+      case 'HIGH':
+        borderColor = Colors.red;
+        break;
+
+      case 'MEDIUM':
+        borderColor = const Color(0xFFC18A00);
+        break;
+
+      case 'LOW':
+        borderColor = const Color(0xFF24B06A);
+        break;
+
+      default:
+        borderColor = Colors.black;
+    }
+
+    return Container(
+      padding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 3.h),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(20.r),
+        border: Border.all(color: borderColor, width: 1.w),
+      ),
+      child: Text(
+        priority.toUpperCase(),
+        style: GoogleFonts.outfit(
+          fontSize: 12.sp,
+          fontWeight: FontWeight.w400,
+          color: borderColor,
+          height: 1,
+        ),
+      ),
     );
   }
 }

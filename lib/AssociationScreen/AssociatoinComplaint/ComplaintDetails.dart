@@ -456,9 +456,7 @@ class _ComplaintDetailsState extends State<ComplaintDetails> {
                       icon: Icons.image_outlined,
                       title: "Complaint Photo",
                       subtitle: "Image attachment",
-                      onTap: () {
-                        // Upload / view complaint photo
-                      },
+                      onTap: () {},
                     ),
                   ),
 
@@ -469,9 +467,7 @@ class _ComplaintDetailsState extends State<ComplaintDetails> {
                       icon: Icons.description_outlined,
                       title: "Supporting Document",
                       subtitle: "Document attachment",
-                      onTap: () {
-                        // Upload / view supporting document
-                      },
+                      onTap: () {},
                     ),
                   ),
                 ],

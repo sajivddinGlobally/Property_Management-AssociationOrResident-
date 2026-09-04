@@ -349,6 +349,80 @@ class _ComplaintStatusState extends State<ComplaintStatus> {
                 ),
               ),
               SizedBox(height: 16.w),
+              Container(
+                width: double.infinity,
+                padding: EdgeInsets.only(
+                  top: 8.h,
+                  left: 16.w,
+                  bottom: 8.h,
+                  right: 16.w,
+                ),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(6.r),
+                  border: Border.all(color: Colors.black, width: 1.w),
+                ),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      children: [
+                        Container(
+                          width: 34.w,
+                          height: 34.w,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(5.r),
+                            border: Border.all(
+                              color: const Color(0xFF1E5993),
+                              width: 1.w,
+                            ),
+                          ),
+                          child: Center(
+                            child: Text(
+                              "✓",
+                              style: GoogleFonts.outfit(
+                                fontSize: 18.sp,
+                                fontWeight: FontWeight.w400,
+                                color: const Color(0xFF1E5993),
+                                height: 1,
+                              ),
+                            ),
+                          ),
+                        ),
+                        SizedBox(width: 10.w),
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "Current Resolution Update",
+                                style: GoogleFonts.outfit(
+                                  fontSize: 14.sp,
+                                  fontWeight: FontWeight.w600,
+                                  color: Colors.black,
+                                  height: 1,
+                                  letterSpacing: -0.3,
+                                ),
+                              ),
+                              SizedBox(height: 2.h),
+                              Text(
+                                "The complaint has been assigned to the maintenance team for necessary action.",
+                                style: GoogleFonts.outfit(
+                                  fontSize: 11.sp,
+                                  fontWeight: FontWeight.w500,
+                                  color: Colors.black,
+                                  height: 1.25,
+                                  letterSpacing: -0.2,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+              SizedBox(height: 20.w),
             ],
           ),
         ),

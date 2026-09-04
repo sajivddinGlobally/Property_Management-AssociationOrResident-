@@ -9,6 +9,7 @@ import 'package:property_association_or_resident/AssociationScreen/AssociationPr
 import 'package:property_association_or_resident/AssociationScreen/AssociationProperty/AssociationProperty.dart';
 import 'package:property_association_or_resident/AssociationScreen/AssociationServiceRequest/ServiiceRequest.dart';
 import 'package:property_association_or_resident/AssociationScreen/AssociatoinComplaint/Complaint.dart';
+import 'package:property_association_or_resident/AssociationScreen/Mantenance&Service/PendingMantenaceService.dart';
 import 'package:property_association_or_resident/Core/Constant/appColor.dart';
 
 class AssociationBottomNavBar extends StatefulWidget {
@@ -22,8 +23,19 @@ class AssociationBottomNavBar extends StatefulWidget {
 class _AssociationBottomNavBarState extends State<AssociationBottomNavBar> {
   int selectedBottomIndex = 0;
 
-  final List<Widget> pages = [
-    AssociationHome(),
+  List<Widget> get pages => [
+    AssociationHome(
+      onDocumentTap: () {
+        setState(() {
+          selectedBottomIndex = 3;
+        });
+      },
+      onProfileTap: () {
+        setState(() {
+          selectedBottomIndex = 4;
+        });
+      },
+    ),
     AssociationProperty(),
     ServiiceRequest(),
     AssociationDocument(),
@@ -137,7 +149,13 @@ class _AssociationBottomNavBarState extends State<AssociationBottomNavBar> {
 }
 
 class AssociationHome extends StatefulWidget {
-  const AssociationHome({super.key});
+  final VoidCallback onDocumentTap;
+  final VoidCallback onProfileTap;
+  const AssociationHome({
+    super.key,
+    required this.onDocumentTap,
+    required this.onProfileTap,
+  });
 
   @override
   State<AssociationHome> createState() => _AssociationHomeState();
@@ -231,18 +249,21 @@ class _AssociationHomeState extends State<AssociationHome> {
                 ],
               ),
               SizedBox(width: 8.w),
-              Container(
-                width: 40.w,
-                height: 40.w,
-                decoration: BoxDecoration(
-                  color: Colors.transparent,
-                  borderRadius: BorderRadius.circular(10.r),
-                  border: Border.all(color: Color(0xffE8E5DC)),
-                ),
-                child: Icon(
-                  Icons.person_outline_rounded,
-                  size: 21.sp,
-                  color: Color(0xff0D241B),
+              InkWell(
+                onTap: widget.onProfileTap,
+                child: Container(
+                  width: 40.w,
+                  height: 40.w,
+                  decoration: BoxDecoration(
+                    color: Colors.transparent,
+                    borderRadius: BorderRadius.circular(10.r),
+                    border: Border.all(color: Color(0xffE8E5DC)),
+                  ),
+                  child: Icon(
+                    Icons.person_outline_rounded,
+                    size: 21.sp,
+                    color: Color(0xff0D241B),
+                  ),
                 ),
               ),
               SizedBox(width: 20.w),
@@ -283,7 +304,14 @@ class _AssociationHomeState extends State<AssociationHome> {
                     icon: Icons.build_outlined,
                     title: "Pending",
                     subtitle: "Maintenance",
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        CupertinoPageRoute(
+                          builder: (context) => PendingMantenaceService(),
+                        ),
+                      );
+                    },
                   ),
                   _quickAction(
                     icon: Icons.currency_rupee,
@@ -295,7 +323,7 @@ class _AssociationHomeState extends State<AssociationHome> {
                     icon: Icons.description_outlined,
                     title: "Documents",
                     subtitle: "",
-                    onTap: () {},
+                    onTap: widget.onDocumentTap,
                   ),
                 ],
               ),
