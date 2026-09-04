@@ -1,0 +1,590 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:property_association_or_resident/AssociationScreen/Auth/AssociationLogin.dart';
+import 'package:property_association_or_resident/Core/Constant/appColor.dart';
+
+class RegisterScreen extends StatefulWidget {
+  const RegisterScreen({super.key});
+
+  @override
+  State<RegisterScreen> createState() => _RegisterScreenState();
+}
+
+class _RegisterScreenState extends State<RegisterScreen> {
+  bool isPasswordVisible = false;
+  bool isConfirmPasswordVisible = false;
+  bool associationAgreeTerms = false;
+  bool ownerAgreeTerms = false;
+  bool isOwnerPasswordVisible = false;
+  bool isOwnerConfirmPasswordVisible = false;
+  int selectIndex = 0;
+
+  final TextEditingController nameController = TextEditingController();
+  final TextEditingController mobileController = TextEditingController();
+  final TextEditingController emailController = TextEditingController();
+  final TextEditingController associationController = TextEditingController();
+  final TextEditingController locationController = TextEditingController();
+  final TextEditingController passwordController = TextEditingController();
+  final TextEditingController confirmPasswordController =
+      TextEditingController();
+  final TextEditingController apartmentController = TextEditingController();
+
+  @override
+  void dispose() {
+    nameController.dispose();
+    mobileController.dispose();
+    emailController.dispose();
+    associationController.dispose();
+    locationController.dispose();
+    passwordController.dispose();
+    confirmPasswordController.dispose();
+    super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: AppColors.scaffoldBg,
+      body: SingleChildScrollView(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            SizedBox(
+              width: double.infinity,
+              height: 170.h,
+              child: Stack(
+                clipBehavior: Clip.none,
+                children: [
+                  Positioned(
+                    top: 0,
+                    right: 0,
+                    child: Image.asset(
+                      "assets/circuler_img.png",
+                      width: 146.w,
+                      fit: BoxFit.contain,
+                    ),
+                  ),
+                  Positioned(
+                    top: 0,
+                    right: 0,
+                    child: Image.asset(
+                      "assets/circuler_img.png",
+                      width: 177.w,
+                      fit: BoxFit.contain,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Center(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  ClipOval(
+                    child: Image.asset(
+                      // "assets/property_img.png",
+                      "assets/logo.png",
+                      width: 75.w,
+                      height: 75.w,
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                  SizedBox(height: 10.h),
+                  Text(
+                    "Create Account",
+                    style: GoogleFonts.uoqMunThenKhung(
+                      fontSize: 18.sp,
+                      fontWeight: FontWeight.w400,
+                      color: const Color(0xFF000000),
+                      letterSpacing: 1,
+                    ),
+                  ),
+                  SizedBox(height: 10.h),
+                  selectIndex == 0
+                      ? SizedBox(
+                          width: 380.w,
+                          child: Text(
+                            textAlign: TextAlign.center,
+                            "REGISTER YOUR ASSOCIATION PROFILE TO MANAGE PROPERTIES, SERVICES, INSPECTIONS AND MAITENANCE ACTIVITIES.",
+                            style: GoogleFonts.outfit(
+                              fontSize: 13.sp,
+                              fontWeight: FontWeight.w500,
+                              color: const Color(0xFF000000),
+                              letterSpacing: -0.2,
+                            ),
+                          ),
+                        )
+                      : Text(
+                          "REGISTER AS A RESIDENT",
+                          textAlign: TextAlign.center,
+                          style: GoogleFonts.outfit(
+                            fontSize: 13.sp,
+                            fontWeight: FontWeight.w500,
+                            color: const Color(0xFF000000),
+                            letterSpacing: -0.2,
+                          ),
+                        ),
+                ],
+              ),
+            ),
+            SizedBox(height: 20.h),
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 20.w),
+              child: Row(
+                children: [
+                  Expanded(
+                    child: _buildButton(
+                      title: "Association Head",
+                      backgroundColor: selectIndex == 0
+                          ? Color(0xFF101C16)
+                          : Colors.transparent,
+                      borderColor: const Color(0xFF101C16),
+                      textColor: selectIndex == 0
+                          ? Colors.white
+                          : Color(0xFF101C16),
+                      onTap: () {
+                        setState(() {
+                          selectIndex = 0;
+                        });
+                      },
+                    ),
+                  ),
+                  SizedBox(width: 20.w),
+                  Expanded(
+                    child: _buildButton(
+                      title: "Resident",
+                      backgroundColor: selectIndex == 1
+                          ? Color(0xFF101C16)
+                          : Colors.transparent,
+                      borderColor: const Color(0xFF101C16),
+                      textColor: selectIndex == 1
+                          ? Colors.white
+                          : Color(0xFF101C16),
+                      onTap: () {
+                        setState(() {
+                          selectIndex = 1;
+                        });
+                      },
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            SizedBox(height: 20.w),
+            selectIndex == 0
+                ? Container(
+                    margin: EdgeInsets.symmetric(horizontal: 20.w),
+                    padding: EdgeInsets.symmetric(
+                      horizontal: 13.w,
+                      vertical: 13.h,
+                    ),
+                    width: double.infinity,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(8.r),
+                      border: Border.all(color: Color(0xFF000000), width: 1.w),
+                    ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        sectionHeader(
+                          number: "01",
+                          title: "PROPERTY INFORMATION",
+                        ),
+                        SizedBox(height: 15.w),
+                        fieldLabel("FULL NAME"),
+                        customTextField(
+                          controller: nameController,
+                          hintText: "Enter Your Full Name",
+                        ),
+                        SizedBox(height: 10.h),
+                        fieldLabel("MOBILE NUMBER"),
+                        customTextField(
+                          controller: mobileController,
+                          hintText: "+91-00000-00000",
+                          keyboardType: TextInputType.phone,
+                        ),
+                        SizedBox(height: 10.h),
+
+                        fieldLabel("EMAIL ADDRESS"),
+                        customTextField(
+                          controller: emailController,
+                          hintText: "Enter Email address",
+                          keyboardType: TextInputType.emailAddress,
+                        ),
+                        SizedBox(height: 20.h),
+                        sectionHeader(
+                          number: "02",
+                          title: "ASSOCIATION INFORMATION",
+                        ),
+                        SizedBox(height: 10.h),
+                        Row(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Container(
+                              width: 36.w,
+                              height: 36.w,
+                              decoration: BoxDecoration(
+                                border: Border.all(
+                                  color: Color(0xFF000000),
+                                  width: 1.w,
+                                ),
+                                borderRadius: BorderRadius.circular(3.r),
+                              ),
+                              child: Icon(
+                                Icons.home_outlined,
+                                size: 14.sp,
+                                color: const Color(0xFF000000),
+                              ),
+                            ),
+                            SizedBox(width: 9.w),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(
+                                  "Association Details",
+                                  style: GoogleFonts.outfit(
+                                    fontSize: 16.sp,
+                                    fontWeight: FontWeight.w500,
+                                    color: Color(0xFF000000),
+                                    letterSpacing: -0.2,
+                                  ),
+                                ),
+                                Text(
+                                  "Enter the residential association information",
+                                  style: GoogleFonts.outfit(
+                                    fontSize: 13.sp,
+                                    fontWeight: FontWeight.w500,
+                                    color: Color.fromRGBO(42, 41, 51, 0.7),
+                                    letterSpacing: -0.2,
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                        SizedBox(height: 12.h),
+                        fieldLabel("ASSOCIATION / COMPLEX NAME"),
+                        customTextField(
+                          controller: associationController,
+                          hintText: "eg. Green Valley Residency",
+                        ),
+                        SizedBox(height: 10.h),
+                        fieldLabel("LOCATION"),
+                        customTextField(
+                          controller: locationController,
+                          hintText: "City / State",
+                        ),
+                        SizedBox(height: 15.h),
+
+                        sectionHeader(
+                          number: "03",
+                          title: "ASSOCIATION INFORMATION",
+                        ),
+
+                        SizedBox(height: 13.h),
+
+                        fieldLabel("PASSWORD"),
+
+                        customTextField(
+                          controller: passwordController,
+                          hintText: "Create a strong password",
+                          obscureText: !isPasswordVisible,
+                          showVisibilityIcon: true,
+                          onVisibilityTap: () {
+                            setState(() {
+                              isPasswordVisible = !isPasswordVisible;
+                            });
+                          },
+                        ),
+                        SizedBox(height: 13.h),
+                        fieldLabel("CONFIRM PASSWORD"),
+                        customTextField(
+                          controller: confirmPasswordController,
+                          hintText: "Re-enter your password",
+                          obscureText: !isConfirmPasswordVisible,
+                          showVisibilityIcon: true,
+                          onVisibilityTap: () {
+                            setState(() {
+                              isConfirmPasswordVisible =
+                                  !isConfirmPasswordVisible;
+                            });
+                          },
+                        ),
+
+                        SizedBox(height: 19.h),
+                        Row(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Container(
+                              width: 25.w,
+                              height: 25.w,
+                              color: Colors.white,
+                              child: Checkbox(
+                                value: associationAgreeTerms,
+                                onChanged: (value) {
+                                  setState(() {
+                                    associationAgreeTerms = value ?? false;
+                                  });
+                                },
+                                materialTapTargetSize:
+                                    MaterialTapTargetSize.shrinkWrap,
+                                visualDensity: VisualDensity.compact,
+                                side: const BorderSide(
+                                  color: Color(0xFF000000),
+                                  width: 1,
+                                ),
+                              ),
+                            ),
+                            SizedBox(width: 10.w),
+                            Expanded(
+                              child: RichText(
+                                text: TextSpan(
+                                  style: GoogleFonts.outfit(
+                                    fontSize: 13.sp,
+                                    color: Color.fromRGBO(42, 41, 51, 0.7),
+                                    letterSpacing: -0.2,
+                                    fontWeight: FontWeight.w500,
+                                  ),
+                                  children: [
+                                    const TextSpan(text: "I agree to the "),
+                                    TextSpan(
+                                      text: "Terms & Conditions",
+                                      style: GoogleFonts.outfit(
+                                        fontSize: 13.sp,
+                                        fontWeight: FontWeight.w700,
+                                        color: const Color(0xFF2A2933),
+                                        letterSpacing: -0.2,
+                                      ),
+                                    ),
+                                    const TextSpan(
+                                      text:
+                                          " and acknowledge the\nassociation management platform policies.",
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+
+                        SizedBox(height: 16.w),
+                        SizedBox(
+                          width: double.infinity,
+                          height: 40.h,
+                          child: ElevatedButton(
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                CupertinoPageRoute(
+                                  builder: (context) => AssociationLogin(),
+                                ),
+                              );
+                            },
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: const Color(0xFF101C16),
+                              elevation: 0,
+                              padding: EdgeInsets.zero,
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(6.r),
+                              ),
+                            ),
+                            child: Text(
+                              "CREATE ACCOUNT  →",
+                              style: GoogleFonts.outfit(
+                                fontSize: 12.sp,
+                                fontWeight: FontWeight.w500,
+                                color: Colors.white,
+                                letterSpacing: 0.1,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  )
+                : Center(child: Text("Comming Soon.......")),
+            SizedBox(height: 20.h),
+            InkWell(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  CupertinoPageRoute(builder: (context) => AssociationLogin()),
+                );
+              },
+              child: Center(
+                child: RichText(
+                  text: TextSpan(
+                    children: [
+                      TextSpan(
+                        text: "Already have an account?  ",
+                        style: GoogleFonts.outfit(
+                          fontSize: 15.sp,
+                          fontWeight: FontWeight.w500,
+                          color: Color(0xFF000000),
+                        ),
+                      ),
+                      TextSpan(
+                        text: "Login",
+                        style: GoogleFonts.outfit(
+                          fontSize: 17.sp,
+                          fontWeight: FontWeight.w500,
+                          color: Color(0xFF000000),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            SizedBox(height: 20.h),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildButton({
+    required String title,
+    required Color backgroundColor,
+    required Color borderColor,
+    required Color textColor,
+    required VoidCallback onTap,
+  }) {
+    return SizedBox(
+      height: 40.h,
+      width: double.infinity,
+      child: OutlinedButton(
+        onPressed: onTap,
+        style: OutlinedButton.styleFrom(
+          backgroundColor: backgroundColor,
+          foregroundColor: textColor,
+          side: BorderSide(color: borderColor, width: 1.w),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(6.r),
+          ),
+          padding: EdgeInsets.zero,
+        ),
+        child: Text(
+          title,
+          style: GoogleFonts.outfit(
+            fontSize: 13.sp,
+            fontWeight: FontWeight.w500,
+            letterSpacing: -0.2,
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget sectionHeader({required String number, required String title}) {
+    return Row(
+      children: [
+        Container(
+          width: 28.w,
+          height: 28.w,
+          alignment: Alignment.center,
+          decoration: BoxDecoration(
+            border: Border.all(color: const Color(0xFF000000), width: 1.w),
+            borderRadius: BorderRadius.circular(3.r),
+          ),
+          child: Text(
+            number,
+            style: GoogleFonts.outfit(
+              fontSize: 13.sp,
+              fontWeight: FontWeight.w500,
+              color: Color(0xFF000000),
+              letterSpacing: -0.3,
+            ),
+          ),
+        ),
+        SizedBox(width: 10.w),
+        Text(
+          title,
+          style: GoogleFonts.outfit(
+            fontSize: 13.sp,
+            fontWeight: FontWeight.w500,
+            color: Color(0xFF000000),
+            letterSpacing: -0.3,
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget fieldLabel(String text) {
+    return Padding(
+      padding: EdgeInsets.only(bottom: 10.h),
+      child: Text(
+        text,
+        style: GoogleFonts.outfit(
+          fontSize: 13.sp,
+          fontWeight: FontWeight.w500,
+          color: Color(0xFF000000),
+          letterSpacing: -0.3,
+        ),
+      ),
+    );
+  }
+
+  Widget customTextField({
+    required TextEditingController controller,
+    required String hintText,
+    TextInputType? keyboardType,
+    bool obscureText = false,
+    VoidCallback? onVisibilityTap,
+    bool showVisibilityIcon = false,
+  }) {
+    return SizedBox(
+      height: 44.h,
+      child: TextField(
+        controller: controller,
+        obscureText: obscureText,
+        keyboardType: keyboardType,
+        style: GoogleFonts.outfit(
+          fontSize: 16.sp,
+          color: const Color(0xff101C16),
+        ),
+        decoration: InputDecoration(
+          hintText: hintText,
+          hintStyle: GoogleFonts.outfit(
+            fontSize: 13.sp,
+            fontWeight: FontWeight.w500,
+            color: Color.fromRGBO(0, 0, 0, 0.6),
+            letterSpacing: -0.3,
+          ),
+          contentPadding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 0.h),
+          suffixIcon: showVisibilityIcon
+              ? InkWell(
+                  onTap: onVisibilityTap,
+                  child: Icon(
+                    obscureText
+                        ? Icons.visibility_off_outlined
+                        : Icons.visibility_outlined,
+                    size: 18.sp,
+                    color: const Color(0xFF000000),
+                  ),
+                )
+              : null,
+          // ⭐ IMPORTANT
+          suffixIconConstraints: BoxConstraints(
+            minHeight: 44.h,
+            maxHeight: 44.h,
+            minWidth: 44.w,
+            maxWidth: 44.w,
+          ),
+
+          enabledBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(4.r),
+            borderSide: BorderSide(color: Color(0xFF000000), width: 1.w),
+          ),
+          focusedBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(4.r),
+            borderSide: BorderSide(color: Color(0xFF000000), width: 1.w),
+          ),
+        ),
+      ),
+    );
+  }
+}
