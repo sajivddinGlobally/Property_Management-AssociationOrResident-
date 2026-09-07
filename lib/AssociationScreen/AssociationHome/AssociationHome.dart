@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:property_association_or_resident/AssociationScreen/AssociationAIProperty/AIPropertyAssistantScreen.dart';
 import 'package:property_association_or_resident/AssociationScreen/AssociationDocument/AssociationDocument.dart';
 import 'package:property_association_or_resident/AssociationScreen/AssociationHome/AssociationComplexInfo.dart';
 import 'package:property_association_or_resident/AssociationScreen/AssociationNotification/Notificaion.dart';
@@ -400,122 +401,135 @@ class _AssociationHomeState extends State<AssociationHome> {
               ),
 
               SizedBox(height: 20.h),
-              Container(
-                width: double.infinity,
-                padding: EdgeInsets.symmetric(vertical: 16.h, horizontal: 17.w),
-                decoration: BoxDecoration(
-                  color: Color.fromRGBO(184, 134, 11, 0.9),
-                  borderRadius: BorderRadius.circular(10.r),
-                ),
-                child: Row(
-                  children: [
-                    Container(
-                      padding: EdgeInsets.all(2.r),
-                      decoration: BoxDecoration(
-                        border: Border.all(
-                          color: const Color(0xFF101C16),
-                          width: 1.w,
-                        ),
-                        borderRadius: BorderRadius.circular(10.r),
-                      ),
-                      child: Center(
-                        child: Container(
-                          width: 39.w,
-                          height: 39.h,
-                          decoration: BoxDecoration(
+              InkWell(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    CupertinoPageRoute(
+                      builder: (context) => AiPropertyAssistantScreen(),
+                    ),
+                  );
+                },
+                child: Container(
+                  width: double.infinity,
+                  padding: EdgeInsets.symmetric(
+                    vertical: 16.h,
+                    horizontal: 17.w,
+                  ),
+                  decoration: BoxDecoration(
+                    color: Color.fromRGBO(184, 134, 11, 0.9),
+                    borderRadius: BorderRadius.circular(10.r),
+                  ),
+                  child: Row(
+                    children: [
+                      Container(
+                        padding: EdgeInsets.all(2.r),
+                        decoration: BoxDecoration(
+                          border: Border.all(
                             color: const Color(0xFF101C16),
-                            borderRadius: BorderRadius.circular(10.r),
+                            width: 1.w,
                           ),
-                          child: Center(
-                            child: SvgPicture.asset(
-                              "assets/SvgImage/vector.svg",
-                            ),
-                          ),
+                          borderRadius: BorderRadius.circular(10.r),
                         ),
-                      ),
-                    ),
-
-                    SizedBox(width: 6.w),
-                    Expanded(
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Row(
-                            children: [
-                              Flexible(
-                                child: Text(
-                                  "Property Assistant",
-                                  maxLines: 1,
-                                  overflow: TextOverflow.ellipsis,
-                                  style: GoogleFonts.outfit(
-                                    fontSize: 16.sp,
-                                    fontWeight: FontWeight.w500,
-                                    color: const Color(0xFF101C16),
-                                    height: 1,
-                                    letterSpacing: -0.2,
-                                  ),
-                                ),
-                              ),
-                              SizedBox(width: 5.w),
-                              Container(
-                                padding: EdgeInsets.symmetric(
-                                  horizontal: 3.w,
-                                  vertical: 2.h,
-                                ),
-                                decoration: BoxDecoration(
-                                  color: const Color(0xFFAE8130),
-                                  borderRadius: BorderRadius.circular(3.r),
-                                ),
-                                child: Text(
-                                  "AI",
-                                  style: GoogleFonts.outfit(
-                                    fontSize: 10.sp,
-                                    fontWeight: FontWeight.w500,
-                                    color: const Color(0xFF101C16),
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                          SizedBox(height: 2.h),
-                          Text(
-                            "Ask me anything about your property",
-                            maxLines: 1,
-                            overflow: TextOverflow.ellipsis,
-                            style: GoogleFonts.outfit(
-                              fontSize: 10.sp,
-                              fontWeight: FontWeight.w500,
+                        child: Center(
+                          child: Container(
+                            width: 39.w,
+                            height: 39.h,
+                            decoration: BoxDecoration(
                               color: const Color(0xFF101C16),
-                              height: 1,
-                              letterSpacing: -0.2,
+                              borderRadius: BorderRadius.circular(10.r),
+                            ),
+                            child: Center(
+                              child: SvgPicture.asset(
+                                "assets/SvgImage/vector.svg",
+                              ),
                             ),
                           ),
-                        ],
+                        ),
                       ),
-                    ),
-                    SizedBox(width: 12.w),
 
-                    // Arrow Circle
-                    Container(
-                      width: 41.w,
-                      height: 41.w,
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        border: Border.all(
-                          color: const Color(0xFF101C16),
-                          width: 1.w,
+                      SizedBox(width: 6.w),
+                      Expanded(
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Row(
+                              children: [
+                                Flexible(
+                                  child: Text(
+                                    "Property Assistant",
+                                    maxLines: 1,
+                                    overflow: TextOverflow.ellipsis,
+                                    style: GoogleFonts.outfit(
+                                      fontSize: 16.sp,
+                                      fontWeight: FontWeight.w500,
+                                      color: const Color(0xFF101C16),
+                                      height: 1,
+                                      letterSpacing: -0.2,
+                                    ),
+                                  ),
+                                ),
+                                SizedBox(width: 5.w),
+                                Container(
+                                  padding: EdgeInsets.symmetric(
+                                    horizontal: 3.w,
+                                    vertical: 2.h,
+                                  ),
+                                  decoration: BoxDecoration(
+                                    color: const Color(0xFFAE8130),
+                                    borderRadius: BorderRadius.circular(3.r),
+                                  ),
+                                  child: Text(
+                                    "AI",
+                                    style: GoogleFonts.outfit(
+                                      fontSize: 10.sp,
+                                      fontWeight: FontWeight.w500,
+                                      color: const Color(0xFF101C16),
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                            SizedBox(height: 2.h),
+                            Text(
+                              "Ask me anything about your property",
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
+                              style: GoogleFonts.outfit(
+                                fontSize: 10.sp,
+                                fontWeight: FontWeight.w500,
+                                color: const Color(0xFF101C16),
+                                height: 1,
+                                letterSpacing: -0.2,
+                              ),
+                            ),
+                          ],
                         ),
                       ),
-                      child: Center(
-                        child: Icon(
-                          Icons.arrow_forward,
-                          size: 18.sp,
-                          color: const Color(0xFF101C16),
+                      SizedBox(width: 12.w),
+
+                      // Arrow Circle
+                      Container(
+                        width: 41.w,
+                        height: 41.w,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          border: Border.all(
+                            color: const Color(0xFF101C16),
+                            width: 1.w,
+                          ),
+                        ),
+                        child: Center(
+                          child: Icon(
+                            Icons.arrow_forward,
+                            size: 18.sp,
+                            color: const Color(0xFF101C16),
+                          ),
                         ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
 
