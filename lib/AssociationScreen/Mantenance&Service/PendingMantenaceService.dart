@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:property_association_or_resident/AssociationScreen/Mantenance&Service/MantenanceServiceDetails.dart';
 import 'package:property_association_or_resident/Core/Constant/appColor.dart';
 
 class PendingMantenaceService extends StatefulWidget {
@@ -324,6 +325,12 @@ class _PendingMantenaceServiceState extends State<PendingMantenaceService> {
                     assignedLabel: 'Assigned Person / Vendor',
                     assignedPerson: 'Raj Kumar · Plumbing',
                     onTap: () {
+                      Navigator.push(
+                        context,
+                        CupertinoPageRoute(
+                          builder: (context) => MantenanceServiceDetails(),
+                        ),
+                      );
                     },
                   ),
                 );

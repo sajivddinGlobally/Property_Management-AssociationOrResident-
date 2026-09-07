@@ -10,6 +10,7 @@ import 'package:property_association_or_resident/AssociationScreen/AssociationPr
 import 'package:property_association_or_resident/AssociationScreen/AssociationServiceRequest/ServiiceRequest.dart';
 import 'package:property_association_or_resident/AssociationScreen/AssociatoinComplaint/Complaint.dart';
 import 'package:property_association_or_resident/AssociationScreen/Mantenance&Service/PendingMantenaceService.dart';
+import 'package:property_association_or_resident/AssociationScreen/MantenanceCharges/MantenanceCharges.dart';
 import 'package:property_association_or_resident/Core/Constant/appColor.dart';
 import 'package:svg_flutter/svg_flutter.dart';
 
@@ -62,31 +63,36 @@ class _AssociationBottomNavBarState extends State<AssociationBottomNavBar> {
             children: [
               _bottomItem(
                 index: 0,
-                image: "assets/bottam_img.png",
+                // image: "assets/bottam_img.png",
+                image: "assets/SvgImage/homeicon.svg",
                 title: "Home",
               ),
 
               _bottomItem(
                 index: 1,
-                image: "assets/bottom_img2.png",
+                // image: "assets/bottom_img2.png",
+                image: "assets/SvgImage/propertyicon.svg",
                 title: "Property",
               ),
 
               _bottomItem(
                 index: 2,
-                image: "assets/bottom_img3.png",
+                // image: "assets/bottom_img3.png",
+                image: "assets/SvgImage/serviceicon.svg",
                 title: "Services",
               ),
 
               _bottomItem(
                 index: 3,
-                image: "assets/bottom_img4.png",
+                // image: "assets/bottom_img4.png",
+                image: "assets/SvgImage/documenticon.svg",
                 title: "Documents",
               ),
 
               _bottomItem(
                 index: 4,
-                image: "assets/bottom_img5.png",
+                // image: "assets/bottom_img5.png",
+                image: "assets/SvgImage/profileicon.svg",
                 title: "Profile",
               ),
             ],
@@ -118,11 +124,14 @@ class _AssociationBottomNavBarState extends State<AssociationBottomNavBar> {
               AnimatedScale(
                 scale: isSelected ? 1.08 : 1.0,
                 duration: const Duration(milliseconds: 200),
-                child: Image.asset(
+                child: SvgPicture.asset(
                   image,
-                  color: isSelected
-                      ? const Color(0xff101C16)
-                      : const Color(0xffA0A5A2),
+                  colorFilter: ColorFilter.mode(
+                    isSelected
+                        ? const Color(0xff101C16)
+                        : const Color(0xffA0A5A2),
+                    BlendMode.srcIn,
+                  ),
                   width: 30.w,
                   height: 30.h,
                 ),
@@ -318,7 +327,14 @@ class _AssociationHomeState extends State<AssociationHome> {
                     icon: Icons.currency_rupee,
                     title: "Maintenance",
                     subtitle: "Charges",
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        CupertinoPageRoute(
+                          builder: (context) => MantenanceCharges(),
+                        ),
+                      );
+                    },
                   ),
                   _quickAction(
                     icon: Icons.description_outlined,
