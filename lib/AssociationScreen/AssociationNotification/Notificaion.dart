@@ -66,7 +66,7 @@ class _NotificaionState extends State<Notificaion> {
                   Text(
                     "Stay updated with your property",
                     style: GoogleFonts.outfit(
-                      fontSize: 13.sp,
+                      fontSize: 14.sp,
                       fontWeight: FontWeight.w400,
                       color: Color.fromRGBO(42, 41, 51, 0.6),
                       letterSpacing: -0.24,
@@ -117,7 +117,7 @@ class _NotificaionState extends State<Notificaion> {
                       child: Text(
                         filters[index],
                         style: GoogleFonts.outfit(
-                          fontSize: 12.sp,
+                          fontSize: 13.sp,
                           fontWeight: FontWeight.w500,
                           color: isSelected
                               ? Colors.white
@@ -139,7 +139,7 @@ class _NotificaionState extends State<Notificaion> {
                 Text(
                   "Today",
                   style: GoogleFonts.outfit(
-                    fontSize: 13.sp,
+                    fontSize: 14.sp,
                     fontWeight: FontWeight.w500,
                     color: AppColors.heading,
                     letterSpacing: -0.2,
@@ -149,7 +149,7 @@ class _NotificaionState extends State<Notificaion> {
                 Text(
                   "3 New",
                   style: GoogleFonts.outfit(
-                    fontSize: 11.sp,
+                    fontSize: 12.sp,
                     fontWeight: FontWeight.w500,
                     color: AppColors.heading,
                     letterSpacing: -0.2,
@@ -209,7 +209,7 @@ class _NotificaionState extends State<Notificaion> {
                                   maxLines: 1,
                                   overflow: TextOverflow.ellipsis,
                                   style: GoogleFonts.outfit(
-                                    fontSize: 16.sp,
+                                    fontSize: 17.sp,
                                     fontWeight: FontWeight.w500,
                                     color: AppColors.heading,
                                     letterSpacing: -0.3,
@@ -222,7 +222,7 @@ class _NotificaionState extends State<Notificaion> {
                               Text(
                                 "09:45 AM",
                                 style: GoogleFonts.outfit(
-                                  fontSize: 9.sp,
+                                  fontSize: 12.sp,
                                   fontWeight: FontWeight.w500,
                                   color: AppColors.heading,
                                 ),
@@ -237,7 +237,7 @@ class _NotificaionState extends State<Notificaion> {
                             maxLines: 2,
                             overflow: TextOverflow.ellipsis,
                             style: GoogleFonts.outfit(
-                              fontSize: 12.sp,
+                              fontSize: 13.sp,
                               fontWeight: FontWeight.w400,
                               color: const Color.fromRGBO(0, 0, 0, 0.7),
                               letterSpacing: -0.2,
@@ -259,7 +259,7 @@ class _NotificaionState extends State<Notificaion> {
                             child: Text(
                               "Maintenance",
                               style: GoogleFonts.outfit(
-                                fontSize: 11.sp,
+                                fontSize: 12.sp,
                                 fontWeight: FontWeight.w500,
                                 color: const Color(0xff101010),
                                 letterSpacing: -0.2,

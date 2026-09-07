@@ -51,7 +51,7 @@ class _AssociationDocumentState extends State<AssociationDocument> {
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                   style: GoogleFonts.outfit(
-                    fontSize: 13.sp,
+                    fontSize: 14.sp,
                     fontWeight: FontWeight.w400,
                     color: Color(0xFF2A2933),
                     letterSpacing: -0.24,
@@ -82,7 +82,7 @@ class _AssociationDocumentState extends State<AssociationDocument> {
                     Text(
                       "DOCUMENT CENTRE",
                       style: GoogleFonts.outfit(
-                        fontSize: 14.sp,
+                        fontSize: 15.sp,
                         fontWeight: FontWeight.w500,
                         color: Color(0xFF000000),
                         letterSpacing: -0.2,
@@ -117,7 +117,7 @@ class _AssociationDocumentState extends State<AssociationDocument> {
                                 maxLines: 1,
                                 overflow: TextOverflow.ellipsis,
                                 style: GoogleFonts.outfit(
-                                  fontSize: 16.sp,
+                                  fontSize: 17.sp,
                                   fontWeight: FontWeight.w500,
                                   color: const Color(0xFF000000),
                                   letterSpacing: -0.3,
@@ -130,7 +130,7 @@ class _AssociationDocumentState extends State<AssociationDocument> {
                                 maxLines: 1,
                                 overflow: TextOverflow.ellipsis,
                                 style: GoogleFonts.outfit(
-                                  fontSize: 12.sp,
+                                  fontSize: 13.sp,
                                   fontWeight: FontWeight.w500,
                                   color: Color.fromRGBO(0, 0, 0, 0.6),
                                   letterSpacing: -0.3,
@@ -246,7 +246,7 @@ class _AssociationDocumentState extends State<AssociationDocument> {
                           child: Text(
                             filters[index],
                             style: GoogleFonts.outfit(
-                              fontSize: 13.sp,
+                              fontSize: 14.sp,
                               fontWeight: FontWeight.w500,
                               color: isSelected
                                   ? Colors.white
@@ -266,7 +266,7 @@ class _AssociationDocumentState extends State<AssociationDocument> {
                 style: GoogleFonts.outfit(
                   fontWeight: FontWeight.w500,
                   color: Color(0xff101C16),
-                  fontSize: 16.sp,
+                  fontSize: 17.sp,
                   letterSpacing: -0.54,
                 ),
               ),
@@ -296,7 +296,7 @@ class _AssociationDocumentState extends State<AssociationDocument> {
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.outfit(
-            fontSize: 16.sp,
+            fontSize: 17.sp,
             fontWeight: FontWeight.w500,
             color: const Color(0xFF000000),
             letterSpacing: -0.3,
@@ -309,7 +309,7 @@ class _AssociationDocumentState extends State<AssociationDocument> {
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.outfit(
-            fontSize: 12.sp,
+            fontSize: 13.sp,
             fontWeight: FontWeight.w500,
             color: Color.fromRGBO(42, 41, 51, 0.6),
             letterSpacing: -0.3,
@@ -365,7 +365,7 @@ class _AssociationDocumentState extends State<AssociationDocument> {
                       "Property Ownership Document",
                       style: GoogleFonts.outfit(
                         fontWeight: FontWeight.w500,
-                        fontSize: 16.sp,
+                        fontSize: 17.sp,
                         color: Color(0xFF000000),
                         letterSpacing: -0.3,
                       ),
@@ -374,7 +374,7 @@ class _AssociationDocumentState extends State<AssociationDocument> {
                       "Association · Updated 18 Aug 2026",
                       style: GoogleFonts.outfit(
                         fontWeight: FontWeight.w500,
-                        fontSize: 12.sp,
+                        fontSize: 13.sp,
                         color: Color.fromRGBO(0, 0, 0, 0.6),
                         letterSpacing: -0.2,
                       ),
@@ -392,7 +392,7 @@ class _AssociationDocumentState extends State<AssociationDocument> {
                   "PDF",
                   style: GoogleFonts.outfit(
                     fontWeight: FontWeight.w500,
-                    fontSize: 12.sp,
+                    fontSize: 13.sp,
                     color: Color(0xFF000000),
                     letterSpacing: -0.3,
                   ),
@@ -402,7 +402,7 @@ class _AssociationDocumentState extends State<AssociationDocument> {
                   "3.8 MB",
                   style: GoogleFonts.outfit(
                     fontWeight: FontWeight.w500,
-                    fontSize: 12.sp,
+                    fontSize: 13.sp,
                     color: Color(0xFF000000),
                     letterSpacing: -0.3,
                   ),
@@ -420,7 +420,7 @@ class _AssociationDocumentState extends State<AssociationDocument> {
                   child: Text(
                     "REPORT",
                     style: GoogleFonts.outfit(
-                      fontSize: 12.sp,
+                      fontSize: 13.sp,
                       fontWeight: FontWeight.w500,
                       color: Color(0xFF1E5993),
                       letterSpacing: -0.2,

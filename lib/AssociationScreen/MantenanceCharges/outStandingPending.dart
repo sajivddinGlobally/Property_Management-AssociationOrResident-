@@ -71,7 +71,7 @@ class _OutstandingPendingState extends State<OutstandingPending> {
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                     style: GoogleFonts.outfit(
-                      fontSize: 13.sp,
+                      fontSize: 14.sp,
                       fontWeight: FontWeight.w500,
                       color: const Color(0xFF2A2933),
                       letterSpacing: -0.2,
@@ -105,7 +105,7 @@ class _OutstandingPendingState extends State<OutstandingPending> {
                       Text(
                         "PENDING AMOUNT OVERVIEW",
                         style: GoogleFonts.outfit(
-                          fontSize: 13.sp,
+                          fontSize: 14.sp,
                           fontWeight: FontWeight.w500,
                           color: Colors.black,
                           letterSpacing: -0.2,
@@ -123,7 +123,7 @@ class _OutstandingPendingState extends State<OutstandingPending> {
                         child: Text(
                           "Overdue",
                           style: GoogleFonts.outfit(
-                            fontSize: 11.sp,
+                            fontSize: 12.sp,
                             fontWeight: FontWeight.w500,
                             color: Colors.black,
                           ),
@@ -157,7 +157,7 @@ class _OutstandingPendingState extends State<OutstandingPending> {
                   Text(
                     "Flat B-302",
                     style: GoogleFonts.outfit(
-                      fontSize: 16.sp,
+                      fontSize: 17.sp,
                       fontWeight: FontWeight.w500,
                       color: Colors.black,
                       letterSpacing: -0.2,
@@ -167,7 +167,7 @@ class _OutstandingPendingState extends State<OutstandingPending> {
                   Text(
                     "Property Unit · Residential",
                     style: GoogleFonts.outfit(
-                      fontSize: 11.sp,
+                      fontSize: 12.sp,
                       fontWeight: FontWeight.w400,
                       color: const Color(0xFF666666),
                       letterSpacing: -0.2,
@@ -186,7 +186,7 @@ class _OutstandingPendingState extends State<OutstandingPending> {
                             Text(
                               "Owner",
                               style: GoogleFonts.outfit(
-                                fontSize: 11.sp,
+                                fontSize: 12.sp,
                                 fontWeight: FontWeight.w400,
                                 color: const Color(0xFF999999),
                               ),
@@ -195,7 +195,7 @@ class _OutstandingPendingState extends State<OutstandingPending> {
                             Text(
                               "Ahmed Khan",
                               style: GoogleFonts.outfit(
-                                fontSize: 16.sp,
+                                fontSize: 17.sp,
                                 fontWeight: FontWeight.w500,
                                 color: Colors.black,
                               ),
@@ -210,7 +210,7 @@ class _OutstandingPendingState extends State<OutstandingPending> {
                             Text(
                               "Due Date",
                               style: GoogleFonts.outfit(
-                                fontSize: 11.sp,
+                                fontSize: 12.sp,
                                 fontWeight: FontWeight.w400,
                                 color: const Color(0xFF999999),
                               ),
@@ -219,7 +219,7 @@ class _OutstandingPendingState extends State<OutstandingPending> {
                             Text(
                               "05 Aug 2026",
                               style: GoogleFonts.outfit(
-                                fontSize: 16.sp,
+                                fontSize: 17.sp,
                                 fontWeight: FontWeight.w500,
                                 color: Colors.black,
                               ),
@@ -262,7 +262,7 @@ class _OutstandingPendingState extends State<OutstandingPending> {
                 Text(
                   "Pending by Unit",
                   style: GoogleFonts.outfit(
-                    fontSize: 16.sp,
+                    fontSize: 17.sp,
                     fontWeight: FontWeight.w500,
                     color: Colors.black,
                     letterSpacing: -0.2,
@@ -271,7 +271,7 @@ class _OutstandingPendingState extends State<OutstandingPending> {
                 Text(
                   "26 units",
                   style: GoogleFonts.outfit(
-                    fontSize: 12.sp,
+                    fontSize: 13.sp,
                     fontWeight: FontWeight.w400,
                     color: const Color(0xFF999999),
                   ),
@@ -298,14 +298,14 @@ class _OutstandingPendingState extends State<OutstandingPending> {
                   Expanded(
                     child: TextField(
                       style: GoogleFonts.outfit(
-                        fontSize: 13.sp,
+                        fontSize: 14.sp,
                         fontWeight: FontWeight.w400,
                         color: Colors.black,
                       ),
                       decoration: InputDecoration(
                         hintText: "Search service or provider..",
                         hintStyle: GoogleFonts.outfit(
-                          fontSize: 13.sp,
+                          fontSize: 14.sp,
                           fontWeight: FontWeight.w400,
                           color: const Color(0xFF666666),
                         ),
@@ -350,7 +350,7 @@ class _OutstandingPendingState extends State<OutstandingPending> {
                       Text(
                         "TOTAL OUTSTANDING",
                         style: GoogleFonts.outfit(
-                          fontSize: 12.sp,
+                          fontSize: 13.sp,
                           fontWeight: FontWeight.w500,
                           color: Colors.black,
                           letterSpacing: -0.2,
@@ -359,7 +359,7 @@ class _OutstandingPendingState extends State<OutstandingPending> {
                       Text(
                         "₹2,18,000",
                         style: GoogleFonts.outfit(
-                          fontSize: 16.sp,
+                          fontSize: 17.sp,
                           fontWeight: FontWeight.w500,
                           color: const Color(0xFFC18A00),
                         ),
@@ -393,7 +393,7 @@ class _OutstandingPendingState extends State<OutstandingPending> {
                       Text(
                         "₹8.42L collected",
                         style: GoogleFonts.outfit(
-                          fontSize: 11.sp,
+                          fontSize: 12.sp,
                           fontWeight: FontWeight.w500,
                           color: Colors.black,
                           letterSpacing: -0.2,
@@ -402,7 +402,7 @@ class _OutstandingPendingState extends State<OutstandingPending> {
                       Text(
                         "₹10.60L TOTAL DUE",
                         style: GoogleFonts.outfit(
-                          fontSize: 11.sp,
+                          fontSize: 12.sp,
                           fontWeight: FontWeight.w500,
                           color: Colors.black,
                           letterSpacing: -0.2,
@@ -483,7 +483,7 @@ class _OutstandingPendingState extends State<OutstandingPending> {
           Text(
             title,
             style: GoogleFonts.outfit(
-              fontSize: 12.sp,
+              fontSize: 13.sp,
               fontWeight: FontWeight.w400,
               color: const Color(0xFF666666),
               letterSpacing: -0.2,
@@ -493,7 +493,7 @@ class _OutstandingPendingState extends State<OutstandingPending> {
           Text(
             amount,
             style: GoogleFonts.outfit(
-              fontSize: 16.sp,
+              fontSize: 17.sp,
               fontWeight: FontWeight.w500,
               color: Colors.black,
               letterSpacing: -0.2,
@@ -503,7 +503,7 @@ class _OutstandingPendingState extends State<OutstandingPending> {
           Text(
             subtitle,
             style: GoogleFonts.outfit(
-              fontSize: 12.sp,
+              fontSize: 13.sp,
               fontWeight: FontWeight.w400,
               color: const Color(0xFF666666),
               letterSpacing: -0.2,
@@ -535,7 +535,7 @@ class _OutstandingPendingState extends State<OutstandingPending> {
         child: Text(
           label,
           style: GoogleFonts.outfit(
-            fontSize: 13.sp,
+            fontSize: 14.sp,
             fontWeight: FontWeight.w500,
             color: isSelected ? Colors.white : Colors.black,
             letterSpacing: -0.2,
@@ -596,7 +596,7 @@ class _OutstandingPendingState extends State<OutstandingPending> {
                   Text(
                     title,
                     style: GoogleFonts.outfit(
-                      fontSize: 16.sp,
+                      fontSize: 17.sp,
                       fontWeight: FontWeight.w500,
                       color: Colors.black,
                       letterSpacing: -0.2,
@@ -605,7 +605,7 @@ class _OutstandingPendingState extends State<OutstandingPending> {
                   Text(
                     subtitle,
                     style: GoogleFonts.outfit(
-                      fontSize: 11.sp,
+                      fontSize: 12.sp,
                       fontWeight: FontWeight.w400,
                       color: const Color(0xFF666666),
                       letterSpacing: -0.2,
@@ -620,7 +620,7 @@ class _OutstandingPendingState extends State<OutstandingPending> {
                 Text(
                   amount,
                   style: GoogleFonts.outfit(
-                    fontSize: 13.sp,
+                    fontSize: 14.sp,
                     fontWeight: FontWeight.w500,
                     color: Colors.black,
                   ),
@@ -629,7 +629,7 @@ class _OutstandingPendingState extends State<OutstandingPending> {
                 Text(
                   "OVERDUE",
                   style: GoogleFonts.outfit(
-                    fontSize: 9.sp,
+                    fontSize: 12.sp,
                     fontWeight: FontWeight.w400,
                     color: const Color(0xFF666666),
                     letterSpacing: -0.1,

@@ -98,7 +98,7 @@ class _ServiiceRequestState extends State<ServiiceRequest> {
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                   style: GoogleFonts.outfit(
-                    fontSize: 13.sp,
+                    fontSize: 14.sp,
                     fontWeight: FontWeight.w400,
                     color: Color(0xFF2A2933),
                     letterSpacing: -0.24,
@@ -145,7 +145,7 @@ class _ServiiceRequestState extends State<ServiiceRequest> {
                     child: Text(
                       "All Requests",
                       style: GoogleFonts.outfit(
-                        fontSize: 13.sp,
+                        fontSize: 14.sp,
                         fontWeight: FontWeight.w500,
                         color: Colors.black,
                         letterSpacing: -0.2,
@@ -155,7 +155,7 @@ class _ServiiceRequestState extends State<ServiiceRequest> {
                   Text(
                     "60 TOTAL",
                     style: GoogleFonts.outfit(
-                      fontSize: 11.sp,
+                      fontSize: 12.sp,
                       fontWeight: FontWeight.w500,
                       color: Color.fromRGBO(0, 0, 0, 0.6),
                       letterSpacing: -0.2,
@@ -235,7 +235,7 @@ class _ServiiceRequestState extends State<ServiiceRequest> {
                         child: Text(
                           filters[index],
                           style: GoogleFonts.outfit(
-                            fontSize: 13.sp,
+                            fontSize: 14.sp,
                             fontWeight: FontWeight.w600,
                             color: isSelected ? Colors.white : Colors.black,
                             letterSpacing: -0.2,
@@ -351,7 +351,7 @@ class _ServiiceRequestState extends State<ServiiceRequest> {
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
             style: GoogleFonts.outfit(
-              fontSize: 13.sp,
+              fontSize: 14.sp,
               fontWeight: FontWeight.w500,
               color: Colors.black,
               letterSpacing: -0.2,
@@ -361,7 +361,7 @@ class _ServiiceRequestState extends State<ServiiceRequest> {
           Text(
             value,
             style: GoogleFonts.outfit(
-              fontSize: 16.sp,
+              fontSize: 17.sp,
               fontWeight: FontWeight.w500,
               color: Colors.black,
               letterSpacing: -0.2,
@@ -374,7 +374,7 @@ class _ServiiceRequestState extends State<ServiiceRequest> {
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
             style: GoogleFonts.outfit(
-              fontSize: 13.sp,
+              fontSize: 14.sp,
               fontWeight: FontWeight.w500,
               color: Color.fromRGBO(41, 41, 51, 0.7),
               height: 1,
@@ -464,7 +464,7 @@ class ComplaintItem extends StatelessWidget {
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                   style: GoogleFonts.outfit(
-                    fontSize: 16.sp,
+                    fontSize: 17.sp,
                     fontWeight: FontWeight.w500,
                     height: 1.0,
                     color: Color(0xFF000000),
@@ -477,7 +477,7 @@ class ComplaintItem extends StatelessWidget {
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                   style: GoogleFonts.outfit(
-                    fontSize: 12.sp,
+                    fontSize: 13.sp,
                     fontWeight: FontWeight.w500,
                     height: 1.0,
                     color: Color.fromRGBO(0, 0, 0, 0.6),
@@ -489,7 +489,7 @@ class ComplaintItem extends StatelessWidget {
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                   style: GoogleFonts.outfit(
-                    fontSize: 12.sp,
+                    fontSize: 13.sp,
                     fontWeight: FontWeight.w500,
                     height: 1.0,
                     color: Color.fromRGBO(0, 0, 0, 0.6),
@@ -516,7 +516,7 @@ class ComplaintItem extends StatelessWidget {
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                   style: GoogleFonts.outfit(
-                    fontSize: 12.sp,
+                    fontSize: 13.sp,
                     fontWeight: FontWeight.w500,
                     color: _getStatusTextColor(status),
                     letterSpacing: -0.2,
@@ -527,7 +527,7 @@ class ComplaintItem extends StatelessWidget {
               Text(
                 data["date"] ?? "",
                 style: GoogleFonts.outfit(
-                  fontSize: 12.sp,
+                  fontSize: 13.sp,
                   fontWeight: FontWeight.w500,
                   color: Color(0xFF000000),
                   letterSpacing: -0.2,

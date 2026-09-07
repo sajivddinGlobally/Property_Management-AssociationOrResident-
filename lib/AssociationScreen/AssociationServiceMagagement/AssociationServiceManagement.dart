@@ -78,7 +78,7 @@ class _AssociationServiceManagementState
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
                         style: GoogleFonts.outfit(
-                          fontSize: 13.sp,
+                          fontSize: 14.sp,
                           fontWeight: FontWeight.w500,
                           color: Color(0xFF2A2933),
                           letterSpacing: -0.2,
@@ -114,7 +114,7 @@ class _AssociationServiceManagementState
                         child: Text(
                           "COMPLEX SERVICE OVERVIEW",
                           style: GoogleFonts.outfit(
-                            fontSize: 13.sp,
+                            fontSize: 14.sp,
                             fontWeight: FontWeight.w500,
                             color: Color(0xFF000000),
                             letterSpacing: -0.2,
@@ -136,7 +136,7 @@ class _AssociationServiceManagementState
                           Text(
                             "LIVE STATUS",
                             style: GoogleFonts.outfit(
-                              fontSize: 13.sp,
+                              fontSize: 14.sp,
                               fontWeight: FontWeight.w700,
                               color: Color(0xFF24B06A),
                               letterSpacing: -0.2,
@@ -151,7 +151,7 @@ class _AssociationServiceManagementState
                   Text(
                     "Service Operations",
                     style: GoogleFonts.outfit(
-                      fontSize: 16.sp,
+                      fontSize: 17.sp,
                       fontWeight: FontWeight.w500,
                       color: Color(0xFF000000),
                       letterSpacing: -0.2,
@@ -164,7 +164,7 @@ class _AssociationServiceManagementState
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                     style: GoogleFonts.outfit(
-                      fontSize: 13.sp,
+                      fontSize: 14.sp,
                       fontWeight: FontWeight.w500,
                       color: Color.fromRGBO(0, 0, 0, 0.7),
                       height: 1.h,
@@ -232,7 +232,7 @@ class _AssociationServiceManagementState
                       decoration: InputDecoration(
                         hintText: "Search service or provider...",
                         hintStyle: GoogleFonts.outfit(
-                          fontSize: 16.sp,
+                          fontSize: 17.sp,
                           fontWeight: FontWeight.w500,
                           color: const Color(0xff8B8D8B),
                           letterSpacing: -0.3,
@@ -285,7 +285,7 @@ class _AssociationServiceManagementState
                         child: Text(
                           filters[index],
                           style: GoogleFonts.outfit(
-                            fontSize: 13.sp,
+                            fontSize: 14.sp,
                             fontWeight: FontWeight.w500,
                             color: isSelected
                                 ? Colors.white
@@ -340,7 +340,7 @@ class _AssociationServiceManagementState
               child: Text(
                 "Services are monitored by category with their current status, assigned provider, service schedule, reported issues and performance. OEM / equipment services can also include service history and equipment-level information.",
                 style: GoogleFonts.outfit(
-                  fontSize: 10.sp,
+                  fontSize: 12.sp,
                   fontWeight: FontWeight.w500,
                   color: Color.fromRGBO(184, 134, 11, 0.9),
                   letterSpacing: -0.1,
@@ -365,7 +365,7 @@ class _AssociationServiceManagementState
         Text(
           label,
           style: GoogleFonts.outfit(
-            fontSize: 11.sp,
+            fontSize: 12.sp,
             fontWeight: FontWeight.w500,
             color: Color.fromRGBO(42, 41, 51, 0.6),
             letterSpacing: -0.2,
@@ -375,7 +375,7 @@ class _AssociationServiceManagementState
         Text(
           value,
           style: GoogleFonts.outfit(
-            fontSize: 16.sp,
+            fontSize: 17.sp,
             fontWeight: FontWeight.w500,
             color: Color(0xFF000000),
           ),
@@ -384,7 +384,7 @@ class _AssociationServiceManagementState
         Text(
           status,
           style: GoogleFonts.outfit(
-            fontSize: 12.sp,
+            fontSize: 13.sp,
             fontWeight: FontWeight.w500,
             color: Color(0xFFB8860B),
             height: 1,
@@ -466,7 +466,7 @@ class ServiceCard extends StatelessWidget {
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                       style: GoogleFonts.outfit(
-                        fontSize: 16.sp,
+                        fontSize: 17.sp,
                         fontWeight: FontWeight.w500,
                         color: Color(0xFF000000),
                         height: 1.h,
@@ -479,7 +479,7 @@ class ServiceCard extends StatelessWidget {
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                       style: GoogleFonts.outfit(
-                        fontSize: 13.sp,
+                        fontSize: 14.sp,
                         fontWeight: FontWeight.w500,
                         color: Color.fromRGBO(0, 0, 0, 0.6),
                         height: 1.1,
@@ -503,7 +503,7 @@ class ServiceCard extends StatelessWidget {
                 child: Text(
                   'ACTIVE',
                   style: GoogleFonts.outfit(
-                    fontSize: 13.sp,
+                    fontSize: 14.sp,
                     fontWeight: FontWeight.w500,
                     color: const Color(0xFF24B06A),
                     letterSpacing: -0.2,
@@ -582,7 +582,7 @@ class ServiceCard extends StatelessWidget {
                     Text(
                       'Service Provider',
                       style: GoogleFonts.outfit(
-                        fontSize: 11.sp,
+                        fontSize: 12.sp,
                         fontWeight: FontWeight.w500,
                         color: Color.fromRGBO(0, 0, 0, 0.8),
                         height: 1,
@@ -595,7 +595,7 @@ class ServiceCard extends StatelessWidget {
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                       style: GoogleFonts.outfit(
-                        fontSize: 14.sp,
+                        fontSize: 15.sp,
                         fontWeight: FontWeight.w500,
                         color: Color(0xFF000000),
                         letterSpacing: -0.1,
@@ -626,7 +626,7 @@ class ServiceCard extends StatelessWidget {
                     child: Text(
                       'View Details →',
                       style: GoogleFonts.outfit(
-                        fontSize: 10.sp,
+                        fontSize: 12.sp,
                         fontWeight: FontWeight.w500,
                         color: Color(0xFF000000),
                         letterSpacing: -0.2,
@@ -644,7 +644,7 @@ class ServiceCard extends StatelessWidget {
                 child: Text(
                   'Service Performance',
                   style: GoogleFonts.outfit(
-                    fontSize: 13.sp,
+                    fontSize: 14.sp,
                     fontWeight: FontWeight.w500,
                     color: Color(0xFF101C16),
                     letterSpacing: -0.2,
@@ -654,7 +654,7 @@ class ServiceCard extends StatelessWidget {
               Text(
                 performance,
                 style: GoogleFonts.outfit(
-                  fontSize: 13.sp,
+                  fontSize: 14.sp,
                   fontWeight: FontWeight.w500,
                   color: Color(0xFF101C16),
                   letterSpacing: -0.2,
@@ -701,7 +701,7 @@ class _InfoItem extends StatelessWidget {
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.outfit(
-            fontSize: 12.sp,
+            fontSize: 13.sp,
             fontWeight: FontWeight.w500,
             color: Color.fromRGBO(42, 41, 51, 0.6),
             height: 1.1,
@@ -714,7 +714,7 @@ class _InfoItem extends StatelessWidget {
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.outfit(
-            fontSize: 16.sp,
+            fontSize: 17.sp,
             fontWeight: FontWeight.w500,
             color: Color(0xFF000000),
             height: 1.1,

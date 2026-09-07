@@ -63,7 +63,7 @@ class _AssociationDocumentDetailsState
                   Text(
                     "DOCUMENT PREVIEW",
                     style: GoogleFonts.outfit(
-                      fontSize: 13.sp,
+                      fontSize: 14.sp,
                       fontWeight: FontWeight.w400,
                       color: Color.fromRGBO(42, 41, 51, 0.6),
                       letterSpacing: -0.24,
@@ -95,7 +95,7 @@ class _AssociationDocumentDetailsState
                     Text(
                       "DOCUMENT CENTRE",
                       style: GoogleFonts.outfit(
-                        fontSize: 14.sp,
+                        fontSize: 15.sp,
                         fontWeight: FontWeight.w500,
                         color: Color(0xFF000000),
                         letterSpacing: -0.2,
@@ -130,7 +130,7 @@ class _AssociationDocumentDetailsState
                                 maxLines: 1,
                                 overflow: TextOverflow.ellipsis,
                                 style: GoogleFonts.outfit(
-                                  fontSize: 16.sp,
+                                  fontSize: 17.sp,
                                   fontWeight: FontWeight.w500,
                                   color: const Color(0xFF000000),
                                   letterSpacing: -0.3,
@@ -143,7 +143,7 @@ class _AssociationDocumentDetailsState
                                 maxLines: 1,
                                 overflow: TextOverflow.ellipsis,
                                 style: GoogleFonts.outfit(
-                                  fontSize: 12.sp,
+                                  fontSize: 13.sp,
                                   fontWeight: FontWeight.w500,
                                   color: Color.fromRGBO(0, 0, 0, 0.6),
                                   letterSpacing: -0.3,
@@ -193,7 +193,7 @@ class _AssociationDocumentDetailsState
                 "Document Preview",
                 style: GoogleFonts.outfit(
                   fontWeight: FontWeight.w500,
-                  fontSize: 16.sp,
+                  fontSize: 17.sp,
                   color: AppColors.heading,
                 ),
               ),
@@ -237,7 +237,7 @@ class _AssociationDocumentDetailsState
                         label: Text(
                           "Share",
                           style: GoogleFonts.outfit(
-                            fontSize: 12.sp,
+                            fontSize: 13.sp,
                             fontWeight: FontWeight.w700,
                             color: AppColors.heading,
                           ),
@@ -268,7 +268,7 @@ class _AssociationDocumentDetailsState
                         label: Text(
                           "Download Document",
                           style: GoogleFonts.outfit(
-                            fontSize: 12.sp,
+                            fontSize: 13.sp,
                             fontWeight: FontWeight.w700,
                             color: Colors.white,
                             letterSpacing: -0.24,
@@ -284,7 +284,7 @@ class _AssociationDocumentDetailsState
                 "Document Information",
                 style: GoogleFonts.outfit(
                   fontWeight: FontWeight.w500,
-                  fontSize: 16.sp,
+                  fontSize: 17.sp,
                   color: AppColors.heading,
                 ),
               ),
@@ -312,7 +312,7 @@ class _AssociationDocumentDetailsState
                 "Related Documents",
                 style: GoogleFonts.outfit(
                   fontWeight: FontWeight.w500,
-                  fontSize: 16.sp,
+                  fontSize: 17.sp,
                   color: AppColors.heading,
                 ),
               ),
@@ -354,7 +354,7 @@ class _AssociationDocumentDetailsState
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.outfit(
-            fontSize: 12.sp,
+            fontSize: 13.sp,
             fontWeight: FontWeight.w500,
             color: Color.fromRGBO(42, 41, 51, 0.6),
             letterSpacing: -0.3,
@@ -366,7 +366,7 @@ class _AssociationDocumentDetailsState
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.outfit(
-            fontSize: 16.sp,
+            fontSize: 17.sp,
             fontWeight: FontWeight.w500,
             color: const Color(0xFF000000),
             letterSpacing: -0.3,
@@ -402,7 +402,7 @@ class _AssociationDocumentDetailsState
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
                 style: GoogleFonts.outfit(
-                  fontSize: 13.sp,
+                  fontSize: 14.sp,
                   fontWeight: FontWeight.w500,
                   color: Color.fromRGBO(42, 41, 51, 0.6),
                   letterSpacing: -0.24,
@@ -427,7 +427,7 @@ class _AssociationDocumentDetailsState
               overflow: TextOverflow.ellipsis,
               textAlign: TextAlign.right,
               style: GoogleFonts.outfit(
-                fontSize: 13.sp,
+                fontSize: 14.sp,
                 fontWeight: FontWeight.w700,
                 color: AppColors.heading,
                 letterSpacing: -0.24,
@@ -471,7 +471,7 @@ class _AssociationDocumentDetailsState
               Text(
                 title,
                 style: GoogleFonts.outfit(
-                  fontSize: 16.sp,
+                  fontSize: 17.sp,
                   fontWeight: FontWeight.w500,
                   color: Color(0xFF000000),
                   letterSpacing: -0.2,
@@ -480,7 +480,7 @@ class _AssociationDocumentDetailsState
               Text(
                 subtitle,
                 style: GoogleFonts.outfit(
-                  fontSize: 13.sp,
+                  fontSize: 14.sp,
                   fontWeight: FontWeight.w500,
                   color: Color.fromRGBO(0, 0, 0, 0.6),
                   letterSpacing: -0.3,

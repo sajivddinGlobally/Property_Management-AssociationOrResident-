@@ -63,7 +63,7 @@ class _ServiceRequestDetailsState extends State<ServiceRequestDetails> {
                   Text(
                     "Service Request",
                     style: GoogleFonts.outfit(
-                      fontSize: 13.sp,
+                      fontSize: 14.sp,
                       fontWeight: FontWeight.w400,
                       color: Color.fromRGBO(42, 41, 51, 0.6),
                       letterSpacing: -0.24,
@@ -98,7 +98,7 @@ class _ServiceRequestDetailsState extends State<ServiceRequestDetails> {
                           child: Text(
                             "TICKET · SR-1024",
                             style: GoogleFonts.outfit(
-                              fontSize: 13.sp,
+                              fontSize: 14.sp,
                               fontWeight: FontWeight.w500,
                               color: Colors.black,
                               letterSpacing: -0.2,
@@ -120,7 +120,7 @@ class _ServiceRequestDetailsState extends State<ServiceRequestDetails> {
                           child: Text(
                             "Pending",
                             style: GoogleFonts.outfit(
-                              fontSize: 13.sp,
+                              fontSize: 14.sp,
                               fontWeight: FontWeight.w500,
                               color: const Color(0xFFB8860B),
                               letterSpacing: -0.2,
@@ -153,7 +153,7 @@ class _ServiceRequestDetailsState extends State<ServiceRequestDetails> {
                               Text(
                                 "Water Leakage",
                                 style: GoogleFonts.outfit(
-                                  fontSize: 16.sp,
+                                  fontSize: 17.sp,
                                   fontWeight: FontWeight.w500,
                                   color: Color(0xFF000000),
                                   height: 1.05,
@@ -164,7 +164,7 @@ class _ServiceRequestDetailsState extends State<ServiceRequestDetails> {
                               Text(
                                 "Plumbing Service Request",
                                 style: GoogleFonts.outfit(
-                                  fontSize: 13.sp,
+                                  fontSize: 14.sp,
                                   fontWeight: FontWeight.w500,
                                   color: Color.fromRGBO(0, 0, 0, 0.6),
                                   height: 1.1,
@@ -193,7 +193,7 @@ class _ServiceRequestDetailsState extends State<ServiceRequestDetails> {
                               Text(
                                 "Raised On",
                                 style: GoogleFonts.outfit(
-                                  fontSize: 11.sp,
+                                  fontSize: 12.sp,
                                   fontWeight: FontWeight.w500,
                                   color: Color.fromRGBO(42, 41, 51, 0.6),
                                   letterSpacing: -0.2,
@@ -203,7 +203,7 @@ class _ServiceRequestDetailsState extends State<ServiceRequestDetails> {
                               Text(
                                 "24 Aug 2026",
                                 style: GoogleFonts.outfit(
-                                  fontSize: 16.sp,
+                                  fontSize: 17.sp,
                                   fontWeight: FontWeight.w500,
                                   color: const Color(0xFF000000),
                                 ),
@@ -218,7 +218,7 @@ class _ServiceRequestDetailsState extends State<ServiceRequestDetails> {
                               Text(
                                 "Last Updated",
                                 style: GoogleFonts.outfit(
-                                  fontSize: 11.sp,
+                                  fontSize: 12.sp,
                                   fontWeight: FontWeight.w500,
                                   color: Color.fromRGBO(42, 41, 51, 0.6),
                                   letterSpacing: -0.2,
@@ -228,7 +228,7 @@ class _ServiceRequestDetailsState extends State<ServiceRequestDetails> {
                               Text(
                                 "05 Aug 2026",
                                 style: GoogleFonts.outfit(
-                                  fontSize: 16.sp,
+                                  fontSize: 17.sp,
                                   fontWeight: FontWeight.w500,
                                   color: const Color(0xFF000000),
                                 ),
@@ -245,7 +245,7 @@ class _ServiceRequestDetailsState extends State<ServiceRequestDetails> {
               Text(
                 "Raised By",
                 style: GoogleFonts.outfit(
-                  fontSize: 16.sp,
+                  fontSize: 17.sp,
                   fontWeight: FontWeight.w500,
                   color: const Color(0xFF000000),
                   letterSpacing: -0.2,
@@ -296,7 +296,7 @@ class _ServiceRequestDetailsState extends State<ServiceRequestDetails> {
                           Text(
                             'Ahmed Khan',
                             style: GoogleFonts.outfit(
-                              fontSize: 16.sp,
+                              fontSize: 17.sp,
                               fontWeight: FontWeight.w500,
                               color: Color(0xFF000000),
                               height: 1,
@@ -309,7 +309,7 @@ class _ServiceRequestDetailsState extends State<ServiceRequestDetails> {
                             maxLines: 1,
                             overflow: TextOverflow.ellipsis,
                             style: GoogleFonts.outfit(
-                              fontSize: 14.sp,
+                              fontSize: 15.sp,
                               fontWeight: FontWeight.w500,
                               color: Color.fromRGBO(0, 0, 0, 0.6),
                               letterSpacing: -0.1,
@@ -334,7 +334,7 @@ class _ServiceRequestDetailsState extends State<ServiceRequestDetails> {
                       child: Text(
                         "B-302",
                         style: GoogleFonts.outfit(
-                          fontSize: 13.sp,
+                          fontSize: 14.sp,
                           fontWeight: FontWeight.w500,
                           color: const Color(0xFFB8860B),
                           letterSpacing: -0.2,
@@ -348,7 +348,7 @@ class _ServiceRequestDetailsState extends State<ServiceRequestDetails> {
               Text(
                 "Request Information",
                 style: GoogleFonts.outfit(
-                  fontSize: 16.sp,
+                  fontSize: 17.sp,
                   fontWeight: FontWeight.w500,
                   color: const Color(0xFF000000),
                   letterSpacing: -0.2,
@@ -376,7 +376,7 @@ class _ServiceRequestDetailsState extends State<ServiceRequestDetails> {
               Text(
                 "Issue Description",
                 style: GoogleFonts.outfit(
-                  fontSize: 16.sp,
+                  fontSize: 17.sp,
                   fontWeight: FontWeight.w500,
                   color: const Color(0xFF000000),
                   letterSpacing: -0.2,
@@ -393,7 +393,7 @@ class _ServiceRequestDetailsState extends State<ServiceRequestDetails> {
                 child: Text(
                   "Water leakage has been noticed near the bathroom pipeline. The resident has requested inspection and necessary plumbing repair.",
                   style: GoogleFonts.outfit(
-                    fontSize: 13.sp,
+                    fontSize: 14.sp,
                     fontWeight: FontWeight.w500,
                     color: const Color(0xFF000000),
                   ),
@@ -403,7 +403,7 @@ class _ServiceRequestDetailsState extends State<ServiceRequestDetails> {
               Text(
                 "Priority",
                 style: GoogleFonts.outfit(
-                  fontSize: 16.sp,
+                  fontSize: 17.sp,
                   fontWeight: FontWeight.w500,
                   color: const Color(0xFF000000),
                   letterSpacing: -0.2,
@@ -432,7 +432,7 @@ class _ServiceRequestDetailsState extends State<ServiceRequestDetails> {
                           Text(
                             'Requires Attention',
                             style: GoogleFonts.outfit(
-                              fontSize: 16.sp,
+                              fontSize: 17.sp,
                               fontWeight: FontWeight.w500,
                               color: Color(0xFF000000),
                               height: 1,
@@ -445,7 +445,7 @@ class _ServiceRequestDetailsState extends State<ServiceRequestDetails> {
                             maxLines: 1,
                             overflow: TextOverflow.ellipsis,
                             style: GoogleFonts.outfit(
-                              fontSize: 14.sp,
+                              fontSize: 15.sp,
                               fontWeight: FontWeight.w500,
                               color: Color.fromRGBO(0, 0, 0, 0.6),
                               letterSpacing: -0.1,
@@ -470,7 +470,7 @@ class _ServiceRequestDetailsState extends State<ServiceRequestDetails> {
                       child: Text(
                         "HIGH",
                         style: GoogleFonts.outfit(
-                          fontSize: 13.sp,
+                          fontSize: 14.sp,
                           fontWeight: FontWeight.w500,
                           color: const Color(0xFFE3240F),
                           letterSpacing: -0.2,
@@ -485,7 +485,7 @@ class _ServiceRequestDetailsState extends State<ServiceRequestDetails> {
               Text(
                 "Assigned Service",
                 style: GoogleFonts.outfit(
-                  fontSize: 16.sp,
+                  fontSize: 17.sp,
                   fontWeight: FontWeight.w500,
                   color: const Color(0xFF000000),
                   letterSpacing: -0.2,
@@ -522,7 +522,7 @@ class _ServiceRequestDetailsState extends State<ServiceRequestDetails> {
                           Text(
                             'ABC Plumbing Services',
                             style: GoogleFonts.outfit(
-                              fontSize: 16.sp,
+                              fontSize: 17.sp,
                               fontWeight: FontWeight.w500,
                               color: Color(0xFF000000),
                               height: 1,
@@ -535,7 +535,7 @@ class _ServiceRequestDetailsState extends State<ServiceRequestDetails> {
                             maxLines: 1,
                             overflow: TextOverflow.ellipsis,
                             style: GoogleFonts.outfit(
-                              fontSize: 14.sp,
+                              fontSize: 15.sp,
                               fontWeight: FontWeight.w500,
                               color: Color.fromRGBO(0, 0, 0, 0.6),
                               letterSpacing: -0.1,
@@ -560,7 +560,7 @@ class _ServiceRequestDetailsState extends State<ServiceRequestDetails> {
                       child: Text(
                         "View",
                         style: GoogleFonts.outfit(
-                          fontSize: 13.sp,
+                          fontSize: 14.sp,
                           fontWeight: FontWeight.w500,
                           color: const Color(0xFF1E5993),
                           letterSpacing: -0.2,
@@ -574,7 +574,7 @@ class _ServiceRequestDetailsState extends State<ServiceRequestDetails> {
               Text(
                 "Current Status",
                 style: GoogleFonts.outfit(
-                  fontSize: 16.sp,
+                  fontSize: 17.sp,
                   fontWeight: FontWeight.w500,
                   color: const Color(0xFF000000),
                   letterSpacing: -0.2,
@@ -636,7 +636,7 @@ class _ServiceRequestDetailsState extends State<ServiceRequestDetails> {
                     "VIEW FULL TICKET STATUS",
                     textAlign: TextAlign.center,
                     style: GoogleFonts.outfit(
-                      fontSize: 13.sp,
+                      fontSize: 14.sp,
                       fontWeight: FontWeight.w500,
                       color: Colors.white,
                       letterSpacing: -0.2,
@@ -677,7 +677,7 @@ class _ServiceRequestDetailsState extends State<ServiceRequestDetails> {
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
                 style: GoogleFonts.outfit(
-                  fontSize: 13.sp,
+                  fontSize: 14.sp,
                   fontWeight: FontWeight.w500,
                   color: Color.fromRGBO(42, 41, 51, 0.6),
                   letterSpacing: -0.24,
@@ -702,7 +702,7 @@ class _ServiceRequestDetailsState extends State<ServiceRequestDetails> {
               overflow: TextOverflow.ellipsis,
               textAlign: TextAlign.right,
               style: GoogleFonts.outfit(
-                fontSize: 13.sp,
+                fontSize: 14.sp,
                 fontWeight: FontWeight.w700,
                 color: AppColors.heading,
                 letterSpacing: -0.24,
@@ -764,7 +764,7 @@ class _StatusItem extends StatelessWidget {
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
                 style: GoogleFonts.outfit(
-                  fontSize: 14.sp,
+                  fontSize: 15.sp,
                   fontWeight: FontWeight.w500,
                   height: 1.1,
                   color: Colors.black,
@@ -777,7 +777,7 @@ class _StatusItem extends StatelessWidget {
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
                 style: GoogleFonts.outfit(
-                  fontSize: 12.sp,
+                  fontSize: 13.sp,
                   fontWeight: FontWeight.w400,
                   height: 1.05,
                   color: Color.fromRGBO(0, 0, 0, 0.6),

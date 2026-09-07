@@ -70,7 +70,7 @@ class _MantenanceChargesState extends State<MantenanceCharges> {
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
                         style: GoogleFonts.outfit(
-                          fontSize: 13.sp,
+                          fontSize: 14.sp,
                           fontWeight: FontWeight.w500,
                           color: const Color(0xFF2A2933),
                           letterSpacing: -0.2,
@@ -106,7 +106,7 @@ class _MantenanceChargesState extends State<MantenanceCharges> {
                       Text(
                         "MONTHLY CHARGES OVERVIEW",
                         style: GoogleFonts.outfit(
-                          fontSize: 13.sp,
+                          fontSize: 14.sp,
                           fontWeight: FontWeight.w500,
                           color: Colors.black,
                           letterSpacing: -0.2,
@@ -115,7 +115,7 @@ class _MantenanceChargesState extends State<MantenanceCharges> {
                       Text(
                         "AUGUST 2026",
                         style: GoogleFonts.outfit(
-                          fontSize: 13.sp,
+                          fontSize: 14.sp,
                           fontWeight: FontWeight.w700,
                           color: const Color(0xFF24B06A),
                           letterSpacing: -0.2,
@@ -148,7 +148,7 @@ class _MantenanceChargesState extends State<MantenanceCharges> {
                             Text(
                               "Maintenance Charges",
                               style: GoogleFonts.outfit(
-                                fontSize: 16.sp,
+                                fontSize: 17.sp,
                                 fontWeight: FontWeight.w500,
                                 color: Colors.black,
                                 height: 1.05,
@@ -159,7 +159,7 @@ class _MantenanceChargesState extends State<MantenanceCharges> {
                             Text(
                               "Track monthly collection and outstanding dues",
                               style: GoogleFonts.outfit(
-                                fontSize: 12.sp,
+                                fontSize: 13.sp,
                                 fontWeight: FontWeight.w400,
                                 color: const Color(0xFF4A4A4A),
                                 height: 1.05,
@@ -206,7 +206,7 @@ class _MantenanceChargesState extends State<MantenanceCharges> {
             Text(
               "Charge Overview",
               style: GoogleFonts.outfit(
-                fontSize: 16.sp,
+                fontSize: 17.sp,
                 fontWeight: FontWeight.w500,
                 color: Colors.black,
                 letterSpacing: -0.2,
@@ -260,7 +260,7 @@ class _MantenanceChargesState extends State<MantenanceCharges> {
             Text(
               "Collection Progress",
               style: GoogleFonts.outfit(
-                fontSize: 16.sp,
+                fontSize: 17.sp,
                 fontWeight: FontWeight.w500,
                 color: Colors.black,
                 letterSpacing: -0.2,
@@ -284,7 +284,7 @@ class _MantenanceChargesState extends State<MantenanceCharges> {
                       Text(
                         "August Collection",
                         style: GoogleFonts.outfit(
-                          fontSize: 12.sp,
+                          fontSize: 13.sp,
                           fontWeight: FontWeight.w400,
                           color: Colors.white,
                         ),
@@ -292,7 +292,7 @@ class _MantenanceChargesState extends State<MantenanceCharges> {
                       Text(
                         "79%",
                         style: GoogleFonts.outfit(
-                          fontSize: 16.sp,
+                          fontSize: 17.sp,
                           fontWeight: FontWeight.w500,
                           color: Colors.white,
                         ),
@@ -325,7 +325,7 @@ class _MantenanceChargesState extends State<MantenanceCharges> {
                       Text(
                         "Collected - ₹8.42L",
                         style: GoogleFonts.outfit(
-                          fontSize: 10.sp,
+                          fontSize: 12.sp,
                           fontWeight: FontWeight.w400,
                           color: Colors.white,
                         ),
@@ -333,7 +333,7 @@ class _MantenanceChargesState extends State<MantenanceCharges> {
                       Text(
                         "Total Due - ₹10.60L",
                         style: GoogleFonts.outfit(
-                          fontSize: 10.sp,
+                          fontSize: 12.sp,
                           fontWeight: FontWeight.w400,
                           color: Colors.white,
                         ),
@@ -347,7 +347,7 @@ class _MantenanceChargesState extends State<MantenanceCharges> {
             Text(
               "Complaint Information",
               style: GoogleFonts.outfit(
-                fontSize: 16.sp,
+                fontSize: 17.sp,
                 fontWeight: FontWeight.w500,
                 color: Colors.black,
                 letterSpacing: -0.2,
@@ -357,7 +357,7 @@ class _MantenanceChargesState extends State<MantenanceCharges> {
             Text(
               "View maintenance payment status and outstanding dues",
               style: GoogleFonts.outfit(
-                fontSize: 12.sp,
+                fontSize: 13.sp,
                 fontWeight: FontWeight.w400,
                 color: const Color(0xFF999999),
               ),
@@ -442,7 +442,7 @@ class _MantenanceChargesState extends State<MantenanceCharges> {
         Text(
           label,
           style: GoogleFonts.outfit(
-            fontSize: 11.sp,
+            fontSize: 12.sp,
             fontWeight: FontWeight.w500,
             color: const Color(0xFF4A4A4A),
             letterSpacing: -0.2,
@@ -452,7 +452,7 @@ class _MantenanceChargesState extends State<MantenanceCharges> {
         Text(
           value,
           style: GoogleFonts.outfit(
-            fontSize: 16.sp,
+            fontSize: 17.sp,
             fontWeight: FontWeight.w500,
             color: Colors.black,
             letterSpacing: -0.2,
@@ -462,7 +462,7 @@ class _MantenanceChargesState extends State<MantenanceCharges> {
         Text(
           subValue,
           style: GoogleFonts.outfit(
-            fontSize: 11.sp,
+            fontSize: 12.sp,
             fontWeight: FontWeight.w400,
             color: subValueColor,
             letterSpacing: -0.2,
@@ -500,7 +500,7 @@ class _MantenanceChargesState extends State<MantenanceCharges> {
           Text(
             title,
             style: GoogleFonts.outfit(
-              fontSize: 11.sp,
+              fontSize: 12.sp,
               fontWeight: FontWeight.w400,
               color: const Color.fromRGBO(42, 41, 51, 0.7),
             ),
@@ -509,7 +509,7 @@ class _MantenanceChargesState extends State<MantenanceCharges> {
           Text(
             value,
             style: GoogleFonts.outfit(
-              fontSize: 16.sp,
+              fontSize: 17.sp,
               fontWeight: FontWeight.w500,
               color: Colors.black,
             ),
@@ -518,7 +518,7 @@ class _MantenanceChargesState extends State<MantenanceCharges> {
           Text(
             subtitle,
             style: GoogleFonts.outfit(
-              fontSize: 10.sp,
+              fontSize: 12.sp,
               fontWeight: FontWeight.w400,
               color: const Color(0xFF4A4A4A),
             ),
@@ -557,7 +557,7 @@ class _MantenanceChargesState extends State<MantenanceCharges> {
                   Text(
                     title,
                     style: GoogleFonts.outfit(
-                      fontSize: 16.sp,
+                      fontSize: 17.sp,
                       fontWeight: FontWeight.w500,
                       color: Colors.black,
                       letterSpacing: -0.2,
@@ -567,7 +567,7 @@ class _MantenanceChargesState extends State<MantenanceCharges> {
                   Text(
                     subtitle,
                     style: GoogleFonts.outfit(
-                      fontSize: 12.sp,
+                      fontSize: 13.sp,
                       fontWeight: FontWeight.w400,
                       color: const Color(0xFF4A4A4A),
                       letterSpacing: -0.2,

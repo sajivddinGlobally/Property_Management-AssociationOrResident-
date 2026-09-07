@@ -84,7 +84,7 @@ class _AssociationLoginState extends State<AssociationLogin> {
                     style: GoogleFonts.outfit(
                       fontWeight: FontWeight.w500,
                       color: AppColors.heading,
-                      fontSize: 13.sp,
+                      fontSize: 14.sp,
                       letterSpacing: -0.39,
                     ),
                   ),
@@ -94,7 +94,7 @@ class _AssociationLoginState extends State<AssociationLogin> {
                     style: GoogleFonts.outfit(
                       fontWeight: FontWeight.w500,
                       color: AppColors.heading,
-                      fontSize: 13.sp,
+                      fontSize: 14.sp,
                       letterSpacing: -0.3,
                     ),
                   ),
@@ -124,7 +124,7 @@ class _AssociationLoginState extends State<AssociationLogin> {
 
                         hintText: "Enter Email or mobile number",
                         hintStyle: GoogleFonts.outfit(
-                          fontSize: 13.sp,
+                          fontSize: 14.sp,
                           fontWeight: FontWeight.w500,
                           color: const Color.fromRGBO(16, 28, 22, 0.6),
                         ),
@@ -154,7 +154,7 @@ class _AssociationLoginState extends State<AssociationLogin> {
                     style: GoogleFonts.outfit(
                       fontWeight: FontWeight.w500,
                       color: AppColors.heading,
-                      fontSize: 13.sp,
+                      fontSize: 14.sp,
                       letterSpacing: -0.39,
                     ),
                   ),
@@ -183,7 +183,7 @@ class _AssociationLoginState extends State<AssociationLogin> {
 
                         hintText: "Enter your Password",
                         hintStyle: GoogleFonts.outfit(
-                          fontSize: 13.sp,
+                          fontSize: 14.sp,
                           fontWeight: FontWeight.w500,
                           color: const Color.fromRGBO(16, 28, 22, 0.6),
                         ),
@@ -260,7 +260,7 @@ class _AssociationLoginState extends State<AssociationLogin> {
                             Text(
                               "Remember me",
                               style: GoogleFonts.outfit(
-                                fontSize: 13.sp,
+                                fontSize: 14.sp,
                                 fontWeight: FontWeight.w500,
                                 color: AppColors.heading,
                                 letterSpacing: -0.39,
@@ -282,7 +282,7 @@ class _AssociationLoginState extends State<AssociationLogin> {
                           child: Text(
                             "Forgot Password?",
                             style: GoogleFonts.outfit(
-                              fontSize: 12.sp,
+                              fontSize: 13.sp,
                               fontWeight: FontWeight.w500,
                               color: const Color(0xff101C16),
                               letterSpacing: -0.39,
@@ -315,7 +315,7 @@ class _AssociationLoginState extends State<AssociationLogin> {
                         "Login",
                         style: GoogleFonts.outfit(
                           fontWeight: FontWeight.w700,
-                          fontSize: 12.sp,
+                          fontSize: 13.sp,
                           color: Color(0xffFFFFFF),
                           letterSpacing: -0.24,
                         ),
@@ -373,7 +373,7 @@ class _AssociationLoginState extends State<AssociationLogin> {
                   //     Text(
                   //       "OR",
                   //       style: GoogleFonts.outfit(
-                  //         fontSize: 16.sp,
+                  //         fontSize: 17.sp,
                   //         fontWeight: FontWeight.w500,
                   //         color: const Color(0xff101C16),
                   //       ),
@@ -403,7 +403,7 @@ class _AssociationLoginState extends State<AssociationLogin> {
                   //       "LOGIN WITH OTP",
                   //       style: GoogleFonts.outfit(
                   //         fontWeight: FontWeight.w700,
-                  //         fontSize: 12.sp,
+                  //         fontSize: 13.sp,
                   //         color: AppColors.heading,
                   //         letterSpacing: -0.24,
                   //       ),
@@ -416,7 +416,7 @@ class _AssociationLoginState extends State<AssociationLogin> {
                     child: Text(
                       "SECURE PRIVATE PROPERTY MANAGEMENT",
                       style: GoogleFonts.outfit(
-                        fontSize: 9.sp,
+                        fontSize: 12.sp,
                         fontWeight: FontWeight.w500,
                         color: Color.fromRGBO(16, 28, 22, 0.5),
                         letterSpacing: 2.16,

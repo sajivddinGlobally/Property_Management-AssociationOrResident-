@@ -66,7 +66,7 @@ class _AssociationChangePasswordState extends State<AssociationChangePassword> {
                   Text(
                     "Manage your account security",
                     style: GoogleFonts.outfit(
-                      fontSize: 13.sp,
+                      fontSize: 14.sp,
                       fontWeight: FontWeight.w400,
                       color: Color.fromRGBO(42, 41, 51, 0.6),
                       letterSpacing: -0.24,
@@ -120,7 +120,7 @@ class _AssociationChangePasswordState extends State<AssociationChangePassword> {
                         Text(
                           "Security & Password",
                           style: GoogleFonts.outfit(
-                            fontSize: 16.sp,
+                            fontSize: 17.sp,
                             fontWeight: FontWeight.w500,
                             color: Color(0xFF000000),
                             letterSpacing: -0.2,
@@ -129,7 +129,7 @@ class _AssociationChangePasswordState extends State<AssociationChangePassword> {
                         Text(
                           "Manage password and account security",
                           style: GoogleFonts.outfit(
-                            fontSize: 13.sp,
+                            fontSize: 14.sp,
                             fontWeight: FontWeight.w500,
                             color: Color.fromRGBO(0, 0, 0, 0.7),
                             letterSpacing: -0.3,
@@ -154,7 +154,7 @@ class _AssociationChangePasswordState extends State<AssociationChangePassword> {
                         child: Text(
                           "Secure",
                           style: GoogleFonts.outfit(
-                            fontSize: 12.sp,
+                            fontSize: 13.sp,
                             fontWeight: FontWeight.w500,
                             color: Color(0xFF000000),
                             letterSpacing: -0.2,
@@ -169,7 +169,7 @@ class _AssociationChangePasswordState extends State<AssociationChangePassword> {
               Text(
                 "Change Password",
                 style: GoogleFonts.outfit(
-                  fontSize: 16.sp,
+                  fontSize: 17.sp,
                   fontWeight: FontWeight.w500,
                   color: Color(0xFF101C16),
                   letterSpacing: -0.2,
@@ -238,7 +238,7 @@ class _AssociationChangePasswordState extends State<AssociationChangePassword> {
                     style: GoogleFonts.outfit(
                       fontWeight: FontWeight.w500,
                       color: Color(0xffFFFFFF),
-                      fontSize: 14.sp,
+                      fontSize: 15.sp,
                       letterSpacing: -0.34,
                     ),
                   ),
@@ -263,7 +263,7 @@ class _AssociationChangePasswordState extends State<AssociationChangePassword> {
         Text(
           label,
           style: GoogleFonts.outfit(
-            fontSize: 16.sp,
+            fontSize: 17.sp,
             fontWeight: FontWeight.w500,
             color: const Color(0xFF000000),
             letterSpacing: -0.2,
@@ -287,7 +287,7 @@ class _AssociationChangePasswordState extends State<AssociationChangePassword> {
               hintText: hintText,
 
               hintStyle: GoogleFonts.outfit(
-                fontSize: 13.sp,
+                fontSize: 14.sp,
                 fontWeight: FontWeight.w500,
                 color: const Color.fromRGBO(16, 28, 22, 0.6),
               ),

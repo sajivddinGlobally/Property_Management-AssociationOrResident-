@@ -68,7 +68,7 @@ class _MantenanceServiceDetailsState extends State<MantenanceServiceDetails> {
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
                         style: GoogleFonts.outfit(
-                          fontSize: 13.sp,
+                          fontSize: 14.sp,
                           fontWeight: FontWeight.w500,
                           color: const Color(0xFF2A2933),
                           letterSpacing: -0.2,
@@ -104,7 +104,7 @@ class _MantenanceServiceDetailsState extends State<MantenanceServiceDetails> {
                       Text(
                         "MAINTENANCE REQUEST · MR-2048",
                         style: GoogleFonts.outfit(
-                          fontSize: 12.sp,
+                          fontSize: 13.sp,
                           fontWeight: FontWeight.w500,
                           color: Colors.black,
                           letterSpacing: -0.2,
@@ -125,7 +125,7 @@ class _MantenanceServiceDetailsState extends State<MantenanceServiceDetails> {
                         child: Text(
                           "In Progress",
                           style: GoogleFonts.outfit(
-                            fontSize: 12.sp,
+                            fontSize: 13.sp,
                             fontWeight: FontWeight.w500,
                             color: const Color(0xFFC18A00),
                             height: 1,
@@ -139,7 +139,7 @@ class _MantenanceServiceDetailsState extends State<MantenanceServiceDetails> {
                   Text(
                     "Water Leakage Repair",
                     style: GoogleFonts.outfit(
-                      fontSize: 16.sp,
+                      fontSize: 17.sp,
                       fontWeight: FontWeight.w500,
                       color: Colors.black,
                       height: 1.05,
@@ -150,7 +150,7 @@ class _MantenanceServiceDetailsState extends State<MantenanceServiceDetails> {
                   Text(
                     "Plumbing maintenance request",
                     style: GoogleFonts.outfit(
-                      fontSize: 12.sp,
+                      fontSize: 13.sp,
                       fontWeight: FontWeight.w400,
                       color: const Color(0xFF4A4A4A),
                       height: 1.05,
@@ -234,7 +234,7 @@ class _MantenanceServiceDetailsState extends State<MantenanceServiceDetails> {
                             Text(
                               "Maintenance Request",
                               style: GoogleFonts.outfit(
-                                fontSize: 16.sp,
+                                fontSize: 17.sp,
                                 fontWeight: FontWeight.w500,
                                 color: Colors.black,
                                 height: 1.05,
@@ -245,7 +245,7 @@ class _MantenanceServiceDetailsState extends State<MantenanceServiceDetails> {
                             Text(
                               "Repair required in apartment plumbing area",
                               style: GoogleFonts.outfit(
-                                fontSize: 12.sp,
+                                fontSize: 13.sp,
                                 fontWeight: FontWeight.w400,
                                 color: const Color(0xFF4A4A4A),
                                 height: 1.05,
@@ -263,7 +263,7 @@ class _MantenanceServiceDetailsState extends State<MantenanceServiceDetails> {
                   Text(
                     "Description",
                     style: GoogleFonts.outfit(
-                      fontSize: 11.sp,
+                      fontSize: 12.sp,
                       fontWeight: FontWeight.w400,
                       color: const Color.fromRGBO(42, 41, 51, 0.60),
                     ),
@@ -272,7 +272,7 @@ class _MantenanceServiceDetailsState extends State<MantenanceServiceDetails> {
                   Text(
                     "Water leakage reported from the bathroom plumbing connection. Maintenance team has been assigned to inspect and complete the required repair.",
                     style: GoogleFonts.outfit(
-                      fontSize: 13.sp,
+                      fontSize: 14.sp,
                       fontWeight: FontWeight.w400,
                       color: Colors.black,
                       height: 1.3,
@@ -316,7 +316,7 @@ class _MantenanceServiceDetailsState extends State<MantenanceServiceDetails> {
                         Text(
                           "Property / Unit",
                           style: GoogleFonts.outfit(
-                            fontSize: 10.sp,
+                            fontSize: 12.sp,
                             fontWeight: FontWeight.w400,
                             color: const Color.fromRGBO(42, 41, 51, 0.60),
                           ),
@@ -325,7 +325,7 @@ class _MantenanceServiceDetailsState extends State<MantenanceServiceDetails> {
                         Text(
                           "Apartment A-204",
                           style: GoogleFonts.outfit(
-                            fontSize: 16.sp,
+                            fontSize: 17.sp,
                             fontWeight: FontWeight.w500,
                             color: Colors.black,
                             height: 1.05,
@@ -335,7 +335,7 @@ class _MantenanceServiceDetailsState extends State<MantenanceServiceDetails> {
                         Text(
                           "Green Valley Residency · Jaipur",
                           style: GoogleFonts.outfit(
-                            fontSize: 12.sp,
+                            fontSize: 13.sp,
                             fontWeight: FontWeight.w400,
                             color: const Color(0xFF4A4A4A),
                           ),
@@ -441,7 +441,7 @@ class _MantenanceServiceDetailsState extends State<MantenanceServiceDetails> {
             Text(
               "Assigned Person / Vendor",
               style: GoogleFonts.outfit(
-                fontSize: 16.sp,
+                fontSize: 17.sp,
                 fontWeight: FontWeight.w500,
                 color: Colors.black,
               ),
@@ -485,7 +485,7 @@ class _MantenanceServiceDetailsState extends State<MantenanceServiceDetails> {
                         Text(
                           "Assigned Person / Vendor",
                           style: GoogleFonts.outfit(
-                            fontSize: 10.sp,
+                            fontSize: 12.sp,
                             fontWeight: FontWeight.w400,
                             color: const Color.fromRGBO(42, 41, 51, 0.60),
                           ),
@@ -494,7 +494,7 @@ class _MantenanceServiceDetailsState extends State<MantenanceServiceDetails> {
                         Text(
                           "Raj Kumar",
                           style: GoogleFonts.outfit(
-                            fontSize: 16.sp,
+                            fontSize: 17.sp,
                             fontWeight: FontWeight.w500,
                             color: Colors.black,
                             height: 1.05,
@@ -504,7 +504,7 @@ class _MantenanceServiceDetailsState extends State<MantenanceServiceDetails> {
                         Text(
                           "Plumbing Maintenance",
                           style: GoogleFonts.outfit(
-                            fontSize: 12.sp,
+                            fontSize: 13.sp,
                             fontWeight: FontWeight.w400,
                             color: const Color(0xFF4A4A4A),
                           ),
@@ -616,7 +616,7 @@ class _MantenanceServiceDetailsState extends State<MantenanceServiceDetails> {
               child: Text(
                 "Maintenance records can include supporting documents, before/after images and maintenance history. Actual completion information will appear once the work is completed.",
                 style: GoogleFonts.outfit(
-                  fontSize: 10.sp,
+                  fontSize: 12.sp,
                   fontWeight: FontWeight.w500,
                   color: const Color(0xFFC18A00),
                   letterSpacing: -0.1,
@@ -636,7 +636,7 @@ class _MantenanceServiceDetailsState extends State<MantenanceServiceDetails> {
                       Text(
                         "CURRENT STATUS",
                         style: GoogleFonts.outfit(
-                          fontSize: 10.sp,
+                          fontSize: 12.sp,
                           fontWeight: FontWeight.w500,
                           color: Colors.black,
                         ),
@@ -645,7 +645,7 @@ class _MantenanceServiceDetailsState extends State<MantenanceServiceDetails> {
                       Text(
                         "Maintenance work in progress",
                         style: GoogleFonts.outfit(
-                          fontSize: 13.sp,
+                          fontSize: 14.sp,
                           fontWeight: FontWeight.w500,
                           color: Colors.black,
                         ),
@@ -665,7 +665,7 @@ class _MantenanceServiceDetailsState extends State<MantenanceServiceDetails> {
                   child: Text(
                     "View Full History →",
                     style: GoogleFonts.outfit(
-                      fontSize: 10.sp,
+                      fontSize: 12.sp,
                       fontWeight: FontWeight.w500,
                       color: Colors.black,
                     ),
@@ -689,7 +689,7 @@ class _MantenanceServiceDetailsState extends State<MantenanceServiceDetails> {
         Text(
           title,
           style: GoogleFonts.outfit(
-            fontSize: 16.sp,
+            fontSize: 17.sp,
             fontWeight: FontWeight.w500,
             color: Colors.black,
             letterSpacing: -0.2,
@@ -698,7 +698,7 @@ class _MantenanceServiceDetailsState extends State<MantenanceServiceDetails> {
         Text(
           subtitle,
           style: GoogleFonts.outfit(
-            fontSize: 12.sp,
+            fontSize: 13.sp,
             fontWeight: FontWeight.w500,
             color: Colors.black,
             letterSpacing: -0.2,
@@ -765,7 +765,7 @@ class _MantenanceServiceDetailsState extends State<MantenanceServiceDetails> {
                 Text(
                   title,
                   style: GoogleFonts.outfit(
-                    fontSize: 13.sp,
+                    fontSize: 14.sp,
                     fontWeight: FontWeight.w500,
                     color: Colors.black,
                   ),
@@ -774,7 +774,7 @@ class _MantenanceServiceDetailsState extends State<MantenanceServiceDetails> {
                 Text(
                   subtitle,
                   style: GoogleFonts.outfit(
-                    fontSize: 12.sp,
+                    fontSize: 13.sp,
                     fontWeight: FontWeight.w400,
                     color: const Color(0xFF4A4A4A),
                   ),
@@ -783,7 +783,7 @@ class _MantenanceServiceDetailsState extends State<MantenanceServiceDetails> {
                 Text(
                   date,
                   style: GoogleFonts.outfit(
-                    fontSize: 10.sp,
+                    fontSize: 12.sp,
                     fontWeight: FontWeight.w400,
                     color: const Color(0xFF999999),
                   ),
@@ -821,7 +821,7 @@ class _MantenanceServiceDetailsState extends State<MantenanceServiceDetails> {
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
             style: GoogleFonts.outfit(
-              fontSize: 14.sp,
+              fontSize: 15.sp,
               fontWeight: FontWeight.w500,
               color: Colors.black,
             ),
@@ -830,7 +830,7 @@ class _MantenanceServiceDetailsState extends State<MantenanceServiceDetails> {
           Text(
             subtitle,
             style: GoogleFonts.outfit(
-              fontSize: 11.sp,
+              fontSize: 12.sp,
               fontWeight: FontWeight.w400,
               color: const Color(0xFF4A4A4A),
             ),
@@ -873,7 +873,7 @@ class _MantenanceServiceDetailsState extends State<MantenanceServiceDetails> {
             child: Text(
               label,
               style: GoogleFonts.outfit(
-                fontSize: 13.sp,
+                fontSize: 14.sp,
                 fontWeight: FontWeight.w500,
                 color: Colors.white,
                 letterSpacing: -0.2,
@@ -903,7 +903,7 @@ class _InfoItem extends StatelessWidget {
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.outfit(
-            fontSize: 11.sp,
+            fontSize: 12.sp,
             fontWeight: FontWeight.w500,
             color: const Color.fromRGBO(42, 41, 51, 0.6),
             height: 1,
@@ -916,7 +916,7 @@ class _InfoItem extends StatelessWidget {
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.outfit(
-            fontSize: 16.sp,
+            fontSize: 17.sp,
             fontWeight: FontWeight.w500,
             color: valueColor ?? Colors.black,
             height: 1,

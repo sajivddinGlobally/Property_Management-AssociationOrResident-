@@ -66,7 +66,7 @@ class _AssociationOccupancePropertyStatusState
                   Text(
                     "Complex-wide occupancy and property status",
                     style: GoogleFonts.outfit(
-                      fontSize: 13.sp,
+                      fontSize: 14.sp,
                       fontWeight: FontWeight.w400,
                       color: Color.fromRGBO(42, 41, 51, 0.6),
                       letterSpacing: -0.24,
@@ -123,7 +123,7 @@ class _AssociationOccupancePropertyStatusState
                               Text(
                                 "Complex",
                                 style: GoogleFonts.outfit(
-                                  fontSize: 13.sp,
+                                  fontSize: 14.sp,
                                   fontWeight: FontWeight.w500,
                                   color: Color.fromRGBO(0, 0, 0, 0.7),
                                   letterSpacing: -0.2,
@@ -133,7 +133,7 @@ class _AssociationOccupancePropertyStatusState
                               Text(
                                 "Green Valley Residency",
                                 style: GoogleFonts.outfit(
-                                  fontSize: 16.sp,
+                                  fontSize: 17.sp,
                                   fontWeight: FontWeight.w500,
                                   color: Color(0xFF101C16),
                                   letterSpacing: -0.2,
@@ -157,7 +157,7 @@ class _AssociationOccupancePropertyStatusState
                           child: Text(
                             "Active",
                             style: GoogleFonts.outfit(
-                              fontSize: 13.sp,
+                              fontSize: 14.sp,
                               fontWeight: FontWeight.w500,
                               color: const Color(0xFF000000),
                               letterSpacing: -0.2,
@@ -208,7 +208,7 @@ class _AssociationOccupancePropertyStatusState
                               Text(
                                 "Overall Occupancy",
                                 style: GoogleFonts.outfit(
-                                  fontSize: 16.sp,
+                                  fontSize: 17.sp,
                                   fontWeight: FontWeight.w500,
                                   color: Colors.black,
                                   letterSpacing: -0.2,
@@ -217,7 +217,7 @@ class _AssociationOccupancePropertyStatusState
                               Text(
                                 "Current complex occupancy status",
                                 style: GoogleFonts.outfit(
-                                  fontSize: 13.sp,
+                                  fontSize: 14.sp,
                                   fontWeight: FontWeight.w500,
                                   color: Color(0xFF000000),
                                   letterSpacing: -0.2,
@@ -233,7 +233,7 @@ class _AssociationOccupancePropertyStatusState
                             Text(
                               "91%",
                               style: GoogleFonts.outfit(
-                                fontSize: 16.sp,
+                                fontSize: 17.sp,
                                 fontWeight: FontWeight.w500,
                                 color: Colors.black,
                                 letterSpacing: -0.2,
@@ -242,7 +242,7 @@ class _AssociationOccupancePropertyStatusState
                             Text(
                               "116 / 128 units",
                               style: GoogleFonts.outfit(
-                                fontSize: 13.sp,
+                                fontSize: 14.sp,
                                 fontWeight: FontWeight.w500,
                                 color: Color(0xFF000000),
                                 letterSpacing: -0.2,
@@ -272,7 +272,7 @@ class _AssociationOccupancePropertyStatusState
                         Text(
                           "116 Occupied",
                           style: GoogleFonts.outfit(
-                            fontSize: 12.sp,
+                            fontSize: 13.sp,
                             fontWeight: FontWeight.w500,
                             color: Colors.black,
                             letterSpacing: -0.2,
@@ -281,7 +281,7 @@ class _AssociationOccupancePropertyStatusState
                         Text(
                           "12 Vacant",
                           style: GoogleFonts.outfit(
-                            fontSize: 12.sp,
+                            fontSize: 13.sp,
                             fontWeight: FontWeight.w500,
                             color: Colors.black,
                             letterSpacing: -0.2,
@@ -328,7 +328,7 @@ class _AssociationOccupancePropertyStatusState
                     'Unit Status',
                     style: GoogleFonts.outfit(
                       color: Color(0xFF000000),
-                      fontSize: 16.sp,
+                      fontSize: 17.sp,
                       fontWeight: FontWeight.w500,
                       letterSpacing: -0.2,
                     ),
@@ -337,7 +337,7 @@ class _AssociationOccupancePropertyStatusState
                     '128 UNITS',
                     style: GoogleFonts.outfit(
                       color: Color(0xFF000000),
-                      fontSize: 12.sp,
+                      fontSize: 13.sp,
                       fontWeight: FontWeight.w500,
                       letterSpacing: -0.2,
                     ),
@@ -378,7 +378,7 @@ class _AssociationOccupancePropertyStatusState
                           child: Text(
                             filters[index],
                             style: GoogleFonts.outfit(
-                              fontSize: 13.sp,
+                              fontSize: 14.sp,
                               fontWeight: FontWeight.w500,
                               color: isSelected
                                   ? Colors.white
@@ -397,7 +397,7 @@ class _AssociationOccupancePropertyStatusState
                 'BLOCK A',
                 style: GoogleFonts.outfit(
                   color: Color(0xFF000000),
-                  fontSize: 13.sp,
+                  fontSize: 14.sp,
                   fontWeight: FontWeight.w500,
                   letterSpacing: -0.2,
                 ),
@@ -410,7 +410,7 @@ class _AssociationOccupancePropertyStatusState
                 'BLOCK B',
                 style: GoogleFonts.outfit(
                   color: Color(0xFF000000),
-                  fontSize: 13.sp,
+                  fontSize: 14.sp,
                   fontWeight: FontWeight.w500,
                   letterSpacing: -0.2,
                 ),
@@ -453,7 +453,7 @@ class _AssociationOccupancePropertyStatusState
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
             style: GoogleFonts.outfit(
-              fontSize: 16.sp,
+              fontSize: 17.sp,
               fontWeight: FontWeight.w500,
               color: Colors.black,
               letterSpacing: -0.2,
@@ -464,7 +464,7 @@ class _AssociationOccupancePropertyStatusState
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
             style: GoogleFonts.outfit(
-              fontSize: 13.sp,
+              fontSize: 14.sp,
               fontWeight: FontWeight.w400,
               color: Colors.black,
               letterSpacing: -0.2,
@@ -510,7 +510,7 @@ class _AssociationOccupancePropertyStatusState
                   Text(
                     "Apartment A-204",
                     style: GoogleFonts.outfit(
-                      fontSize: 16.sp,
+                      fontSize: 17.sp,
                       fontWeight: FontWeight.w700,
                       color: Color(0xFF000000),
                       letterSpacing: -0.2,
@@ -519,7 +519,7 @@ class _AssociationOccupancePropertyStatusState
                   Text(
                     "Block A · 3 BHK",
                     style: GoogleFonts.outfit(
-                      fontSize: 12.sp,
+                      fontSize: 13.sp,
                       fontWeight: FontWeight.w500,
                       color: Color.fromRGBO(42, 41, 51, 0.7),
                     ),
@@ -539,7 +539,7 @@ class _AssociationOccupancePropertyStatusState
                 child: Text(
                   "Occupied",
                   style: GoogleFonts.outfit(
-                    fontSize: 13.sp,
+                    fontSize: 14.sp,
                     fontWeight: FontWeight.w500,
                     color: const Color(0xFF000000),
                     letterSpacing: -0.2,
@@ -587,7 +587,7 @@ class _AssociationOccupancePropertyStatusState
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.outfit(
-            fontSize: 13.sp,
+            fontSize: 14.sp,
             fontWeight: FontWeight.w500,
             color: Color(0xFF000000),
             letterSpacing: -0.2,
@@ -598,7 +598,7 @@ class _AssociationOccupancePropertyStatusState
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.outfit(
-            fontSize: 16.sp,
+            fontSize: 17.sp,
             fontWeight: FontWeight.w500,
             color: Color(0xFF000000),
             letterSpacing: -0.2,

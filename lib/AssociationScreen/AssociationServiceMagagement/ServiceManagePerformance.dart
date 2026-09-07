@@ -64,7 +64,7 @@ class _ServiceManagePerformanceState extends State<ServiceManagePerformance> {
                   Text(
                     "Service Management",
                     style: GoogleFonts.outfit(
-                      fontSize: 13.sp,
+                      fontSize: 14.sp,
                       fontWeight: FontWeight.w400,
                       color: Color.fromRGBO(42, 41, 51, 0.6),
                       letterSpacing: -0.24,
@@ -98,7 +98,7 @@ class _ServiceManagePerformanceState extends State<ServiceManagePerformance> {
                           child: Text(
                             "PERFORMANCE OVERVIEW",
                             style: GoogleFonts.outfit(
-                              fontSize: 13.sp,
+                              fontSize: 14.sp,
                               fontWeight: FontWeight.w500,
                               color: Colors.black,
                               letterSpacing: -0.2,
@@ -120,7 +120,7 @@ class _ServiceManagePerformanceState extends State<ServiceManagePerformance> {
                           child: Text(
                             "THIS MONTH",
                             style: GoogleFonts.outfit(
-                              fontSize: 13.sp,
+                              fontSize: 14.sp,
                               fontWeight: FontWeight.w500,
                               color: const Color(0xFFB8860B),
                               letterSpacing: -0.2,
@@ -153,7 +153,7 @@ class _ServiceManagePerformanceState extends State<ServiceManagePerformance> {
                               Text(
                                 "Service Performance",
                                 style: GoogleFonts.outfit(
-                                  fontSize: 16.sp,
+                                  fontSize: 17.sp,
                                   fontWeight: FontWeight.w500,
                                   color: Color(0xFF000000),
                                   height: 1.05,
@@ -164,7 +164,7 @@ class _ServiceManagePerformanceState extends State<ServiceManagePerformance> {
                               Text(
                                 "CleanCare Services · Overall monitoring",
                                 style: GoogleFonts.outfit(
-                                  fontSize: 13.sp,
+                                  fontSize: 14.sp,
                                   fontWeight: FontWeight.w500,
                                   color: Color(0xFF000000),
                                   height: 1.1,
@@ -193,7 +193,7 @@ class _ServiceManagePerformanceState extends State<ServiceManagePerformance> {
                               Text(
                                 "Overall Performance",
                                 style: GoogleFonts.outfit(
-                                  fontSize: 11.sp,
+                                  fontSize: 12.sp,
                                   fontWeight: FontWeight.w500,
                                   color: Color(0xFF000000),
                                   letterSpacing: -0.2,
@@ -203,7 +203,7 @@ class _ServiceManagePerformanceState extends State<ServiceManagePerformance> {
                               Text(
                                 "94%",
                                 style: GoogleFonts.outfit(
-                                  fontSize: 16.sp,
+                                  fontSize: 17.sp,
                                   fontWeight: FontWeight.w500,
                                   color: const Color(0xFFB8860B),
                                 ),
@@ -225,7 +225,7 @@ class _ServiceManagePerformanceState extends State<ServiceManagePerformance> {
                             Text(
                               "Excellent",
                               style: GoogleFonts.outfit(
-                                fontSize: 12.sp,
+                                fontSize: 13.sp,
                                 fontWeight: FontWeight.w500,
                                 color: const Color(0xFF403F3F),
                                 letterSpacing: -0.2,
@@ -242,7 +242,7 @@ class _ServiceManagePerformanceState extends State<ServiceManagePerformance> {
               Text(
                 "Performance Metrics",
                 style: GoogleFonts.outfit(
-                  fontSize: 16.sp,
+                  fontSize: 17.sp,
                   fontWeight: FontWeight.w500,
                   color: Color(0xFF000000),
                   height: 1.05,
@@ -297,7 +297,7 @@ class _ServiceManagePerformanceState extends State<ServiceManagePerformance> {
               Text(
                 "Service Snapshot",
                 style: GoogleFonts.outfit(
-                  fontSize: 16.sp,
+                  fontSize: 17.sp,
                   fontWeight: FontWeight.w500,
                   color: Color(0xFF000000),
                   height: 1.05,
@@ -345,7 +345,7 @@ class _ServiceManagePerformanceState extends State<ServiceManagePerformance> {
               Text(
                 "Performance Trend",
                 style: GoogleFonts.outfit(
-                  fontSize: 16.sp,
+                  fontSize: 17.sp,
                   fontWeight: FontWeight.w500,
                   color: Color(0xFF000000),
                   height: 1.05,
@@ -358,7 +358,7 @@ class _ServiceManagePerformanceState extends State<ServiceManagePerformance> {
               Text(
                 "Recent Service Issues",
                 style: GoogleFonts.outfit(
-                  fontSize: 16.sp,
+                  fontSize: 17.sp,
                   fontWeight: FontWeight.w500,
                   color: Color(0xFF000000),
                   height: 1.05,
@@ -420,7 +420,7 @@ class _ServiceManagePerformanceState extends State<ServiceManagePerformance> {
                           child: Text(
                             "Performance Summary",
                             style: GoogleFonts.outfit(
-                              fontSize: 14.sp,
+                              fontSize: 15.sp,
                               fontWeight: FontWeight.w500,
                               color: Colors.white,
                               letterSpacing: -0.2,
@@ -430,7 +430,7 @@ class _ServiceManagePerformanceState extends State<ServiceManagePerformance> {
                         Text(
                           "AUGUST 2026",
                           style: GoogleFonts.outfit(
-                            fontSize: 12.sp,
+                            fontSize: 13.sp,
                             fontWeight: FontWeight.w200,
                             color: Colors.white,
                             letterSpacing: -0.2,
@@ -442,7 +442,7 @@ class _ServiceManagePerformanceState extends State<ServiceManagePerformance> {
                     Text(
                       "Service performance remains strong this month, with high completion and issue-resolution rates. Current performance is within the expected service level.",
                       style: GoogleFonts.outfit(
-                        fontSize: 12.sp,
+                        fontSize: 13.sp,
                         fontWeight: FontWeight.w500,
                         color: Color.fromRGBO(255, 255, 2555, 0.6),
                       ),
@@ -504,7 +504,7 @@ class _ServiceManagePerformanceState extends State<ServiceManagePerformance> {
               child: Text(
                 title,
                 style: GoogleFonts.outfit(
-                  fontSize: 12.sp,
+                  fontSize: 13.sp,
                   fontWeight: FontWeight.w500,
                   color: const Color(0xFF3F3F3F),
                   height: 1,
@@ -515,7 +515,7 @@ class _ServiceManagePerformanceState extends State<ServiceManagePerformance> {
             Text(
               "$percentage%",
               style: GoogleFonts.outfit(
-                fontSize: 12.sp,
+                fontSize: 13.sp,
                 fontWeight: FontWeight.w700,
                 color: Color(0xFF000000),
                 height: 1,
@@ -541,7 +541,7 @@ class _ServiceManagePerformanceState extends State<ServiceManagePerformance> {
               child: Text(
                 description,
                 style: GoogleFonts.outfit(
-                  fontSize: 12.sp,
+                  fontSize: 13.sp,
                   fontWeight: FontWeight.w500,
                   color: const Color(0xFF3F3F3F),
                   height: 1,
@@ -552,7 +552,7 @@ class _ServiceManagePerformanceState extends State<ServiceManagePerformance> {
             Text(
               status,
               style: GoogleFonts.outfit(
-                fontSize: 12.sp,
+                fontSize: 13.sp,
                 fontWeight: FontWeight.w500,
                 color: const Color(0xFF3F3F3F),
                 height: 1,
@@ -598,7 +598,7 @@ class _ServiceManagePerformanceState extends State<ServiceManagePerformance> {
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
             style: GoogleFonts.outfit(
-              fontSize: 10.sp,
+              fontSize: 12.sp,
               fontWeight: FontWeight.w500,
               color: Color.fromRGBO(0, 0, 0, 0.6),
               height: 1,
@@ -612,7 +612,7 @@ class _ServiceManagePerformanceState extends State<ServiceManagePerformance> {
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
             style: GoogleFonts.outfit(
-              fontSize: 16.sp,
+              fontSize: 17.sp,
               fontWeight: FontWeight.w500,
               color: Colors.black,
               height: 1,
@@ -625,7 +625,7 @@ class _ServiceManagePerformanceState extends State<ServiceManagePerformance> {
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
             style: GoogleFonts.outfit(
-              fontSize: 10.sp,
+              fontSize: 12.sp,
               fontWeight: FontWeight.w500,
               color: Color.fromRGBO(0, 0, 0, 0.6),
               height: 1,
@@ -669,7 +669,7 @@ class _ServiceManagePerformanceState extends State<ServiceManagePerformance> {
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                   style: GoogleFonts.outfit(
-                    fontSize: 16.sp,
+                    fontSize: 17.sp,
                     fontWeight: FontWeight.w500,
                     color: Colors.black,
                     height: 1,
@@ -682,7 +682,7 @@ class _ServiceManagePerformanceState extends State<ServiceManagePerformance> {
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                   style: GoogleFonts.outfit(
-                    fontSize: 12.sp,
+                    fontSize: 13.sp,
                     fontWeight: FontWeight.w500,
                     color: Color.fromRGBO(0, 0, 0, 0.6),
                     height: 1,
@@ -702,7 +702,7 @@ class _ServiceManagePerformanceState extends State<ServiceManagePerformance> {
             child: Text(
               status,
               style: GoogleFonts.outfit(
-                fontSize: 10.sp,
+                fontSize: 12.sp,
                 fontWeight: FontWeight.w400,
                 color: statusColor,
                 height: 1,
@@ -723,7 +723,7 @@ class _ServiceManagePerformanceState extends State<ServiceManagePerformance> {
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.outfit(
-            fontSize: 12.sp,
+            fontSize: 13.sp,
             fontWeight: FontWeight.w500,
             color: const Color(0xFF939393),
             height: 1,
@@ -735,7 +735,7 @@ class _ServiceManagePerformanceState extends State<ServiceManagePerformance> {
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.outfit(
-            fontSize: 12.sp,
+            fontSize: 13.sp,
             fontWeight: FontWeight.w500,
             color: Colors.white,
             height: 1,

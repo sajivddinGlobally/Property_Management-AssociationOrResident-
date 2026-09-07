@@ -91,7 +91,7 @@ class _ServiceRequestStatusState extends State<ServiceRequestStatus> {
                   Text(
                     "Service Request · SR-1024",
                     style: GoogleFonts.outfit(
-                      fontSize: 13.sp,
+                      fontSize: 14.sp,
                       fontWeight: FontWeight.w400,
                       color: Color.fromRGBO(42, 41, 51, 0.6),
                       letterSpacing: -0.24,
@@ -126,7 +126,7 @@ class _ServiceRequestStatusState extends State<ServiceRequestStatus> {
                           child: Text(
                             "TICKET · SR-1024",
                             style: GoogleFonts.outfit(
-                              fontSize: 13.sp,
+                              fontSize: 14.sp,
                               fontWeight: FontWeight.w500,
                               color: Colors.black,
                               letterSpacing: -0.2,
@@ -148,7 +148,7 @@ class _ServiceRequestStatusState extends State<ServiceRequestStatus> {
                           child: Text(
                             "In Progress",
                             style: GoogleFonts.outfit(
-                              fontSize: 13.sp,
+                              fontSize: 14.sp,
                               fontWeight: FontWeight.w500,
                               color: const Color(0xFFB8860B),
                               letterSpacing: -0.2,
@@ -181,7 +181,7 @@ class _ServiceRequestStatusState extends State<ServiceRequestStatus> {
                               Text(
                                 "Water Leakage",
                                 style: GoogleFonts.outfit(
-                                  fontSize: 16.sp,
+                                  fontSize: 17.sp,
                                   fontWeight: FontWeight.w500,
                                   color: Color(0xFF000000),
                                   height: 1.05,
@@ -192,7 +192,7 @@ class _ServiceRequestStatusState extends State<ServiceRequestStatus> {
                               Text(
                                 "Plumbing Service Request",
                                 style: GoogleFonts.outfit(
-                                  fontSize: 13.sp,
+                                  fontSize: 14.sp,
                                   fontWeight: FontWeight.w500,
                                   color: Color.fromRGBO(0, 0, 0, 0.6),
                                   height: 1.1,
@@ -221,7 +221,7 @@ class _ServiceRequestStatusState extends State<ServiceRequestStatus> {
                               Text(
                                 "Raised On",
                                 style: GoogleFonts.outfit(
-                                  fontSize: 11.sp,
+                                  fontSize: 12.sp,
                                   fontWeight: FontWeight.w500,
                                   color: Color.fromRGBO(42, 41, 51, 0.6),
                                   letterSpacing: -0.2,
@@ -231,7 +231,7 @@ class _ServiceRequestStatusState extends State<ServiceRequestStatus> {
                               Text(
                                 "24 Aug 2026",
                                 style: GoogleFonts.outfit(
-                                  fontSize: 16.sp,
+                                  fontSize: 17.sp,
                                   fontWeight: FontWeight.w500,
                                   color: const Color(0xFF000000),
                                 ),
@@ -246,7 +246,7 @@ class _ServiceRequestStatusState extends State<ServiceRequestStatus> {
                               Text(
                                 "Last Updated",
                                 style: GoogleFonts.outfit(
-                                  fontSize: 11.sp,
+                                  fontSize: 12.sp,
                                   fontWeight: FontWeight.w500,
                                   color: Color.fromRGBO(42, 41, 51, 0.6),
                                   letterSpacing: -0.2,
@@ -256,7 +256,7 @@ class _ServiceRequestStatusState extends State<ServiceRequestStatus> {
                               Text(
                                 "05 Aug 2026",
                                 style: GoogleFonts.outfit(
-                                  fontSize: 16.sp,
+                                  fontSize: 17.sp,
                                   fontWeight: FontWeight.w500,
                                   color: const Color(0xFF000000),
                                 ),
@@ -271,7 +271,7 @@ class _ServiceRequestStatusState extends State<ServiceRequestStatus> {
                               Text(
                                 "Priority",
                                 style: GoogleFonts.outfit(
-                                  fontSize: 11.sp,
+                                  fontSize: 12.sp,
                                   fontWeight: FontWeight.w500,
                                   color: Color.fromRGBO(42, 41, 51, 0.6),
                                   letterSpacing: -0.2,
@@ -281,7 +281,7 @@ class _ServiceRequestStatusState extends State<ServiceRequestStatus> {
                               Text(
                                 "High",
                                 style: GoogleFonts.outfit(
-                                  fontSize: 16.sp,
+                                  fontSize: 17.sp,
                                   fontWeight: FontWeight.w500,
                                   color: const Color(0xFF000000),
                                 ),
@@ -298,7 +298,7 @@ class _ServiceRequestStatusState extends State<ServiceRequestStatus> {
               Text(
                 "Current Status",
                 style: GoogleFonts.outfit(
-                  fontSize: 14.sp,
+                  fontSize: 15.sp,
                   fontWeight: FontWeight.w500,
                   color: Color(0xFF000000),
                   letterSpacing: -0.2,
@@ -340,7 +340,7 @@ class _ServiceRequestStatusState extends State<ServiceRequestStatus> {
                               Text(
                                 "TICKET PROGRESS",
                                 style: GoogleFonts.outfit(
-                                  fontSize: 10.sp,
+                                  fontSize: 12.sp,
                                   fontWeight: FontWeight.w500,
                                   height: 1,
                                   color: Color.fromRGBO(0, 0, 0, 0.6),
@@ -353,7 +353,7 @@ class _ServiceRequestStatusState extends State<ServiceRequestStatus> {
                                 maxLines: 1,
                                 overflow: TextOverflow.ellipsis,
                                 style: GoogleFonts.outfit(
-                                  fontSize: 12.sp,
+                                  fontSize: 13.sp,
                                   fontWeight: FontWeight.w500,
                                   height: 1,
                                   color: Colors.black,
@@ -374,7 +374,7 @@ class _ServiceRequestStatusState extends State<ServiceRequestStatus> {
                           child: Text(
                             "ACTIVE",
                             style: GoogleFonts.outfit(
-                              fontSize: 12.sp,
+                              fontSize: 13.sp,
                               fontWeight: FontWeight.w500,
                               color: Colors.white,
                               letterSpacing: -0.2,
@@ -432,7 +432,7 @@ class _ServiceRequestStatusState extends State<ServiceRequestStatus> {
               Text(
                 "Current Status",
                 style: GoogleFonts.outfit(
-                  fontSize: 14.sp,
+                  fontSize: 15.sp,
                   fontWeight: FontWeight.w500,
                   color: Color(0xFF000000),
                   letterSpacing: -0.2,
@@ -496,7 +496,7 @@ class _ServiceRequestStatusState extends State<ServiceRequestStatus> {
                             maxLines: 1,
                             overflow: TextOverflow.ellipsis,
                             style: GoogleFonts.outfit(
-                              fontSize: 16.sp,
+                              fontSize: 17.sp,
                               fontWeight: FontWeight.w500,
                               color: Colors.black,
                               height: 1,
@@ -508,7 +508,7 @@ class _ServiceRequestStatusState extends State<ServiceRequestStatus> {
                           Text(
                             'Assigned for SR-1024',
                             style: GoogleFonts.outfit(
-                              fontSize: 12.sp,
+                              fontSize: 13.sp,
                               fontWeight: FontWeight.w400,
                               color: Color.fromRGBO(0, 0, 0, 0.6),
                               height: 1,
@@ -536,7 +536,7 @@ class _ServiceRequestStatusState extends State<ServiceRequestStatus> {
                       child: Text(
                         'ACTIVE',
                         style: GoogleFonts.outfit(
-                          fontSize: 13.sp,
+                          fontSize: 14.sp,
                           fontWeight: FontWeight.w400,
                           color: const Color(0xFF1E5993),
                         ),
@@ -563,7 +563,7 @@ class _ServiceRequestStatusState extends State<ServiceRequestStatus> {
         child: Text(
           title,
           style: GoogleFonts.outfit(
-            fontSize: 12.sp,
+            fontSize: 13.sp,
             fontWeight: FontWeight.w500,
             color: Colors.black,
             letterSpacing: -0.1,
@@ -648,7 +648,7 @@ class _TimelineItem extends StatelessWidget {
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                     style: GoogleFonts.outfit(
-                      fontSize: 13.sp,
+                      fontSize: 14.sp,
                       fontWeight: FontWeight.w500,
                       color: Colors.black,
                       height: 1.h,
@@ -661,7 +661,7 @@ class _TimelineItem extends StatelessWidget {
                     maxLines: 2,
                     overflow: TextOverflow.ellipsis,
                     style: GoogleFonts.outfit(
-                      fontSize: 11.sp,
+                      fontSize: 12.sp,
                       fontWeight: FontWeight.w500,
                       color: Color.fromRGBO(0, 0, 0, 0.6),
                     ),
@@ -671,7 +671,7 @@ class _TimelineItem extends StatelessWidget {
                     Text(
                       date,
                       style: GoogleFonts.outfit(
-                        fontSize: 11.sp,
+                        fontSize: 12.sp,
                         fontWeight: FontWeight.w500,
                         color: Color.fromRGBO(0, 0, 0, 0.6),
                       ),

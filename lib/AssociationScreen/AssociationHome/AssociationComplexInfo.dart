@@ -91,7 +91,7 @@ class _AssociationComplexInfoState extends State<AssociationComplexInfo> {
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                   style: GoogleFonts.outfit(
-                    fontSize: 13.sp,
+                    fontSize: 14.sp,
                     fontWeight: FontWeight.w400,
                     color: Color(0xFF2A2933),
                     letterSpacing: -0.24,
@@ -134,7 +134,7 @@ class _AssociationComplexInfoState extends State<AssociationComplexInfo> {
               Text(
                 "Complex Details",
                 style: GoogleFonts.outfit(
-                  fontSize: 16.sp,
+                  fontSize: 17.sp,
                   fontWeight: FontWeight.w500,
                   color: Color(0xFF000000),
                   letterSpacing: -0.2,
@@ -182,7 +182,7 @@ class _AssociationComplexInfoState extends State<AssociationComplexInfo> {
                   Text(
                     "Buildings / Blocks",
                     style: GoogleFonts.outfit(
-                      fontSize: 16.sp,
+                      fontSize: 17.sp,
                       fontWeight: FontWeight.w500,
                       color: Color(0xFF000000),
                       letterSpacing: -0.2,
@@ -191,7 +191,7 @@ class _AssociationComplexInfoState extends State<AssociationComplexInfo> {
                   Text(
                     "View All",
                     style: GoogleFonts.outfit(
-                      fontSize: 13.sp,
+                      fontSize: 14.sp,
                       fontWeight: FontWeight.w500,
                       color: Color(0xFF000000),
                       letterSpacing: -0.2,
@@ -226,7 +226,7 @@ class _AssociationComplexInfoState extends State<AssociationComplexInfo> {
                   Text(
                     "Common Facilities",
                     style: GoogleFonts.outfit(
-                      fontSize: 16.sp,
+                      fontSize: 17.sp,
                       fontWeight: FontWeight.w500,
                       color: Color(0xFF000000),
                       letterSpacing: -0.2,
@@ -235,7 +235,7 @@ class _AssociationComplexInfoState extends State<AssociationComplexInfo> {
                   Text(
                     "View All",
                     style: GoogleFonts.outfit(
-                      fontSize: 13.sp,
+                      fontSize: 14.sp,
                       fontWeight: FontWeight.w500,
                       color: Color(0xFF000000),
                       letterSpacing: -0.2,
@@ -279,7 +279,7 @@ class _AssociationComplexInfoState extends State<AssociationComplexInfo> {
                   Text(
                     "Important Documents",
                     style: GoogleFonts.outfit(
-                      fontSize: 16.sp,
+                      fontSize: 17.sp,
                       fontWeight: FontWeight.w500,
                       color: Color(0xFF000000),
                       letterSpacing: -0.2,
@@ -288,7 +288,7 @@ class _AssociationComplexInfoState extends State<AssociationComplexInfo> {
                   Text(
                     "View All",
                     style: GoogleFonts.outfit(
-                      fontSize: 13.sp,
+                      fontSize: 14.sp,
                       fontWeight: FontWeight.w500,
                       color: Color(0xFF000000),
                       letterSpacing: -0.2,
@@ -357,7 +357,7 @@ class _AssociationComplexInfoState extends State<AssociationComplexInfo> {
                           Text(
                             'Complex Information',
                             style: GoogleFonts.outfit(
-                              fontSize: 16.sp,
+                              fontSize: 17.sp,
                               fontWeight: FontWeight.w500,
                               color: Color(0xFF000000),
                               letterSpacing: -0.2,
@@ -369,7 +369,7 @@ class _AssociationComplexInfoState extends State<AssociationComplexInfo> {
                             maxLines: 2,
                             overflow: TextOverflow.ellipsis,
                             style: GoogleFonts.outfit(
-                              fontSize: 13.sp,
+                              fontSize: 14.sp,
                               fontWeight: FontWeight.w500,
                               color: Color.fromRGBO(41, 41, 51, 0.7),
                               letterSpacing: -0.2,
@@ -418,7 +418,7 @@ class _AssociationComplexInfoState extends State<AssociationComplexInfo> {
                   Text(
                     "RESIDENTIAL COMPLEX",
                     style: GoogleFonts.outfit(
-                      fontSize: 11.sp,
+                      fontSize: 12.sp,
                       fontWeight: FontWeight.w500,
                       color: Colors.white,
                       letterSpacing: -0.2,
@@ -447,7 +447,7 @@ class _AssociationComplexInfoState extends State<AssociationComplexInfo> {
                         child: Text(
                           "Sector 45, Noida, Uttar Pradesh",
                           style: GoogleFonts.outfit(
-                            fontSize: 13.sp,
+                            fontSize: 14.sp,
                             fontWeight: FontWeight.w500,
                             color: Color.fromRGBO(255, 255, 255, 0.6),
                             letterSpacing: -0.2,
@@ -493,7 +493,7 @@ class _AssociationComplexInfoState extends State<AssociationComplexInfo> {
           Text(
             value,
             style: GoogleFonts.outfit(
-              fontSize: 16.sp,
+              fontSize: 17.sp,
               fontWeight: FontWeight.w500,
               color: Color(0xFF000000),
               letterSpacing: -0.2,
@@ -504,7 +504,7 @@ class _AssociationComplexInfoState extends State<AssociationComplexInfo> {
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
             style: GoogleFonts.outfit(
-              fontSize: 13.sp,
+              fontSize: 14.sp,
               fontWeight: FontWeight.w500,
               color: Color(0xFF000000),
               letterSpacing: -0.2,
@@ -546,7 +546,7 @@ class _AssociationComplexInfoState extends State<AssociationComplexInfo> {
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                     style: GoogleFonts.outfit(
-                      fontSize: 12.sp,
+                      fontSize: 13.sp,
                       fontWeight: FontWeight.w500,
                       color: Color.fromRGBO(0, 0, 0, 0.7),
                       letterSpacing: -0.2,
@@ -559,7 +559,7 @@ class _AssociationComplexInfoState extends State<AssociationComplexInfo> {
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                     style: GoogleFonts.outfit(
-                      fontSize: 16.sp,
+                      fontSize: 17.sp,
                       fontWeight: FontWeight.w500,
                       color: Color(0xFF000000),
                       letterSpacing: -0.2,
@@ -609,7 +609,7 @@ class _AssociationComplexInfoState extends State<AssociationComplexInfo> {
                   child: Text(
                     block,
                     style: GoogleFonts.outfit(
-                      fontSize: 13.sp,
+                      fontSize: 14.sp,
                       fontWeight: FontWeight.w700,
                       color: Color(0xFF000000),
                     ),
@@ -626,7 +626,7 @@ class _AssociationComplexInfoState extends State<AssociationComplexInfo> {
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
             style: GoogleFonts.outfit(
-              fontSize: 16.sp,
+              fontSize: 17.sp,
               fontWeight: FontWeight.w700,
               color: Color(0xFF000000),
               letterSpacing: -0.2,
@@ -635,7 +635,7 @@ class _AssociationComplexInfoState extends State<AssociationComplexInfo> {
           Text(
             units,
             style: GoogleFonts.outfit(
-              fontSize: 13.sp,
+              fontSize: 14.sp,
               fontWeight: FontWeight.w500,
               color: Color(0xFF000000),
               letterSpacing: -0.2,
@@ -676,7 +676,7 @@ class _AssociationComplexInfoState extends State<AssociationComplexInfo> {
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                   style: GoogleFonts.outfit(
-                    fontSize: 16.sp,
+                    fontSize: 17.sp,
                     fontWeight: FontWeight.w500,
                     color: Colors.black,
                     height: 1.1,
@@ -688,7 +688,7 @@ class _AssociationComplexInfoState extends State<AssociationComplexInfo> {
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
-                    fontSize: 13.sp,
+                    fontSize: 14.sp,
                     fontWeight: FontWeight.w500,
                     color: Color.fromRGBO(0, 0, 0, 0.6),
                     height: 1.1,
@@ -711,7 +711,7 @@ class _AssociationComplexInfoState extends State<AssociationComplexInfo> {
               child: Text(
                 'Active',
                 style: TextStyle(
-                  fontSize: 13.sp,
+                  fontSize: 14.sp,
                   fontWeight: FontWeight.w500,
                   color: Color(0xFF24B06A),
                   height: 1.1,
@@ -757,7 +757,7 @@ class _AssociationComplexInfoState extends State<AssociationComplexInfo> {
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
             style: GoogleFonts.outfit(
-              fontSize: 16.sp,
+              fontSize: 17.sp,
               fontWeight: FontWeight.w500,
               color: Color(0xFF000000),
               height: 1.1,
@@ -770,7 +770,7 @@ class _AssociationComplexInfoState extends State<AssociationComplexInfo> {
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
             style: GoogleFonts.outfit(
-              fontSize: 12.sp,
+              fontSize: 13.sp,
               fontWeight: FontWeight.w500,
               color: Color.fromRGBO(42, 41, 51, 0.7),
               height: 1.1,
@@ -781,7 +781,7 @@ class _AssociationComplexInfoState extends State<AssociationComplexInfo> {
           Text(
             'View Document ›',
             style: GoogleFonts.outfit(
-              fontSize: 16.sp,
+              fontSize: 17.sp,
               fontWeight: FontWeight.w500,
               color: Color(0xFF000000),
               height: 1.1,

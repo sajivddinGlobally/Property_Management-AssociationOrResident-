@@ -71,7 +71,7 @@ class _AssociationReportState extends State<AssociationReport> {
                   Text(
                     "Association Management",
                     style: GoogleFonts.outfit(
-                      fontSize: 13.sp,
+                      fontSize: 14.sp,
                       fontWeight: FontWeight.w400,
                       color: Color.fromRGBO(42, 41, 51, 0.6),
                       letterSpacing: -0.24,
@@ -103,7 +103,7 @@ class _AssociationReportState extends State<AssociationReport> {
                     Text(
                       "ASSOCIATION INSIGHTS",
                       style: GoogleFonts.outfit(
-                        fontSize: 14.sp,
+                        fontSize: 15.sp,
                         fontWeight: FontWeight.w500,
                         color: Color(0xFF000000),
                         letterSpacing: -0.2,
@@ -138,7 +138,7 @@ class _AssociationReportState extends State<AssociationReport> {
                                 maxLines: 1,
                                 overflow: TextOverflow.ellipsis,
                                 style: GoogleFonts.outfit(
-                                  fontSize: 16.sp,
+                                  fontSize: 17.sp,
                                   fontWeight: FontWeight.w500,
                                   color: const Color(0xFF000000),
                                   letterSpacing: -0.3,
@@ -151,7 +151,7 @@ class _AssociationReportState extends State<AssociationReport> {
                                 maxLines: 1,
                                 overflow: TextOverflow.ellipsis,
                                 style: GoogleFonts.outfit(
-                                  fontSize: 12.sp,
+                                  fontSize: 13.sp,
                                   fontWeight: FontWeight.w500,
                                   color: Color.fromRGBO(0, 0, 0, 0.6),
                                   letterSpacing: -0.3,
@@ -264,7 +264,7 @@ class _AssociationReportState extends State<AssociationReport> {
                           child: Text(
                             filters[index],
                             style: GoogleFonts.outfit(
-                              fontSize: 13.sp,
+                              fontSize: 14.sp,
                               fontWeight: FontWeight.w500,
                               color: isSelected
                                   ? Colors.white
@@ -284,7 +284,7 @@ class _AssociationReportState extends State<AssociationReport> {
                 style: GoogleFonts.outfit(
                   fontWeight: FontWeight.w500,
                   color: Color(0xff101C16),
-                  fontSize: 16.sp,
+                  fontSize: 17.sp,
                   letterSpacing: -0.54,
                 ),
               ),
@@ -314,7 +314,7 @@ class _AssociationReportState extends State<AssociationReport> {
                 style: GoogleFonts.outfit(
                   fontWeight: FontWeight.w500,
                   color: Color(0xff101C16),
-                  fontSize: 16.sp,
+                  fontSize: 17.sp,
                   letterSpacing: -0.54,
                 ),
               ),
@@ -366,7 +366,7 @@ class _AssociationReportState extends State<AssociationReport> {
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.outfit(
-            fontSize: 16.sp,
+            fontSize: 17.sp,
             color: const Color(0xFF000000),
             fontWeight: FontWeight.w500,
             letterSpacing: -0.3,
@@ -378,7 +378,7 @@ class _AssociationReportState extends State<AssociationReport> {
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.outfit(
-            fontSize: 12.sp,
+            fontSize: 13.sp,
             fontWeight: FontWeight.w500,
             color: Color.fromRGBO(42, 41, 51, 0.6),
             letterSpacing: -0.3,
@@ -417,7 +417,7 @@ class _AssociationReportState extends State<AssociationReport> {
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
             style: GoogleFonts.outfit(
-              fontSize: 16.sp,
+              fontSize: 17.sp,
               fontWeight: FontWeight.w500,
               height: 1,
               color: Color(0xFF000000),
@@ -430,7 +430,7 @@ class _AssociationReportState extends State<AssociationReport> {
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
             style: GoogleFonts.outfit(
-              fontSize: 11.sp,
+              fontSize: 12.sp,
               fontWeight: FontWeight.w500,
               height: 1,
               color: Color.fromRGBO(0, 0, 0, 0.6),
@@ -481,7 +481,7 @@ class _AssociationReportState extends State<AssociationReport> {
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                       style: GoogleFonts.outfit(
-                        fontSize: 16.sp,
+                        fontSize: 17.sp,
                         fontWeight: FontWeight.w500,
                         height: 1,
                         color: Color(0xFF111111),
@@ -496,7 +496,7 @@ class _AssociationReportState extends State<AssociationReport> {
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                       style: GoogleFonts.outfit(
-                        fontSize: 12.sp,
+                        fontSize: 13.sp,
                         fontWeight: FontWeight.w500,
                         height: 1,
                         color: Color.fromRGBO(0, 0, 0, 0.6),
@@ -517,7 +517,7 @@ class _AssociationReportState extends State<AssociationReport> {
                 child: Text(
                   "READY",
                   style: GoogleFonts.outfit(
-                    fontSize: 12.sp,
+                    fontSize: 13.sp,
                     fontWeight: FontWeight.w500,
                     color: Color(0xFFB8860B),
                     letterSpacing: -0.2,
@@ -534,7 +534,7 @@ class _AssociationReportState extends State<AssociationReport> {
               Text(
                 count,
                 style: GoogleFonts.outfit(
-                  fontSize: 12.sp,
+                  fontSize: 13.sp,
                   fontWeight: FontWeight.w500,
                   color: Color(0xFF000000),
                   letterSpacing: -0.2,
@@ -544,7 +544,7 @@ class _AssociationReportState extends State<AssociationReport> {
               Text(
                 "PDF",
                 style: GoogleFonts.outfit(
-                  fontSize: 12.sp,
+                  fontSize: 13.sp,
                   fontWeight: FontWeight.w500,
                   color: Color(0xFF000000),
                   letterSpacing: -0.2,
@@ -554,7 +554,7 @@ class _AssociationReportState extends State<AssociationReport> {
               Text(
                 "VIEW →",
                 style: GoogleFonts.outfit(
-                  fontSize: 12.sp,
+                  fontSize: 13.sp,
                   fontWeight: FontWeight.w500,
                   color: Color(0xFF1E5993),
                 ),

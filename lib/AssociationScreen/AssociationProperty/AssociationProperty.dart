@@ -50,7 +50,7 @@ class _AssociationPropertyState extends State<AssociationProperty> {
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                   style: GoogleFonts.outfit(
-                    fontSize: 13.sp,
+                    fontSize: 14.sp,
                     fontWeight: FontWeight.w400,
                     color: Color(0xFF2A2933),
                     letterSpacing: -0.24,
@@ -139,7 +139,7 @@ class _AssociationPropertyState extends State<AssociationProperty> {
                                     overflow: TextOverflow.ellipsis,
                                     style: GoogleFonts.outfit(
                                       color: Colors.white,
-                                      fontSize: 16.sp,
+                                      fontSize: 17.sp,
                                       fontWeight: FontWeight.w500,
                                       height: 1.1,
                                       letterSpacing: -0.2,
@@ -151,7 +151,7 @@ class _AssociationPropertyState extends State<AssociationProperty> {
                                     overflow: TextOverflow.ellipsis,
                                     style: GoogleFonts.outfit(
                                       color: Colors.white,
-                                      fontSize: 13.sp,
+                                      fontSize: 14.sp,
                                       fontWeight: FontWeight.w400,
                                       height: 1.1,
                                       letterSpacing: -0.2,
@@ -176,7 +176,7 @@ class _AssociationPropertyState extends State<AssociationProperty> {
                                 'Active',
                                 style: GoogleFonts.outfit(
                                   color: const Color(0xFF24B06A),
-                                  fontSize: 13.sp,
+                                  fontSize: 14.sp,
                                   fontWeight: FontWeight.w500,
                                   letterSpacing: -0.2,
                                 ),
@@ -289,7 +289,7 @@ class _AssociationPropertyState extends State<AssociationProperty> {
                         child: Text(
                           filters[index],
                           style: GoogleFonts.outfit(
-                            fontSize: 13.sp,
+                            fontSize: 14.sp,
                             fontWeight: FontWeight.w500,
                             color: isSelected
                                 ? Colors.white
@@ -314,7 +314,7 @@ class _AssociationPropertyState extends State<AssociationProperty> {
                     'All Units',
                     style: GoogleFonts.outfit(
                       color: Color(0xFF000000),
-                      fontSize: 16.sp,
+                      fontSize: 17.sp,
                       fontWeight: FontWeight.w500,
                       letterSpacing: -0.2,
                     ),
@@ -323,7 +323,7 @@ class _AssociationPropertyState extends State<AssociationProperty> {
                     '128 Units',
                     style: GoogleFonts.outfit(
                       color: Color(0xFF000000),
-                      fontSize: 12.sp,
+                      fontSize: 13.sp,
                       fontWeight: FontWeight.w500,
                       letterSpacing: -0.2,
                     ),
@@ -339,7 +339,7 @@ class _AssociationPropertyState extends State<AssociationProperty> {
                 'BLOCK A · 32 UNITS',
                 style: GoogleFonts.outfit(
                   color: Color.fromRGBO(0, 0, 0, 0.7),
-                  fontSize: 12.sp,
+                  fontSize: 13.sp,
                   fontWeight: FontWeight.w500,
                   letterSpacing: -0.2,
                 ),
@@ -401,7 +401,7 @@ class _AssociationPropertyState extends State<AssociationProperty> {
           value,
           style: GoogleFonts.outfit(
             color: Colors.white,
-            fontSize: 16.sp,
+            fontSize: 17.sp,
             fontWeight: FontWeight.w500,
             letterSpacing: -0.2,
           ),
@@ -410,7 +410,7 @@ class _AssociationPropertyState extends State<AssociationProperty> {
           title,
           style: GoogleFonts.outfit(
             color: Color.fromRGBO(255, 255, 255, 0.6),
-            fontSize: 13.sp,
+            fontSize: 14.sp,
             fontWeight: FontWeight.w500,
             letterSpacing: -0.2,
           ),
@@ -492,7 +492,7 @@ class _AssociationPropertyState extends State<AssociationProperty> {
                         unitNumber,
                         style: GoogleFonts.outfit(
                           color: Color(0xFFEAD408),
-                          fontSize: 13.sp,
+                          fontSize: 14.sp,
                           fontWeight: FontWeight.w500,
                           letterSpacing: -0.2,
                         ),
@@ -509,7 +509,7 @@ class _AssociationPropertyState extends State<AssociationProperty> {
                             overflow: TextOverflow.ellipsis,
                             style: GoogleFonts.outfit(
                               color: Colors.white,
-                              fontSize: 16.sp,
+                              fontSize: 17.sp,
                               fontWeight: FontWeight.w500,
                               height: 1.05,
                             ),
@@ -519,7 +519,7 @@ class _AssociationPropertyState extends State<AssociationProperty> {
                             blockName,
                             style: GoogleFonts.outfit(
                               color: Color.fromRGBO(255, 255, 255, 0.8),
-                              fontSize: 12.sp,
+                              fontSize: 13.sp,
                               fontWeight: FontWeight.w500,
                               height: 1,
                             ),
@@ -543,7 +543,7 @@ class _AssociationPropertyState extends State<AssociationProperty> {
                         status,
                         style: GoogleFonts.outfit(
                           color: Color(0xFFEAD408),
-                          fontSize: 12.sp,
+                          fontSize: 13.sp,
                           fontWeight: FontWeight.w500,
                           letterSpacing: -0.2,
                         ),
@@ -563,7 +563,7 @@ class _AssociationPropertyState extends State<AssociationProperty> {
                             "OWNER",
                             style: GoogleFonts.outfit(
                               color: Color.fromRGBO(255, 255, 255, 0.5),
-                              fontSize: 11.sp,
+                              fontSize: 12.sp,
                               fontWeight: FontWeight.w500,
                               letterSpacing: -0.2,
                             ),
@@ -586,7 +586,7 @@ class _AssociationPropertyState extends State<AssociationProperty> {
                             "PROPERTY STATUS",
                             style: GoogleFonts.outfit(
                               color: Color.fromRGBO(255, 255, 255, 0.5),
-                              fontSize: 11.sp,
+                              fontSize: 12.sp,
                               fontWeight: FontWeight.w500,
                               letterSpacing: -0.2,
                             ),
@@ -616,7 +616,7 @@ class _AssociationPropertyState extends State<AssociationProperty> {
                             "RESIDENT",
                             style: GoogleFonts.outfit(
                               color: Color.fromRGBO(255, 255, 255, 0.5),
-                              fontSize: 11.sp,
+                              fontSize: 12.sp,
                               fontWeight: FontWeight.w500,
                               letterSpacing: -0.2,
                             ),
@@ -640,7 +640,7 @@ class _AssociationPropertyState extends State<AssociationProperty> {
                             "LAST INSPECTION",
                             style: GoogleFonts.outfit(
                               color: Color.fromRGBO(255, 255, 255, 0.5),
-                              fontSize: 11.sp,
+                              fontSize: 12.sp,
                               fontWeight: FontWeight.w500,
                               letterSpacing: -0.2,
                             ),
@@ -715,7 +715,7 @@ class _AssociationPropertyState extends State<AssociationProperty> {
                             'View Report',
                             style: GoogleFonts.outfit(
                               color: Color(0xFFEAD408),
-                              fontSize: 13.sp,
+                              fontSize: 14.sp,
                               fontWeight: FontWeight.w500,
                               letterSpacing: -0.2,
                             ),

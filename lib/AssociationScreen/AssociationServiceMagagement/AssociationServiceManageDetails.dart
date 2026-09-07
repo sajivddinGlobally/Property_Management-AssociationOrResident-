@@ -72,7 +72,7 @@ class _AssociationServiceManageDetailsState
                   Text(
                     "Service Management",
                     style: GoogleFonts.outfit(
-                      fontSize: 13.sp,
+                      fontSize: 14.sp,
                       fontWeight: FontWeight.w400,
                       color: Color.fromRGBO(42, 41, 51, 0.6),
                       letterSpacing: -0.24,
@@ -109,7 +109,7 @@ class _AssociationServiceManageDetailsState
                           maxLines: 1,
                           overflow: TextOverflow.ellipsis,
                           style: GoogleFonts.outfit(
-                            fontSize: 13.sp,
+                            fontSize: 14.sp,
                             fontWeight: FontWeight.w500,
                             color: Color(0xFF000000),
                             height: 1.h,
@@ -139,7 +139,7 @@ class _AssociationServiceManageDetailsState
                               Text(
                                 'ACTIVE',
                                 style: GoogleFonts.outfit(
-                                  fontSize: 11.sp,
+                                  fontSize: 12.sp,
                                   fontWeight: FontWeight.w500,
                                   color: const Color(0xFF000000),
                                   letterSpacing: -0.2,
@@ -177,7 +177,7 @@ class _AssociationServiceManageDetailsState
                                 maxLines: 1,
                                 overflow: TextOverflow.ellipsis,
                                 style: GoogleFonts.outfit(
-                                  fontSize: 16.sp,
+                                  fontSize: 17.sp,
                                   fontWeight: FontWeight.w500,
                                   color: Color(0xFF000000),
                                   height: 1.h,
@@ -190,7 +190,7 @@ class _AssociationServiceManageDetailsState
                                 maxLines: 1,
                                 overflow: TextOverflow.ellipsis,
                                 style: GoogleFonts.outfit(
-                                  fontSize: 12.sp,
+                                  fontSize: 13.sp,
                                   fontWeight: FontWeight.w500,
                                   color: Color.fromRGBO(0, 0, 0, 0.6),
                                   height: 1.1,
@@ -240,7 +240,7 @@ class _AssociationServiceManageDetailsState
               Text(
                 "Service Information",
                 style: GoogleFonts.outfit(
-                  fontSize: 16.sp,
+                  fontSize: 17.sp,
                   fontWeight: FontWeight.w500,
                   color: const Color(0xFF000000),
                   letterSpacing: -0.2,
@@ -280,7 +280,7 @@ class _AssociationServiceManageDetailsState
               Text(
                 "Assigned Person / Vendor",
                 style: GoogleFonts.outfit(
-                  fontSize: 16.sp,
+                  fontSize: 17.sp,
                   fontWeight: FontWeight.w500,
                   color: const Color(0xFF000000),
                   letterSpacing: -0.2,
@@ -340,7 +340,7 @@ class _AssociationServiceManageDetailsState
                             Text(
                               'Service Provider',
                               style: GoogleFonts.outfit(
-                                fontSize: 13.sp,
+                                fontSize: 14.sp,
                                 fontWeight: FontWeight.w500,
                                 color: Color.fromRGBO(42, 41, 52, 0.6),
                                 height: 1,
@@ -353,7 +353,7 @@ class _AssociationServiceManageDetailsState
                               maxLines: 1,
                               overflow: TextOverflow.ellipsis,
                               style: GoogleFonts.outfit(
-                                fontSize: 16.sp,
+                                fontSize: 17.sp,
                                 fontWeight: FontWeight.w500,
                                 color: Color(0xFF101C16),
                                 letterSpacing: -0.1,
@@ -362,7 +362,7 @@ class _AssociationServiceManageDetailsState
                             Text(
                               'Assigned for complex housekeeping operations',
                               style: GoogleFonts.outfit(
-                                fontSize: 13.sp,
+                                fontSize: 14.sp,
                                 fontWeight: FontWeight.w500,
                                 color: Color.fromRGBO(42, 41, 52, 0.6),
                                 height: 1,
@@ -386,7 +386,7 @@ class _AssociationServiceManageDetailsState
               Text(
                 "Assigned Person / Vendor",
                 style: GoogleFonts.outfit(
-                  fontSize: 16.sp,
+                  fontSize: 17.sp,
                   fontWeight: FontWeight.w500,
                   color: const Color(0xFF000000),
                   letterSpacing: -0.2,
@@ -431,7 +431,7 @@ class _AssociationServiceManageDetailsState
                               maxLines: 1,
                               overflow: TextOverflow.ellipsis,
                               style: GoogleFonts.outfit(
-                                fontSize: 16.sp,
+                                fontSize: 17.sp,
                                 fontWeight: FontWeight.w500,
                                 color: Color(0xFF000000),
                                 height: 1.1,
@@ -449,7 +449,7 @@ class _AssociationServiceManageDetailsState
               Text(
                 "Reported Issues",
                 style: GoogleFonts.outfit(
-                  fontSize: 16.sp,
+                  fontSize: 17.sp,
                   fontWeight: FontWeight.w500,
                   color: const Color(0xFF000000),
                   letterSpacing: -0.2,
@@ -476,7 +476,7 @@ class _AssociationServiceManageDetailsState
                         child: Text(
                           '02',
                           style: GoogleFonts.outfit(
-                            fontSize: 12.sp,
+                            fontSize: 13.sp,
                             fontWeight: FontWeight.w500,
                             color: Color(0xFFFFFFFF),
                             height: 1,
@@ -493,7 +493,7 @@ class _AssociationServiceManageDetailsState
                           Text(
                             'Open Service Issues',
                             style: GoogleFonts.outfit(
-                              fontSize: 14.sp,
+                              fontSize: 15.sp,
                               fontWeight: FontWeight.w500,
                               color: Color(0xFF000000),
                               height: 1,
@@ -506,7 +506,7 @@ class _AssociationServiceManageDetailsState
                             maxLines: 1,
                             overflow: TextOverflow.ellipsis,
                             style: GoogleFonts.outfit(
-                              fontSize: 13.sp,
+                              fontSize: 14.sp,
                               fontWeight: FontWeight.w500,
                               color: Color.fromRGBO(0, 0, 0, 0.6),
                               letterSpacing: -0.1,
@@ -528,7 +528,7 @@ class _AssociationServiceManageDetailsState
               Text(
                 "Service Performance",
                 style: GoogleFonts.outfit(
-                  fontSize: 16.sp,
+                  fontSize: 17.sp,
                   fontWeight: FontWeight.w500,
                   color: const Color(0xFF000000),
                   letterSpacing: -0.2,
@@ -567,7 +567,7 @@ class _AssociationServiceManageDetailsState
                                 Text(
                                   "Service Performance",
                                   style: GoogleFonts.outfit(
-                                    fontSize: 13.sp,
+                                    fontSize: 14.sp,
                                     fontWeight: FontWeight.w500,
                                     color: Colors.white,
                                     height: 1.1,
@@ -578,7 +578,7 @@ class _AssociationServiceManageDetailsState
                                 Text(
                                   "Based on service monitoring",
                                   style: GoogleFonts.outfit(
-                                    fontSize: 10.sp,
+                                    fontSize: 12.sp,
                                     fontWeight: FontWeight.w500,
                                     color: Colors.white,
                                     height: 1.1,
@@ -590,7 +590,7 @@ class _AssociationServiceManageDetailsState
                           Text(
                             "94%",
                             style: GoogleFonts.outfit(
-                              fontSize: 16.sp,
+                              fontSize: 17.sp,
                               fontWeight: FontWeight.w500,
                               color: Colors.white,
                               height: 1.1,
@@ -618,7 +618,7 @@ class _AssociationServiceManageDetailsState
                             child: Text(
                               "Current Performance",
                               style: GoogleFonts.outfit(
-                                fontSize: 10.sp,
+                                fontSize: 12.sp,
                                 fontWeight: FontWeight.w500,
                                 color: Colors.white,
                                 height: 1.1,
@@ -628,7 +628,7 @@ class _AssociationServiceManageDetailsState
                           Text(
                             "Good",
                             style: GoogleFonts.outfit(
-                              fontSize: 10.sp,
+                              fontSize: 12.sp,
                               fontWeight: FontWeight.w500,
                               color: Colors.white,
                               height: 1.1,
@@ -655,7 +655,7 @@ class _AssociationServiceManageDetailsState
         Text(
           label,
           style: GoogleFonts.outfit(
-            fontSize: 12.sp,
+            fontSize: 13.sp,
             fontWeight: FontWeight.w500,
             color: Color(0xFF000000),
             letterSpacing: -0.2,
@@ -665,7 +665,7 @@ class _AssociationServiceManageDetailsState
         Text(
           value,
           style: GoogleFonts.outfit(
-            fontSize: 16.sp,
+            fontSize: 17.sp,
             fontWeight: FontWeight.w500,
             color: Color(0xFF000000),
             letterSpacing: -0.2,
@@ -684,7 +684,7 @@ class _AssociationServiceManageDetailsState
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.outfit(
-            fontSize: 12.sp,
+            fontSize: 13.sp,
             fontWeight: FontWeight.w500,
             color: Color.fromRGBO(0, 0, 0, 0.7),
             height: 1.1,
@@ -697,7 +697,7 @@ class _AssociationServiceManageDetailsState
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.outfit(
-            fontSize: 16.sp,
+            fontSize: 17.sp,
             fontWeight: FontWeight.w500,
             color: Color(0xFF000000),
             height: 1.1,

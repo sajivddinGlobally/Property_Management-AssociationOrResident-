@@ -85,7 +85,7 @@ class _AiPropertyAssistantScreenState extends State<AiPropertyAssistantScreen> {
                   Text(
                     "Your property information assistant",
                     style: GoogleFonts.outfit(
-                      fontSize: 14.sp,
+                      fontSize: 15.sp,
                       fontWeight: FontWeight.w400,
                       color: Color.fromRGBO(42, 41, 51, 0.6),
                       letterSpacing: -0.24,
@@ -117,7 +117,7 @@ class _AiPropertyAssistantScreenState extends State<AiPropertyAssistantScreen> {
                       TextSpan(
                         text: "AI Assistant is",
                         style: GoogleFonts.outfit(
-                          fontSize: 13.sp,
+                          fontSize: 14.sp,
                           fontWeight: FontWeight.w500,
                           color: AppColors.heading,
                           letterSpacing: -0.24,
@@ -126,7 +126,7 @@ class _AiPropertyAssistantScreenState extends State<AiPropertyAssistantScreen> {
                       TextSpan(
                         text: " Ready",
                         style: GoogleFonts.outfit(
-                          fontSize: 13.sp,
+                          fontSize: 14.sp,
                           fontWeight: FontWeight.w500,
                           color: Color(0xffAE8130),
                           letterSpacing: -0.24,
@@ -181,7 +181,7 @@ class _AiPropertyAssistantScreenState extends State<AiPropertyAssistantScreen> {
                     Text(
                       "Ask questions about your property, inspections, maintenance,\n complaints, service requests and property status.",
                       style: GoogleFonts.outfit(
-                        fontSize: 13.sp,
+                        fontSize: 14.sp,
                         fontWeight: FontWeight.w500,
                         color: const Color(0xff292832),
                         letterSpacing: -0.2,
@@ -235,7 +235,7 @@ class _AiPropertyAssistantScreenState extends State<AiPropertyAssistantScreen> {
                           style: GoogleFonts.outfit(
                             fontWeight: FontWeight.w500,
                             color: Color.fromRGBO(42, 41, 51, 0.5),
-                            fontSize: 12.sp,
+                            fontSize: 13.sp,
                             letterSpacing: -0.2,
                           ),
                         ),
@@ -346,7 +346,7 @@ class _AiPropertyAssistantScreenState extends State<AiPropertyAssistantScreen> {
                           child: Text(
                             "AI",
                             style: GoogleFonts.inter(
-                              fontSize: 7.sp,
+                              fontSize: 12.sp,
                               fontWeight: FontWeight.w500,
                               color: Colors.black,
                             ),
@@ -360,7 +360,7 @@ class _AiPropertyAssistantScreenState extends State<AiPropertyAssistantScreen> {
                             "Your property score is 86/100. There are currently 2 open "
                             "issues recorded for your property.",
                             style: GoogleFonts.outfit(
-                              fontSize: 13.sp,
+                              fontSize: 14.sp,
                               color: AppColors.heading,
                               fontWeight: FontWeight.w500,
                               letterSpacing: -0.2,
@@ -390,7 +390,7 @@ class _AiPropertyAssistantScreenState extends State<AiPropertyAssistantScreen> {
                         child: Text(
                           "What maintenance is currently pending?",
                           style: GoogleFonts.outfit(
-                            fontSize: 11.sp,
+                            fontSize: 12.sp,
                             color: AppColors.heading,
                           ),
                         ),
@@ -413,7 +413,7 @@ class _AiPropertyAssistantScreenState extends State<AiPropertyAssistantScreen> {
                           child: Text(
                             "AI",
                             style: GoogleFonts.inter(
-                              fontSize: 7.sp,
+                              fontSize: 12.sp,
                               fontWeight: FontWeight.w500,
                               color: Colors.black,
                             ),
@@ -428,7 +428,7 @@ class _AiPropertyAssistantScreenState extends State<AiPropertyAssistantScreen> {
                             "currently 1 pending maintenance activity. You can view "
                             "its complete details in Maintenance History.",
                             style: GoogleFonts.outfit(
-                              fontSize: 12.sp,
+                              fontSize: 13.sp,
                               color: AppColors.heading,
                               fontWeight: FontWeight.w500,
                               letterSpacing: -0.2,
@@ -461,7 +461,7 @@ class _AiPropertyAssistantScreenState extends State<AiPropertyAssistantScreen> {
                               child: Text(
                                 message,
                                 style: GoogleFonts.outfit(
-                                  fontSize: 11.sp,
+                                  fontSize: 12.sp,
                                   color: AppColors.heading,
                                 ),
                               ),
@@ -616,7 +616,7 @@ class _AiPropertyAssistantScreenState extends State<AiPropertyAssistantScreen> {
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
             style: GoogleFonts.inter(
-              fontSize: 11.sp,
+              fontSize: 12.sp,
               fontWeight: FontWeight.w400,
               color: const Color(0xFF777777),
             ),
@@ -648,7 +648,7 @@ class _AiPropertyAssistantScreenState extends State<AiPropertyAssistantScreen> {
                 child: Text(
                   title,
                   style: GoogleFonts.outfit(
-                    fontSize: 13.sp,
+                    fontSize: 14.sp,
                     fontWeight: FontWeight.w500,
                     color: AppColors.heading,
                     letterSpacing: -0.2,

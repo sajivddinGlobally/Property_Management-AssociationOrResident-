@@ -47,7 +47,7 @@ class _AssociationProfileState extends State<AssociationProfile> {
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                   style: GoogleFonts.outfit(
-                    fontSize: 13.sp,
+                    fontSize: 14.sp,
                     fontWeight: FontWeight.w400,
                     color: Color.fromRGBO(42, 41, 51, 0.6),
                     letterSpacing: -0.24,
@@ -83,7 +83,7 @@ class _AssociationProfileState extends State<AssociationProfile> {
                     Text(
                       "MD Sajiv",
                       style: GoogleFonts.outfit(
-                        fontSize: 16.sp,
+                        fontSize: 17.sp,
                         fontWeight: FontWeight.w500,
                         color: Color(0xFF000000),
                         letterSpacing: -0.3,
@@ -93,7 +93,7 @@ class _AssociationProfileState extends State<AssociationProfile> {
                     Text(
                       "sajiv@gmail.com",
                       style: GoogleFonts.outfit(
-                        fontSize: 13.sp,
+                        fontSize: 14.sp,
                         fontWeight: FontWeight.w500,
                         color: Color(0xFF000000),
                         letterSpacing: -0.3,
@@ -115,7 +115,7 @@ class _AssociationProfileState extends State<AssociationProfile> {
                       child: Text(
                         "ASSOCIATION HEAD",
                         style: GoogleFonts.outfit(
-                          fontSize: 13.sp,
+                          fontSize: 14.sp,
                           fontWeight: FontWeight.w500,
                           color: Color(0xFF000000),
                           letterSpacing: -0.3,
@@ -129,7 +129,7 @@ class _AssociationProfileState extends State<AssociationProfile> {
               Text(
                 "Personal Information",
                 style: GoogleFonts.outfit(
-                  fontSize: 13.sp,
+                  fontSize: 14.sp,
                   fontWeight: FontWeight.w500,
                   color: Color(0xFF000000),
                   letterSpacing: -0.2,
@@ -196,7 +196,7 @@ class _AssociationProfileState extends State<AssociationProfile> {
                             Text(
                               "Association",
                               style: GoogleFonts.outfit(
-                                fontSize: 12.sp,
+                                fontSize: 13.sp,
                                 fontWeight: FontWeight.w500,
                                 color: Color.fromRGBO(0, 0, 0, 0.6),
                               ),
@@ -204,7 +204,7 @@ class _AssociationProfileState extends State<AssociationProfile> {
                             Text(
                               "Greenview Residency",
                               style: GoogleFonts.outfit(
-                                fontSize: 16.sp,
+                                fontSize: 17.sp,
                                 fontWeight: FontWeight.w500,
                                 color: Color(0xFF101C16),
                                 letterSpacing: -0.2,
@@ -252,7 +252,7 @@ class _AssociationProfileState extends State<AssociationProfile> {
               Text(
                 "Account Settings",
                 style: GoogleFonts.outfit(
-                  fontSize: 16.sp,
+                  fontSize: 17.sp,
                   fontWeight: FontWeight.w500,
                   color: Color(0xFF101C16),
                   letterSpacing: -0.2,
@@ -374,7 +374,7 @@ class _AssociationProfileState extends State<AssociationProfile> {
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
                 style: GoogleFonts.outfit(
-                  fontSize: 13.sp,
+                  fontSize: 14.sp,
                   fontWeight: FontWeight.w500,
                   color: Color.fromRGBO(42, 41, 51, 0.6),
                   letterSpacing: -0.24,
@@ -399,7 +399,7 @@ class _AssociationProfileState extends State<AssociationProfile> {
               overflow: TextOverflow.ellipsis,
               textAlign: TextAlign.right,
               style: GoogleFonts.outfit(
-                fontSize: 13.sp,
+                fontSize: 14.sp,
                 fontWeight: FontWeight.w700,
                 color: AppColors.heading,
                 letterSpacing: -0.24,
@@ -444,7 +444,7 @@ class _AssociationProfileState extends State<AssociationProfile> {
                 Text(
                   name,
                   style: GoogleFonts.outfit(
-                    fontSize: 16.sp,
+                    fontSize: 17.sp,
                     fontWeight: FontWeight.w500,
                     color: Color(0xFF000000),
                     letterSpacing: -0.2,
@@ -453,7 +453,7 @@ class _AssociationProfileState extends State<AssociationProfile> {
                 Text(
                   title,
                   style: GoogleFonts.outfit(
-                    fontSize: 13.sp,
+                    fontSize: 14.sp,
                     fontWeight: FontWeight.w500,
                     color: Color.fromRGBO(0, 0, 0, 0.7),
                     letterSpacing: -0.3,
@@ -482,7 +482,7 @@ class _AssociationProfileState extends State<AssociationProfile> {
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.outfit(
-            fontSize: 13.sp,
+            fontSize: 14.sp,
             fontWeight: FontWeight.w500,
             color: Color.fromRGBO(0, 0, 0, 0.5),
             letterSpacing: -0.2,
@@ -494,7 +494,7 @@ class _AssociationProfileState extends State<AssociationProfile> {
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.outfit(
-            fontSize: 13.sp,
+            fontSize: 14.sp,
             fontWeight: FontWeight.w500,
             color: Color(0xFF000000),
             letterSpacing: -0.2,

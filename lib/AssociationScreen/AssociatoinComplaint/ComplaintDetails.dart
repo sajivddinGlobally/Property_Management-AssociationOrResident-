@@ -94,7 +94,7 @@ class _ComplaintDetailsState extends State<ComplaintDetails> {
                   Text(
                     "View complete complaint information",
                     style: GoogleFonts.outfit(
-                      fontSize: 13.sp,
+                      fontSize: 14.sp,
                       fontWeight: FontWeight.w400,
                       color: Color.fromRGBO(42, 41, 51, 0.6),
                       letterSpacing: -0.24,
@@ -172,7 +172,7 @@ class _ComplaintDetailsState extends State<ComplaintDetails> {
                                 maxLines: 1,
                                 overflow: TextOverflow.ellipsis,
                                 style: GoogleFonts.outfit(
-                                  fontSize: 16.sp,
+                                  fontSize: 17.sp,
                                   fontWeight: FontWeight.w500,
                                   color: Colors.black,
                                   letterSpacing: -0.2,
@@ -183,7 +183,7 @@ class _ComplaintDetailsState extends State<ComplaintDetails> {
                               Text(
                                 'Ticket ID: #CMP-2048',
                                 style: GoogleFonts.outfit(
-                                  fontSize: 13.sp,
+                                  fontSize: 14.sp,
                                   fontWeight: FontWeight.w500,
                                   color: Color.fromRGBO(42, 41, 51, 0.7),
                                   letterSpacing: -0.2,
@@ -211,7 +211,7 @@ class _ComplaintDetailsState extends State<ComplaintDetails> {
                           child: Text(
                             'High',
                             style: GoogleFonts.outfit(
-                              fontSize: 14.sp,
+                              fontSize: 15.sp,
                               fontWeight: FontWeight.w500,
                               color: const Color(0xFFE3240F),
                             ),
@@ -232,7 +232,7 @@ class _ComplaintDetailsState extends State<ComplaintDetails> {
                         Text(
                           'Current Status',
                           style: GoogleFonts.outfit(
-                            fontSize: 13.sp,
+                            fontSize: 14.sp,
                             fontWeight: FontWeight.w500,
                             color: Colors.black,
                             letterSpacing: -0.2,
@@ -241,7 +241,7 @@ class _ComplaintDetailsState extends State<ComplaintDetails> {
                         Text(
                           'In Progress',
                           style: GoogleFonts.outfit(
-                            fontSize: 13.sp,
+                            fontSize: 14.sp,
                             fontWeight: FontWeight.w500,
                             color: const Color(0xFF1E5993),
                             letterSpacing: -0.2,
@@ -259,7 +259,7 @@ class _ComplaintDetailsState extends State<ComplaintDetails> {
               Text(
                 'Complaint Information',
                 style: GoogleFonts.outfit(
-                  fontSize: 16.sp,
+                  fontSize: 17.sp,
                   fontWeight: FontWeight.w500,
                   color: Colors.black,
                   letterSpacing: -0.2,
@@ -313,7 +313,7 @@ class _ComplaintDetailsState extends State<ComplaintDetails> {
               Text(
                 'Description',
                 style: GoogleFonts.outfit(
-                  fontSize: 16.sp,
+                  fontSize: 17.sp,
                   fontWeight: FontWeight.w500,
                   color: Colors.black,
                   letterSpacing: -0.2,
@@ -330,7 +330,7 @@ class _ComplaintDetailsState extends State<ComplaintDetails> {
                 child: Text(
                   'Water leakage has been reported from the bathroom area of Apartment A-204. The issue requires inspection and maintenance attention. Complaint has been assigned to the maintenance team for further action.',
                   style: GoogleFonts.outfit(
-                    fontSize: 12.sp,
+                    fontSize: 13.sp,
                     fontWeight: FontWeight.w500,
                     color: Color.fromRGBO(42, 41, 51, 0.7),
                     letterSpacing: -0.2,
@@ -341,7 +341,7 @@ class _ComplaintDetailsState extends State<ComplaintDetails> {
               Text(
                 "Assigned Person",
                 style: GoogleFonts.outfit(
-                  fontSize: 16.sp,
+                  fontSize: 17.sp,
                   fontWeight: FontWeight.w500,
                   color: const Color(0xFF000000),
                   letterSpacing: -0.2,
@@ -391,7 +391,7 @@ class _ComplaintDetailsState extends State<ComplaintDetails> {
                             maxLines: 1,
                             overflow: TextOverflow.ellipsis,
                             style: GoogleFonts.outfit(
-                              fontSize: 16.sp,
+                              fontSize: 17.sp,
                               fontWeight: FontWeight.w500,
                               color: Color(0xFF101C16),
                               letterSpacing: -0.1,
@@ -400,7 +400,7 @@ class _ComplaintDetailsState extends State<ComplaintDetails> {
                           Text(
                             'Assigned for complaint resolution',
                             style: GoogleFonts.outfit(
-                              fontSize: 13.sp,
+                              fontSize: 14.sp,
                               fontWeight: FontWeight.w500,
                               color: Color.fromRGBO(42, 41, 52, 0.6),
                               height: 1,
@@ -428,7 +428,7 @@ class _ComplaintDetailsState extends State<ComplaintDetails> {
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
                         style: GoogleFonts.outfit(
-                          fontSize: 13.sp,
+                          fontSize: 14.sp,
                           fontWeight: FontWeight.w500,
                           color: Color(0xFF24B06A),
                           letterSpacing: -0.1,
@@ -442,7 +442,7 @@ class _ComplaintDetailsState extends State<ComplaintDetails> {
               Text(
                 "Attachments",
                 style: GoogleFonts.outfit(
-                  fontSize: 16.sp,
+                  fontSize: 17.sp,
                   fontWeight: FontWeight.w500,
                   color: const Color(0xFF000000),
                   letterSpacing: -0.2,
@@ -518,7 +518,7 @@ class _ComplaintDetailsState extends State<ComplaintDetails> {
                           child: Text(
                             "Current Resolution Update",
                             style: GoogleFonts.outfit(
-                              fontSize: 16.sp,
+                              fontSize: 17.sp,
                               fontWeight: FontWeight.w600,
                               color: Colors.black,
                               height: 1,
@@ -532,7 +532,7 @@ class _ComplaintDetailsState extends State<ComplaintDetails> {
                     Text(
                       "Maintenance team has been assigned. Inspection of the reported leakage is currently in progress. Final resolution will be recorded after the issue is completed.",
                       style: GoogleFonts.outfit(
-                        fontSize: 12.sp,
+                        fontSize: 13.sp,
                         fontWeight: FontWeight.w500,
                         color: Colors.black,
                         height: 1.25,
@@ -546,7 +546,7 @@ class _ComplaintDetailsState extends State<ComplaintDetails> {
               Text(
                 "Complaint Activity",
                 style: GoogleFonts.outfit(
-                  fontSize: 16.sp,
+                  fontSize: 17.sp,
                   fontWeight: FontWeight.w500,
                   color: const Color(0xFF000000),
                   letterSpacing: -0.2,
@@ -598,7 +598,7 @@ class _ComplaintDetailsState extends State<ComplaintDetails> {
               title,
               textAlign: TextAlign.center,
               style: GoogleFonts.outfit(
-                fontSize: 16.sp,
+                fontSize: 17.sp,
                 fontWeight: FontWeight.w500,
                 color: Colors.black,
                 height: 1,
@@ -610,7 +610,7 @@ class _ComplaintDetailsState extends State<ComplaintDetails> {
               subtitle,
               textAlign: TextAlign.center,
               style: GoogleFonts.outfit(
-                fontSize: 10.sp,
+                fontSize: 12.sp,
                 fontWeight: FontWeight.w500,
                 color: Color(0xFF101C16),
                 height: 1,
@@ -650,7 +650,7 @@ class _ComplaintDetailsState extends State<ComplaintDetails> {
               Text(
                 label,
                 style: GoogleFonts.outfit(
-                  fontSize: 13.sp,
+                  fontSize: 14.sp,
                   fontWeight: FontWeight.w500,
                   color: Color.fromRGBO(42, 41, 51, 0.7),
                   letterSpacing: -0.2,
@@ -662,7 +662,7 @@ class _ComplaintDetailsState extends State<ComplaintDetails> {
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
                 style: GoogleFonts.outfit(
-                  fontSize: 13.sp,
+                  fontSize: 14.sp,
                   fontWeight: FontWeight.w500,
                   color: Color(0xFF101C16),
                   letterSpacing: -0.2,
@@ -684,7 +684,7 @@ class _ComplaintDetailsState extends State<ComplaintDetails> {
               child: Text(
                 action,
                 style: GoogleFonts.outfit(
-                  fontSize: 13.sp,
+                  fontSize: 14.sp,
                   fontWeight: FontWeight.w700,
                   color: Color(0xFF2A2933),
                   letterSpacing: -0.2,
@@ -744,7 +744,7 @@ class ComplaintTimeline extends StatelessWidget {
                 steps[index],
                 textAlign: _getTextAlignment(index),
                 style: GoogleFonts.outfit(
-                  fontSize: 12.sp,
+                  fontSize: 13.sp,
                   fontWeight: FontWeight.w500,
                   color: _getLabelColor(index),
                   letterSpacing: -0.2,
@@ -885,7 +885,7 @@ class _TimelineItem extends StatelessWidget {
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                     style: GoogleFonts.outfit(
-                      fontSize: 16.sp,
+                      fontSize: 17.sp,
                       height: 1.1,
                       fontWeight: FontWeight.w500,
                       color: Color(0xFF101C16),
@@ -896,7 +896,7 @@ class _TimelineItem extends StatelessWidget {
                   Text(
                     date,
                     style: GoogleFonts.outfit(
-                      fontSize: 11.sp,
+                      fontSize: 12.sp,
                       height: 1.1,
                       fontWeight: FontWeight.w500,
                       color: Color.fromRGBO(42, 41, 51, 0.5),
@@ -907,7 +907,7 @@ class _TimelineItem extends StatelessWidget {
                   Text(
                     desc,
                     style: GoogleFonts.outfit(
-                      fontSize: 11.sp,
+                      fontSize: 12.sp,
                       height: 1.1,
                       fontWeight: FontWeight.w500,
                       color: Color.fromRGBO(42, 41, 51, 0.5),

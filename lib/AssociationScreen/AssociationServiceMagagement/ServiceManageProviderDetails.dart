@@ -65,7 +65,7 @@ class _ServiceManageProviderDetailsState
                   Text(
                     "Service Management",
                     style: GoogleFonts.outfit(
-                      fontSize: 13.sp,
+                      fontSize: 14.sp,
                       fontWeight: FontWeight.w400,
                       color: Color.fromRGBO(42, 41, 51, 0.6),
                       letterSpacing: -0.24,
@@ -100,7 +100,7 @@ class _ServiceManageProviderDetailsState
                           child: Text(
                             "REGISTERED SERVICE PROVIDER",
                             style: GoogleFonts.outfit(
-                              fontSize: 13.sp,
+                              fontSize: 14.sp,
                               fontWeight: FontWeight.w500,
                               color: Color(0xFF000000),
                               letterSpacing: -0.2,
@@ -122,7 +122,7 @@ class _ServiceManageProviderDetailsState
                             Text(
                               "ACTIVE",
                               style: GoogleFonts.outfit(
-                                fontSize: 13.sp,
+                                fontSize: 14.sp,
                                 fontWeight: FontWeight.w700,
                                 color: Color(0xFF24B06A),
                                 letterSpacing: -0.2,
@@ -137,7 +137,7 @@ class _ServiceManageProviderDetailsState
                     Text(
                       "CleanCare Services",
                       style: GoogleFonts.outfit(
-                        fontSize: 16.sp,
+                        fontSize: 17.sp,
                         fontWeight: FontWeight.w500,
                         color: Color(0xFF000000),
                         letterSpacing: -0.2,
@@ -150,7 +150,7 @@ class _ServiceManageProviderDetailsState
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                       style: GoogleFonts.outfit(
-                        fontSize: 13.sp,
+                        fontSize: 14.sp,
                         fontWeight: FontWeight.w500,
                         color: Color.fromRGBO(0, 0, 0, 0.7),
                         height: 1.h,
@@ -195,7 +195,7 @@ class _ServiceManageProviderDetailsState
               Text(
                 "Provider Information",
                 style: GoogleFonts.outfit(
-                  fontSize: 16.sp,
+                  fontSize: 17.sp,
                   fontWeight: FontWeight.w500,
                   color: Color(0xFF000000),
                   letterSpacing: -0.2,
@@ -276,7 +276,7 @@ class _ServiceManageProviderDetailsState
               Text(
                 "Primary Contact",
                 style: GoogleFonts.outfit(
-                  fontSize: 16.sp,
+                  fontSize: 17.sp,
                   fontWeight: FontWeight.w500,
                   color: const Color(0xFF000000),
                   letterSpacing: -0.2,
@@ -324,7 +324,7 @@ class _ServiceManageProviderDetailsState
                           Text(
                             'Contact Person',
                             style: GoogleFonts.outfit(
-                              fontSize: 13.sp,
+                              fontSize: 14.sp,
                               fontWeight: FontWeight.w500,
                               color: Color.fromRGBO(42, 41, 52, 0.6),
                               height: 1,
@@ -337,7 +337,7 @@ class _ServiceManageProviderDetailsState
                             maxLines: 1,
                             overflow: TextOverflow.ellipsis,
                             style: GoogleFonts.outfit(
-                              fontSize: 16.sp,
+                              fontSize: 17.sp,
                               fontWeight: FontWeight.w500,
                               color: Color(0xFF101C16),
                               letterSpacing: -0.1,
@@ -346,7 +346,7 @@ class _ServiceManageProviderDetailsState
                           Text(
                             'Operations Manager · CleanCare Services',
                             style: GoogleFonts.outfit(
-                              fontSize: 13.sp,
+                              fontSize: 14.sp,
                               fontWeight: FontWeight.w500,
                               color: Color.fromRGBO(42, 41, 52, 0.6),
                               height: 1,
@@ -369,7 +369,7 @@ class _ServiceManageProviderDetailsState
               Text(
                 "Contact Details",
                 style: GoogleFonts.outfit(
-                  fontSize: 16.sp,
+                  fontSize: 17.sp,
                   fontWeight: FontWeight.w500,
                   color: const Color(0xFF000000),
                   letterSpacing: -0.2,
@@ -430,7 +430,7 @@ class _ServiceManageProviderDetailsState
               Text(
                 "Assigned Services",
                 style: GoogleFonts.outfit(
-                  fontSize: 16.sp,
+                  fontSize: 17.sp,
                   fontWeight: FontWeight.w500,
                   color: Colors.black,
                   letterSpacing: -0.2,
@@ -472,7 +472,7 @@ class _ServiceManageProviderDetailsState
               Text(
                 "Provider Performance",
                 style: GoogleFonts.outfit(
-                  fontSize: 16.sp,
+                  fontSize: 17.sp,
                   fontWeight: FontWeight.w500,
                   color: Colors.black,
                   letterSpacing: -0.2,
@@ -511,7 +511,7 @@ class _ServiceManageProviderDetailsState
                                 Text(
                                   "Service Performance",
                                   style: GoogleFonts.outfit(
-                                    fontSize: 13.sp,
+                                    fontSize: 14.sp,
                                     fontWeight: FontWeight.w500,
                                     color: Colors.white,
                                     height: 1.1,
@@ -522,7 +522,7 @@ class _ServiceManageProviderDetailsState
                                 Text(
                                   "Based on service monitoring",
                                   style: GoogleFonts.outfit(
-                                    fontSize: 10.sp,
+                                    fontSize: 12.sp,
                                     fontWeight: FontWeight.w500,
                                     color: Colors.white,
                                     height: 1.1,
@@ -534,7 +534,7 @@ class _ServiceManageProviderDetailsState
                           Text(
                             "94%",
                             style: GoogleFonts.outfit(
-                              fontSize: 16.sp,
+                              fontSize: 17.sp,
                               fontWeight: FontWeight.w500,
                               color: Colors.white,
                               height: 1.1,
@@ -562,7 +562,7 @@ class _ServiceManageProviderDetailsState
                             child: Text(
                               "Current Performance",
                               style: GoogleFonts.outfit(
-                                fontSize: 10.sp,
+                                fontSize: 12.sp,
                                 fontWeight: FontWeight.w500,
                                 color: Colors.white,
                                 height: 1.1,
@@ -572,7 +572,7 @@ class _ServiceManageProviderDetailsState
                           Text(
                             "Good",
                             style: GoogleFonts.outfit(
-                              fontSize: 10.sp,
+                              fontSize: 12.sp,
                               fontWeight: FontWeight.w500,
                               color: Colors.white,
                               height: 1.1,
@@ -588,7 +588,7 @@ class _ServiceManageProviderDetailsState
               Text(
                 "Provider Documents",
                 style: GoogleFonts.outfit(
-                  fontSize: 16.sp,
+                  fontSize: 17.sp,
                   fontWeight: FontWeight.w500,
                   color: Colors.black,
                   letterSpacing: -0.2,
@@ -642,7 +642,7 @@ class _ServiceManageProviderDetailsState
         Text(
           label,
           style: GoogleFonts.outfit(
-            fontSize: 11.sp,
+            fontSize: 12.sp,
             fontWeight: FontWeight.w500,
             color: Color.fromRGBO(42, 41, 51, 0.6),
             letterSpacing: -0.2,
@@ -652,7 +652,7 @@ class _ServiceManageProviderDetailsState
         Text(
           value,
           style: GoogleFonts.outfit(
-            fontSize: 16.sp,
+            fontSize: 17.sp,
             fontWeight: FontWeight.w500,
             color: Color(0xFF000000),
           ),
@@ -661,7 +661,7 @@ class _ServiceManageProviderDetailsState
         Text(
           status,
           style: GoogleFonts.outfit(
-            fontSize: 12.sp,
+            fontSize: 13.sp,
             fontWeight: FontWeight.w500,
             color: Color(0xFFB8860B),
             height: 1,
@@ -684,7 +684,7 @@ class _ServiceManageProviderDetailsState
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.outfit(
-            fontSize: 12.sp,
+            fontSize: 13.sp,
             fontWeight: FontWeight.w500,
             color: Color.fromRGBO(42, 41, 51, 0.6),
             height: 1.1,
@@ -697,7 +697,7 @@ class _ServiceManageProviderDetailsState
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.outfit(
-            fontSize: 16.sp,
+            fontSize: 17.sp,
             fontWeight: FontWeight.w500,
             color: valueColor,
             height: 1.1,
@@ -737,7 +737,7 @@ class _ServiceManageProviderDetailsState
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                   style: GoogleFonts.outfit(
-                    fontSize: 16.sp,
+                    fontSize: 17.sp,
                     fontWeight: FontWeight.w500,
                     color: Colors.black,
                     height: 1.05,
@@ -750,7 +750,7 @@ class _ServiceManageProviderDetailsState
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                   style: GoogleFonts.outfit(
-                    fontSize: 12.sp,
+                    fontSize: 13.sp,
                     fontWeight: FontWeight.w500,
                     color: Color.fromRGBO(0, 0, 0, 0.6),
                     height: 1.05,
@@ -769,7 +769,7 @@ class _ServiceManageProviderDetailsState
             child: Text(
               status,
               style: GoogleFonts.outfit(
-                fontSize: 12.sp,
+                fontSize: 13.sp,
                 fontWeight: FontWeight.w500,
                 color: const Color(0xFF11B262),
                 letterSpacing: -0.2,
@@ -809,7 +809,7 @@ class _ServiceManageProviderDetailsState
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                   style: GoogleFonts.outfit(
-                    fontSize: 16.sp,
+                    fontSize: 17.sp,
                     fontWeight: FontWeight.w500,
                     color: Colors.black,
                     height: 1.05,
@@ -822,7 +822,7 @@ class _ServiceManageProviderDetailsState
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                   style: GoogleFonts.outfit(
-                    fontSize: 12.sp,
+                    fontSize: 13.sp,
                     fontWeight: FontWeight.w500,
                     color: Color.fromRGBO(0, 0, 0, 0.6),
                     height: 1.05,
@@ -836,7 +836,7 @@ class _ServiceManageProviderDetailsState
           Text(
             "VIEW",
             style: GoogleFonts.outfit(
-              fontSize: 12.sp,
+              fontSize: 13.sp,
               fontWeight: FontWeight.w500,
               color: const Color(0xFFB8860B),
               letterSpacing: -0.2,

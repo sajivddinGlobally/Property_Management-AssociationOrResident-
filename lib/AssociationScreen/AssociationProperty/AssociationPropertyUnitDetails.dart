@@ -66,7 +66,7 @@ class _AssociationPropertyUnitDetailsState
                   Text(
                     "Complete information for this unit",
                     style: GoogleFonts.outfit(
-                      fontSize: 13.sp,
+                      fontSize: 14.sp,
                       fontWeight: FontWeight.w400,
                       color: Color.fromRGBO(42, 41, 51, 0.6),
                       letterSpacing: -0.24,
@@ -120,7 +120,7 @@ class _AssociationPropertyUnitDetailsState
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
                 style: GoogleFonts.outfit(
-                  fontSize: 16.sp,
+                  fontSize: 17.sp,
                   fontWeight: FontWeight.w500,
                   color: Colors.black,
                   letterSpacing: -0.2,
@@ -181,7 +181,7 @@ class _AssociationPropertyUnitDetailsState
               Text(
                 "Assigned Owner",
                 style: GoogleFonts.outfit(
-                  fontSize: 13.sp,
+                  fontSize: 14.sp,
                   fontWeight: FontWeight.w500,
                   color: Colors.black,
                   letterSpacing: -0.2,
@@ -215,7 +215,7 @@ class _AssociationPropertyUnitDetailsState
                               Text(
                                 "Arjun Sharma",
                                 style: GoogleFonts.outfit(
-                                  fontSize: 13.sp,
+                                  fontSize: 14.sp,
                                   fontWeight: FontWeight.w700,
                                   color: Colors.black,
                                   letterSpacing: -0.2,
@@ -224,7 +224,7 @@ class _AssociationPropertyUnitDetailsState
                               Text(
                                 "Registered Property Owner",
                                 style: GoogleFonts.outfit(
-                                  fontSize: 13.sp,
+                                  fontSize: 14.sp,
                                   fontWeight: FontWeight.w500,
                                   color: Color.fromRGBO(0, 0, 0, 0.6),
                                   letterSpacing: -0.2,
@@ -248,7 +248,7 @@ class _AssociationPropertyUnitDetailsState
                           child: Text(
                             "Verified",
                             style: GoogleFonts.outfit(
-                              fontSize: 13.sp,
+                              fontSize: 14.sp,
                               fontWeight: FontWeight.w500,
                               color: Color(0xFF24B06A),
                             ),
@@ -285,7 +285,7 @@ class _AssociationPropertyUnitDetailsState
                   Text(
                     "Occupancy Status",
                     style: GoogleFonts.outfit(
-                      fontSize: 16.sp,
+                      fontSize: 17.sp,
                       fontWeight: FontWeight.w500,
                       color: Colors.black,
                       letterSpacing: -0.2,
@@ -304,7 +304,7 @@ class _AssociationPropertyUnitDetailsState
                     child: Text(
                       "View Status ›",
                       style: GoogleFonts.outfit(
-                        fontSize: 13.sp,
+                        fontSize: 14.sp,
                         fontWeight: FontWeight.w500,
                         color: Color(0xFF000000),
                         letterSpacing: -0.2,
@@ -350,7 +350,7 @@ class _AssociationPropertyUnitDetailsState
                               Text(
                                 "Currently Occupied",
                                 style: GoogleFonts.outfit(
-                                  fontSize: 16.sp,
+                                  fontSize: 17.sp,
                                   fontWeight: FontWeight.w500,
                                   color: Colors.black,
                                   letterSpacing: -0.2,
@@ -359,7 +359,7 @@ class _AssociationPropertyUnitDetailsState
                               Text(
                                 "Unit occupancy information",
                                 style: GoogleFonts.outfit(
-                                  fontSize: 13.sp,
+                                  fontSize: 14.sp,
                                   fontWeight: FontWeight.w500,
                                   color: Color.fromRGBO(0, 0, 0, 0.7),
                                   letterSpacing: -0.2,
@@ -385,7 +385,7 @@ class _AssociationPropertyUnitDetailsState
                           child: Text(
                             "Occupied",
                             style: GoogleFonts.outfit(
-                              fontSize: 13.sp,
+                              fontSize: 14.sp,
                               fontWeight: FontWeight.w500,
                               color: const Color(0xFF1E5993),
                             ),
@@ -414,7 +414,7 @@ class _AssociationPropertyUnitDetailsState
                         Text(
                           "Occupancy",
                           style: GoogleFonts.outfit(
-                            fontSize: 11.sp,
+                            fontSize: 12.sp,
                             fontWeight: FontWeight.w500,
                             color: Colors.black,
                             letterSpacing: -0.2,
@@ -423,7 +423,7 @@ class _AssociationPropertyUnitDetailsState
                         Text(
                           "Active",
                           style: GoogleFonts.outfit(
-                            fontSize: 11.sp,
+                            fontSize: 12.sp,
                             fontWeight: FontWeight.w500,
                             color: Colors.black,
                             letterSpacing: -0.2,
@@ -440,7 +440,7 @@ class _AssociationPropertyUnitDetailsState
                   Text(
                     "Property Performance",
                     style: GoogleFonts.outfit(
-                      fontSize: 16.sp,
+                      fontSize: 17.sp,
                       fontWeight: FontWeight.w500,
                       color: Colors.black,
                       letterSpacing: -0.2,
@@ -450,7 +450,7 @@ class _AssociationPropertyUnitDetailsState
                   Text(
                     "View Details",
                     style: GoogleFonts.outfit(
-                      fontSize: 13.sp,
+                      fontSize: 14.sp,
                       fontWeight: FontWeight.w500,
                       color: Color(0xFF000000),
                       letterSpacing: -0.2,
@@ -493,7 +493,7 @@ class _AssociationPropertyUnitDetailsState
                               Text(
                                 "86%",
                                 style: GoogleFonts.outfit(
-                                  fontSize: 16.sp,
+                                  fontSize: 17.sp,
                                   fontWeight: FontWeight.w500,
                                   color: const Color(0xFF101C16),
                                   letterSpacing: -0.2,
@@ -504,7 +504,7 @@ class _AssociationPropertyUnitDetailsState
                               Text(
                                 "/100%",
                                 style: GoogleFonts.outfit(
-                                  fontSize: 7.sp,
+                                  fontSize: 12.sp,
                                   fontWeight: FontWeight.w500,
                                   color: const Color(0xFF101C16),
                                   letterSpacing: -0.2,
@@ -524,7 +524,7 @@ class _AssociationPropertyUnitDetailsState
                           Text(
                             "Property Score",
                             style: GoogleFonts.outfit(
-                              fontSize: 16.sp,
+                              fontSize: 17.sp,
                               fontWeight: FontWeight.w500,
                               color: const Color(0xFF101C16),
                               letterSpacing: -0.2,
@@ -534,7 +534,7 @@ class _AssociationPropertyUnitDetailsState
                           Text(
                             "Overall property performance based on maintenance, cleanliness, security and inspections",
                             style: GoogleFonts.outfit(
-                              fontSize: 13.sp,
+                              fontSize: 14.sp,
                               fontWeight: FontWeight.w500,
                               height: 1.1,
                               color: Color.fromRGBO(42, 41, 51, 0.7),
@@ -555,7 +555,7 @@ class _AssociationPropertyUnitDetailsState
                               Text(
                                 "Good Performance",
                                 style: GoogleFonts.outfit(
-                                  fontSize: 8.sp,
+                                  fontSize: 12.sp,
                                   fontWeight: FontWeight.w700,
                                   color: const Color(0xFF24B06A),
                                 ),
@@ -574,7 +574,7 @@ class _AssociationPropertyUnitDetailsState
                   Text(
                     "Recent Property Activity",
                     style: GoogleFonts.outfit(
-                      fontSize: 16.sp,
+                      fontSize: 17.sp,
                       fontWeight: FontWeight.w500,
                       color: Colors.black,
                       letterSpacing: -0.2,
@@ -584,7 +584,7 @@ class _AssociationPropertyUnitDetailsState
                   Text(
                     "View All",
                     style: GoogleFonts.outfit(
-                      fontSize: 13.sp,
+                      fontSize: 14.sp,
                       fontWeight: FontWeight.w500,
                       color: Color(0xFF000000),
                       letterSpacing: -0.2,
@@ -632,7 +632,7 @@ class _AssociationPropertyUnitDetailsState
               Text(
                 "Property Records",
                 style: GoogleFonts.outfit(
-                  fontSize: 16.sp,
+                  fontSize: 17.sp,
                   fontWeight: FontWeight.w500,
                   color: Colors.black,
                   letterSpacing: -0.2,
@@ -739,7 +739,7 @@ class _AssociationPropertyUnitDetailsState
                       Text(
                         "PROPERTY UNIT",
                         style: GoogleFonts.outfit(
-                          fontSize: 11.sp,
+                          fontSize: 12.sp,
                           fontWeight: FontWeight.w500,
                           color: Color(0xFFFFFFFF),
                           letterSpacing: -0.2,
@@ -759,7 +759,7 @@ class _AssociationPropertyUnitDetailsState
                       Text(
                         "Block A · Green Valley Residency · Jaipur",
                         style: GoogleFonts.outfit(
-                          fontSize: 13.sp,
+                          fontSize: 14.sp,
                           fontWeight: FontWeight.w500,
                           color: Color.fromRGBO(255, 255, 255, 0.6),
                           letterSpacing: -0.2,
@@ -780,7 +780,7 @@ class _AssociationPropertyUnitDetailsState
                   child: Text(
                     "Active",
                     style: GoogleFonts.outfit(
-                      fontSize: 13.sp,
+                      fontSize: 14.sp,
                       fontWeight: FontWeight.w500,
                       color: Color(0xFF24B06A),
                     ),
@@ -823,7 +823,7 @@ class _AssociationPropertyUnitDetailsState
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
             style: GoogleFonts.outfit(
-              fontSize: 16.sp,
+              fontSize: 17.sp,
               fontWeight: FontWeight.w500,
               color: Colors.black,
               letterSpacing: -0.2,
@@ -834,7 +834,7 @@ class _AssociationPropertyUnitDetailsState
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
             style: GoogleFonts.outfit(
-              fontSize: 13.sp,
+              fontSize: 14.sp,
               fontWeight: FontWeight.w400,
               color: Colors.black,
               letterSpacing: -0.2,
@@ -873,7 +873,7 @@ class _AssociationPropertyUnitDetailsState
               Text(
                 label,
                 style: GoogleFonts.outfit(
-                  fontSize: 13.sp,
+                  fontSize: 14.sp,
                   fontWeight: FontWeight.w500,
                   color: Color.fromRGBO(42, 41, 51, 0.7),
                   letterSpacing: -0.2,
@@ -885,7 +885,7 @@ class _AssociationPropertyUnitDetailsState
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
                 style: GoogleFonts.outfit(
-                  fontSize: 13.sp,
+                  fontSize: 14.sp,
                   fontWeight: FontWeight.w500,
                   color: Color(0xFF101C16),
                   letterSpacing: -0.2,
@@ -900,7 +900,7 @@ class _AssociationPropertyUnitDetailsState
             child: Text(
               action,
               style: GoogleFonts.outfit(
-                fontSize: 13.sp,
+                fontSize: 14.sp,
                 fontWeight: FontWeight.w700,
                 color: Color(0xFF2A2933),
                 letterSpacing: -0.2,
@@ -925,7 +925,7 @@ class _AssociationPropertyUnitDetailsState
         Text(
           title,
           style: GoogleFonts.outfit(
-            fontSize: 13.sp,
+            fontSize: 14.sp,
             fontWeight: FontWeight.w500,
             color: Color.fromRGBO(42, 41, 51, 0.7),
             letterSpacing: -0.2,
@@ -937,7 +937,7 @@ class _AssociationPropertyUnitDetailsState
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.outfit(
-            fontSize: 16.sp,
+            fontSize: 17.sp,
             fontWeight: FontWeight.w500,
             color: Color(0xFF101C16),
             letterSpacing: -0.2,
@@ -969,7 +969,7 @@ class _AssociationPropertyUnitDetailsState
             child: Text(
               icon,
               style: GoogleFonts.outfit(
-                fontSize: 16.sp,
+                fontSize: 17.sp,
                 fontWeight: FontWeight.w500,
                 color: Color(0xFF000000),
               ),
@@ -985,7 +985,7 @@ class _AssociationPropertyUnitDetailsState
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                   style: GoogleFonts.outfit(
-                    fontSize: 16.sp,
+                    fontSize: 17.sp,
                     fontWeight: FontWeight.w500,
                     color: Color(0xFF101C16),
                     letterSpacing: -0.2,
@@ -996,7 +996,7 @@ class _AssociationPropertyUnitDetailsState
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                   style: GoogleFonts.outfit(
-                    fontSize: 13.sp,
+                    fontSize: 14.sp,
                     fontWeight: FontWeight.w400,
                     height: 1.1,
                     color: Color.fromRGBO(42, 41, 51, 0.7),
@@ -1009,7 +1009,7 @@ class _AssociationPropertyUnitDetailsState
           Text(
             date,
             style: GoogleFonts.outfit(
-              fontSize: 13.sp,
+              fontSize: 14.sp,
               fontWeight: FontWeight.w700,
               color: const Color(0xFF2A2933),
             ),
@@ -1048,7 +1048,7 @@ class _AssociationPropertyUnitDetailsState
               child: Text(
                 icon,
                 style: GoogleFonts.outfit(
-                  fontSize: 14.sp,
+                  fontSize: 15.sp,
                   fontWeight: FontWeight.w700,
                   color: Color(0xFF000000),
                 ),
@@ -1058,7 +1058,7 @@ class _AssociationPropertyUnitDetailsState
             Text(
               title,
               style: GoogleFonts.outfit(
-                fontSize: 14.sp,
+                fontSize: 15.sp,
                 fontWeight: FontWeight.w700,
                 color: Color(0xFF000000),
                 letterSpacing: -0.2,
@@ -1068,7 +1068,7 @@ class _AssociationPropertyUnitDetailsState
             Text(
               description,
               style: GoogleFonts.outfit(
-                fontSize: 11.sp,
+                fontSize: 12.sp,
                 fontWeight: FontWeight.w500,
                 color: Color.fromRGBO(42, 41, 51, 0.7),
                 letterSpacing: -0.2,
@@ -1078,7 +1078,7 @@ class _AssociationPropertyUnitDetailsState
             Text(
               buttonText,
               style: GoogleFonts.outfit(
-                fontSize: 13.sp,
+                fontSize: 14.sp,
                 fontWeight: FontWeight.w500,
                 color: Color(0xFF101C16),
                 letterSpacing: -0.2,

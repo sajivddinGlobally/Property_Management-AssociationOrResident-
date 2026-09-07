@@ -71,7 +71,7 @@ class _ComplaintState extends State<Complaint> {
                   Text(
                     "Review and monitor complaints across the complex",
                     style: GoogleFonts.outfit(
-                      fontSize: 13.sp,
+                      fontSize: 14.sp,
                       fontWeight: FontWeight.w400,
                       color: Color.fromRGBO(42, 41, 51, 0.6),
                       letterSpacing: -0.24,
@@ -133,7 +133,7 @@ class _ComplaintState extends State<Complaint> {
                               maxLines: 1,
                               overflow: TextOverflow.ellipsis,
                               style: GoogleFonts.outfit(
-                                fontSize: 16.sp,
+                                fontSize: 17.sp,
                                 fontWeight: FontWeight.w500,
                                 color: const Color(0xFF000000),
                                 letterSpacing: -0.3,
@@ -146,7 +146,7 @@ class _ComplaintState extends State<Complaint> {
                               maxLines: 1,
                               overflow: TextOverflow.ellipsis,
                               style: GoogleFonts.outfit(
-                                fontSize: 13.sp,
+                                fontSize: 14.sp,
                                 fontWeight: FontWeight.w500,
                                 color: Color.fromRGBO(0, 0, 0, 0.6),
                                 letterSpacing: -0.3,
@@ -162,7 +162,7 @@ class _ComplaintState extends State<Complaint> {
                           Text(
                             "08",
                             style: GoogleFonts.outfit(
-                              fontSize: 16.sp,
+                              fontSize: 17.sp,
                               fontWeight: FontWeight.w500,
                               color: Color(0xFF000000),
                               letterSpacing: -0.2,
@@ -171,7 +171,7 @@ class _ComplaintState extends State<Complaint> {
                           Text(
                             "Open Complaints",
                             style: GoogleFonts.outfit(
-                              fontSize: 13.sp,
+                              fontSize: 14.sp,
                               fontWeight: FontWeight.w500,
                               color: Color(0xFF000000),
                               letterSpacing: -0.2,
@@ -287,7 +287,7 @@ class _ComplaintState extends State<Complaint> {
                         child: Text(
                           filters[index],
                           style: GoogleFonts.outfit(
-                            fontSize: 13.sp,
+                            fontSize: 14.sp,
                             fontWeight: FontWeight.w600,
                             color: isSelected
                                 ? Colors.white
@@ -310,7 +310,7 @@ class _ComplaintState extends State<Complaint> {
                   Text(
                     "Open Complaints",
                     style: GoogleFonts.outfit(
-                      fontSize: 16.sp,
+                      fontSize: 17.sp,
                       fontWeight: FontWeight.w500,
                       color: Color(0xFF000000),
                       letterSpacing: -0.2,
@@ -319,7 +319,7 @@ class _ComplaintState extends State<Complaint> {
                   Text(
                     "08 ACTIVE",
                     style: GoogleFonts.outfit(
-                      fontSize: 13.sp,
+                      fontSize: 14.sp,
                       fontWeight: FontWeight.w600,
                       color: Color(0xFF000000),
                       letterSpacing: -0.2,
@@ -377,7 +377,7 @@ class _ComplaintState extends State<Complaint> {
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.outfit(
-            fontSize: 16.sp,
+            fontSize: 17.sp,
             fontWeight: FontWeight.w500,
             color: const Color(0xFF000000),
             letterSpacing: -0.3,
@@ -390,7 +390,7 @@ class _ComplaintState extends State<Complaint> {
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.outfit(
-            fontSize: 12.sp,
+            fontSize: 13.sp,
             fontWeight: FontWeight.w500,
             color: Color.fromRGBO(42, 41, 51, 0.6),
             letterSpacing: -0.3,
@@ -475,7 +475,7 @@ class ServiceCard extends StatelessWidget {
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
                         style: GoogleFonts.outfit(
-                          fontSize: 16.sp,
+                          fontSize: 17.sp,
                           fontWeight: FontWeight.w500,
                           color: Color(0xFF000000),
                           height: 1.h,
@@ -488,7 +488,7 @@ class ServiceCard extends StatelessWidget {
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
                         style: GoogleFonts.outfit(
-                          fontSize: 12.sp,
+                          fontSize: 13.sp,
                           fontWeight: FontWeight.w500,
                           color: Color(0xFF000000),
                           height: 1.1,
@@ -514,7 +514,7 @@ class ServiceCard extends StatelessWidget {
                   child: Text(
                     'HIGH',
                     style: GoogleFonts.outfit(
-                      fontSize: 12.sp,
+                      fontSize: 13.sp,
                       fontWeight: FontWeight.w500,
                       color: const Color(0xFF000000),
                       letterSpacing: -0.2,
@@ -559,7 +559,7 @@ class ServiceCard extends StatelessWidget {
                 Text(
                   "In Progress",
                   style: GoogleFonts.outfit(
-                    fontSize: 13.sp,
+                    fontSize: 14.sp,
                     fontWeight: FontWeight.w700,
                     color: Color(0xFF1E5993),
                     height: 1.1,
@@ -574,7 +574,7 @@ class ServiceCard extends StatelessWidget {
                       Text(
                         "View Details",
                         style: GoogleFonts.outfit(
-                          fontSize: 13.sp,
+                          fontSize: 14.sp,
                           fontWeight: FontWeight.w700,
                           color: Color.fromRGBO(184, 134, 11, 0.9),
                           height: 1.1,
@@ -607,7 +607,7 @@ class ServiceCard extends StatelessWidget {
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.outfit(
-            fontSize: 13.sp,
+            fontSize: 14.sp,
             fontWeight: FontWeight.w500,
             color: Color.fromRGBO(42, 41, 51, 0.6),
             height: 1.1,
@@ -620,7 +620,7 @@ class ServiceCard extends StatelessWidget {
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.outfit(
-            fontSize: 16.sp,
+            fontSize: 17.sp,
             fontWeight: FontWeight.w500,
             color: Color(0xFF000000),
             height: 1.1,

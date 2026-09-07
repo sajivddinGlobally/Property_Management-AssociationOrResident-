@@ -108,7 +108,7 @@ class _AssociationForgotPasswordPageState
                   Text(
                     "No worries. Enter your registered email address or mobile number \nand we'll send you a secure reset code.",
                     style: GoogleFonts.outfit(
-                      fontSize: 13.sp,
+                      fontSize: 14.sp,
                       fontWeight: FontWeight.w500,
                       color: AppColors.heading,
                       letterSpacing: -0.39,
@@ -118,7 +118,7 @@ class _AssociationForgotPasswordPageState
                   Text(
                     "Email or Mobile Number",
                     style: GoogleFonts.outfit(
-                      fontSize: 13.sp,
+                      fontSize: 14.sp,
                       fontWeight: FontWeight.w500,
                       color: AppColors.heading,
                       letterSpacing: -0.39,
@@ -142,7 +142,7 @@ class _AssociationForgotPasswordPageState
 
                         hintText: "Enter Email or mobile number",
                         hintStyle: GoogleFonts.outfit(
-                          fontSize: 13.sp,
+                          fontSize: 14.sp,
                           fontWeight: FontWeight.w500,
                           color: Color.fromRGBO(16, 28, 22, 0.6),
                         ),
@@ -188,7 +188,7 @@ class _AssociationForgotPasswordPageState
                         "Send Reset OTP",
                         style: GoogleFonts.outfit(
                           fontWeight: FontWeight.w700,
-                          fontSize: 12.sp,
+                          fontSize: 13.sp,
                           color: Color(0xffFFFFFF),
                           letterSpacing: -0.24,
                         ),

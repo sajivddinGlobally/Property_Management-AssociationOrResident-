@@ -141,7 +141,7 @@ class _AssociationVerifyOtpPageState extends State<AssociationVerifyOtpPage> {
             Text(
               "We've sent a 6-digit verification code to",
               style: GoogleFonts.outfit(
-                fontSize: 13.sp,
+                fontSize: 14.sp,
                 fontWeight: FontWeight.w500,
                 color: AppColors.heading,
                 letterSpacing: -0.39,
@@ -150,7 +150,7 @@ class _AssociationVerifyOtpPageState extends State<AssociationVerifyOtpPage> {
             Text(
               "+91 98XXXXXX42",
               style: GoogleFonts.outfit(
-                fontSize: 13.sp,
+                fontSize: 14.sp,
                 fontWeight: FontWeight.w500,
                 color: AppColors.heading,
                 letterSpacing: -0.39,
@@ -160,7 +160,7 @@ class _AssociationVerifyOtpPageState extends State<AssociationVerifyOtpPage> {
             Text(
               "Enter OTP",
               style: GoogleFonts.outfit(
-                fontSize: 13.sp,
+                fontSize: 14.sp,
                 fontWeight: FontWeight.w500,
                 color: AppColors.heading,
                 letterSpacing: -0.39,
@@ -185,7 +185,7 @@ class _AssociationVerifyOtpPageState extends State<AssociationVerifyOtpPage> {
 
                   textStyle: GoogleFonts.inter(
                     color: const Color(0xff1B1E28),
-                    fontSize: 20.sp,
+                    fontSize: 18.sp,
                     fontWeight: FontWeight.w500,
                   ),
 
@@ -205,7 +205,7 @@ class _AssociationVerifyOtpPageState extends State<AssociationVerifyOtpPage> {
 
                   textStyle: GoogleFonts.inter(
                     color: const Color(0xff1B1E28),
-                    fontSize: 20.sp,
+                    fontSize: 18.sp,
                     fontWeight: FontWeight.w500,
                   ),
 
@@ -222,7 +222,7 @@ class _AssociationVerifyOtpPageState extends State<AssociationVerifyOtpPage> {
 
                   textStyle: GoogleFonts.inter(
                     color: const Color(0xff1B1E28),
-                    fontSize: 20.sp,
+                    fontSize: 18.sp,
                     fontWeight: FontWeight.w500,
                   ),
 
@@ -239,7 +239,7 @@ class _AssociationVerifyOtpPageState extends State<AssociationVerifyOtpPage> {
             Text(
               "Resend code in 00:${seconds.toString().padLeft(2, '0')}",
               style: GoogleFonts.outfit(
-                fontSize: 13.sp,
+                fontSize: 14.sp,
                 fontWeight: FontWeight.w500,
                 color: const Color(0xff101C16),
               ),
@@ -255,7 +255,7 @@ class _AssociationVerifyOtpPageState extends State<AssociationVerifyOtpPage> {
               child: Text(
                 "Didn't receive the code? Resend OTP",
                 style: GoogleFonts.outfit(
-                  fontSize: 13.sp,
+                  fontSize: 14.sp,
                   fontWeight: FontWeight.w500,
                   color: seconds == 0
                       ? const Color(0xff101C16)
@@ -281,7 +281,7 @@ class _AssociationVerifyOtpPageState extends State<AssociationVerifyOtpPage> {
                     "Verify",
                     style: GoogleFonts.outfit(
                       fontWeight: FontWeight.w700,
-                      fontSize: 12.sp,
+                      fontSize: 13.sp,
                       color: Color(0xffFFFFFF),
                       letterSpacing: -0.24,
                     ),

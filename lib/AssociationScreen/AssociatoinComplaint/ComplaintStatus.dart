@@ -89,7 +89,7 @@ class _ComplaintStatusState extends State<ComplaintStatus> {
                   Text(
                     "View complete complaint information",
                     style: GoogleFonts.outfit(
-                      fontSize: 13.sp,
+                      fontSize: 14.sp,
                       fontWeight: FontWeight.w400,
                       color: Color.fromRGBO(42, 41, 51, 0.6),
                       letterSpacing: -0.24,
@@ -126,7 +126,7 @@ class _ComplaintStatusState extends State<ComplaintStatus> {
                           maxLines: 1,
                           overflow: TextOverflow.ellipsis,
                           style: GoogleFonts.outfit(
-                            fontSize: 16.sp,
+                            fontSize: 17.sp,
                             fontWeight: FontWeight.w500,
                             color: const Color(0xFF000000),
                             letterSpacing: -0.3,
@@ -148,7 +148,7 @@ class _ComplaintStatusState extends State<ComplaintStatus> {
                           child: Text(
                             "In Progress",
                             style: GoogleFonts.outfit(
-                              fontSize: 12.sp,
+                              fontSize: 13.sp,
                               fontWeight: FontWeight.w500,
                               color: const Color(0xFFB8860B),
                               letterSpacing: -0.3,
@@ -164,7 +164,7 @@ class _ComplaintStatusState extends State<ComplaintStatus> {
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                       style: GoogleFonts.outfit(
-                        fontSize: 16.sp,
+                        fontSize: 17.sp,
                         fontWeight: FontWeight.w500,
                         color: const Color(0xFF000000),
                         letterSpacing: -0.3,
@@ -177,7 +177,7 @@ class _ComplaintStatusState extends State<ComplaintStatus> {
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                       style: GoogleFonts.outfit(
-                        fontSize: 13.sp,
+                        fontSize: 14.sp,
                         fontWeight: FontWeight.w500,
                         color: const Color(0xFF000000),
                         letterSpacing: -0.3,
@@ -225,7 +225,7 @@ class _ComplaintStatusState extends State<ComplaintStatus> {
                     Text(
                       "CURRENT STATUS",
                       style: GoogleFonts.outfit(
-                        fontSize: 11.sp,
+                        fontSize: 12.sp,
                         fontWeight: FontWeight.w500,
                         color: Color(0xFF000000),
                         letterSpacing: -0.2,
@@ -235,7 +235,7 @@ class _ComplaintStatusState extends State<ComplaintStatus> {
                     Text(
                       "In Progress",
                       style: GoogleFonts.outfit(
-                        fontSize: 16.sp,
+                        fontSize: 17.sp,
                         fontWeight: FontWeight.w500,
                         color: Color(0xFF000000),
                         letterSpacing: -0.2,
@@ -245,7 +245,7 @@ class _ComplaintStatusState extends State<ComplaintStatus> {
                     Text(
                       "Complaint has been assigned and is currently being worked on by the concerned service team.",
                       style: GoogleFonts.outfit(
-                        fontSize: 11.sp,
+                        fontSize: 12.sp,
                         fontWeight: FontWeight.w500,
                         color: Color(0xFF000000),
                         letterSpacing: -0.2,
@@ -261,7 +261,7 @@ class _ComplaintStatusState extends State<ComplaintStatus> {
                   Text(
                     "Status Timeline",
                     style: GoogleFonts.outfit(
-                      fontSize: 16.sp,
+                      fontSize: 17.sp,
                       fontWeight: FontWeight.w500,
                       color: Color(0xFF000000),
                       letterSpacing: -0.2,
@@ -270,7 +270,7 @@ class _ComplaintStatusState extends State<ComplaintStatus> {
                   Text(
                     "4 STAGES",
                     style: GoogleFonts.outfit(
-                      fontSize: 14.sp,
+                      fontSize: 15.sp,
                       fontWeight: FontWeight.w600,
                       color: Color(0xFF000000),
                       letterSpacing: -0.2,
@@ -303,7 +303,7 @@ class _ComplaintStatusState extends State<ComplaintStatus> {
               Text(
                 "Complex Details",
                 style: GoogleFonts.outfit(
-                  fontSize: 16.sp,
+                  fontSize: 17.sp,
                   fontWeight: FontWeight.w500,
                   color: Color(0xFF000000),
                   letterSpacing: -0.2,
@@ -342,7 +342,7 @@ class _ComplaintStatusState extends State<ComplaintStatus> {
               Text(
                 "Latest Update",
                 style: GoogleFonts.outfit(
-                  fontSize: 16.sp,
+                  fontSize: 17.sp,
                   fontWeight: FontWeight.w500,
                   color: Color(0xFF000000),
                   letterSpacing: -0.2,
@@ -396,7 +396,7 @@ class _ComplaintStatusState extends State<ComplaintStatus> {
                               Text(
                                 "Current Resolution Update",
                                 style: GoogleFonts.outfit(
-                                  fontSize: 14.sp,
+                                  fontSize: 15.sp,
                                   fontWeight: FontWeight.w600,
                                   color: Colors.black,
                                   height: 1,
@@ -407,7 +407,7 @@ class _ComplaintStatusState extends State<ComplaintStatus> {
                               Text(
                                 "The complaint has been assigned to the maintenance team for necessary action.",
                                 style: GoogleFonts.outfit(
-                                  fontSize: 11.sp,
+                                  fontSize: 12.sp,
                                   fontWeight: FontWeight.w500,
                                   color: Colors.black,
                                   height: 1.25,
@@ -439,7 +439,7 @@ class _ComplaintStatusState extends State<ComplaintStatus> {
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.outfit(
-            fontSize: 12.sp,
+            fontSize: 13.sp,
             fontWeight: FontWeight.w500,
             color: Color.fromRGBO(42, 41, 51, 0.6),
             letterSpacing: -0.3,
@@ -452,7 +452,7 @@ class _ComplaintStatusState extends State<ComplaintStatus> {
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.outfit(
-            fontSize: 16.sp,
+            fontSize: 17.sp,
             fontWeight: FontWeight.w500,
             color: const Color(0xFF000000),
             letterSpacing: -0.3,
@@ -494,7 +494,7 @@ class _ComplaintStatusState extends State<ComplaintStatus> {
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                     style: GoogleFonts.outfit(
-                      fontSize: 12.sp,
+                      fontSize: 13.sp,
                       fontWeight: FontWeight.w500,
                       color: Color.fromRGBO(0, 0, 0, 0.7),
                       letterSpacing: -0.2,
@@ -507,7 +507,7 @@ class _ComplaintStatusState extends State<ComplaintStatus> {
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                     style: GoogleFonts.outfit(
-                      fontSize: 16.sp,
+                      fontSize: 17.sp,
                       fontWeight: FontWeight.w500,
                       color: Color(0xFF000000),
                       letterSpacing: -0.2,
@@ -584,7 +584,7 @@ class _TimelineItem extends StatelessWidget {
                         Text(
                           title,
                           style: GoogleFonts.outfit(
-                            fontSize: 16.sp,
+                            fontSize: 17.sp,
                             fontWeight: FontWeight.w500,
                             color: Color(0xFF000000),
                             height: 1.05,
@@ -595,7 +595,7 @@ class _TimelineItem extends StatelessWidget {
                         Text(
                           description,
                           style: GoogleFonts.outfit(
-                            fontSize: 12.sp,
+                            fontSize: 13.sp,
                             fontWeight: FontWeight.w500,
                             color: Color.fromRGBO(0, 0, 0, 0.6),
                             height: 1.2,
@@ -612,7 +612,7 @@ class _TimelineItem extends StatelessWidget {
                       child: Text(
                         date,
                         style: GoogleFonts.outfit(
-                          fontSize: 12.sp,
+                          fontSize: 13.sp,
                           fontWeight: FontWeight.w500,
                           color: const Color(0xFF7C7C7C),
                           letterSpacing: -0.2,

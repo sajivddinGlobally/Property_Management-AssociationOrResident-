@@ -81,7 +81,7 @@ class _MantenanceServiceState extends State<MantenanceService> {
                   Text(
                     "Association Operations",
                     style: GoogleFonts.outfit(
-                      fontSize: 13.sp,
+                      fontSize: 14.sp,
                       fontWeight: FontWeight.w400,
                       color: Color.fromRGBO(42, 41, 51, 0.6),
                       letterSpacing: -0.24,
@@ -116,7 +116,7 @@ class _MantenanceServiceState extends State<MantenanceService> {
                           child: Text(
                             "PROPERTY OPERATIONS",
                             style: GoogleFonts.outfit(
-                              fontSize: 13.sp,
+                              fontSize: 14.sp,
                               fontWeight: FontWeight.w500,
                               color: Color(0xFF000000),
                               letterSpacing: -0.2,
@@ -138,7 +138,7 @@ class _MantenanceServiceState extends State<MantenanceService> {
                           child: Text(
                             "OVERVIEW",
                             style: GoogleFonts.outfit(
-                              fontSize: 12.sp,
+                              fontSize: 13.sp,
                               fontWeight: FontWeight.w500,
                               color: Color(0xFFB8860B),
                               letterSpacing: -0.2,
@@ -152,7 +152,7 @@ class _MantenanceServiceState extends State<MantenanceService> {
                     Text(
                       "Keep Everything Running Smoothly.",
                       style: GoogleFonts.outfit(
-                        fontSize: 16.sp,
+                        fontSize: 17.sp,
                         fontWeight: FontWeight.w500,
                         color: Color(0xFF000000),
                         letterSpacing: -0.2,
@@ -162,7 +162,7 @@ class _MantenanceServiceState extends State<MantenanceService> {
                     Text(
                       "Monitor maintenance activities, service operations and ongoing work across the complex.",
                       style: GoogleFonts.outfit(
-                        fontSize: 13.sp,
+                        fontSize: 14.sp,
                         fontWeight: FontWeight.w500,
                         color: Color.fromRGBO(0, 0, 0, 0.7),
                         height: 1.2.h,
@@ -212,7 +212,7 @@ class _MantenanceServiceState extends State<MantenanceService> {
                   Text(
                     "Maintenance",
                     style: GoogleFonts.outfit(
-                      fontSize: 16.sp,
+                      fontSize: 17.sp,
                       fontWeight: FontWeight.w500,
                       color: Colors.black,
                       letterSpacing: -0.2,
@@ -221,7 +221,7 @@ class _MantenanceServiceState extends State<MantenanceService> {
                   Text(
                     "Manage & Track",
                     style: GoogleFonts.outfit(
-                      fontSize: 13.sp,
+                      fontSize: 14.sp,
                       fontWeight: FontWeight.w500,
                       color: Color.fromRGBO(0, 0, 0, 0.7),
                       letterSpacing: -0.2,
@@ -263,7 +263,7 @@ class _MantenanceServiceState extends State<MantenanceService> {
                   Text(
                     "Services",
                     style: GoogleFonts.outfit(
-                      fontSize: 16.sp,
+                      fontSize: 17.sp,
                       fontWeight: FontWeight.w500,
                       color: Colors.black,
                       letterSpacing: -0.2,
@@ -272,7 +272,7 @@ class _MantenanceServiceState extends State<MantenanceService> {
                   Text(
                     "Complex Services",
                     style: GoogleFonts.outfit(
-                      fontSize: 13.sp,
+                      fontSize: 14.sp,
                       fontWeight: FontWeight.w500,
                       color: Color.fromRGBO(0, 0, 0, 0.7),
                       letterSpacing: -0.2,
@@ -306,7 +306,7 @@ class _MantenanceServiceState extends State<MantenanceService> {
                   Text(
                     'Quick Access',
                     style: GoogleFonts.outfit(
-                      fontSize: 16.sp,
+                      fontSize: 17.sp,
                       fontWeight: FontWeight.w500,
                       color: Colors.black,
                       height: 1,
@@ -316,7 +316,7 @@ class _MantenanceServiceState extends State<MantenanceService> {
                   Text(
                     'Shortcuts',
                     style: GoogleFonts.outfit(
-                      fontSize: 14.sp,
+                      fontSize: 15.sp,
                       fontWeight: FontWeight.w400,
                       color: Color.fromRGBO(0, 0, 0, 0.7),
                       height: 1,
@@ -364,7 +364,7 @@ class _MantenanceServiceState extends State<MantenanceService> {
                         Text(
                           'Service Snapshot',
                           style: GoogleFonts.outfit(
-                            fontSize: 16.sp,
+                            fontSize: 17.sp,
                             fontWeight: FontWeight.w500,
                             color: Colors.white,
                             height: 1,
@@ -381,7 +381,7 @@ class _MantenanceServiceState extends State<MantenanceService> {
                               Text(
                                 'VIEW ALL',
                                 style: GoogleFonts.outfit(
-                                  fontSize: 13.sp,
+                                  fontSize: 14.sp,
                                   fontWeight: FontWeight.w500,
                                   color: Colors.white,
                                   letterSpacing: -0.2,
@@ -442,7 +442,7 @@ class _MantenanceServiceState extends State<MantenanceService> {
         Text(
           label,
           style: GoogleFonts.outfit(
-            fontSize: 11.sp,
+            fontSize: 12.sp,
             fontWeight: FontWeight.w500,
             color: Color.fromRGBO(0, 0, 0, 0.7),
             letterSpacing: -0.2,
@@ -452,7 +452,7 @@ class _MantenanceServiceState extends State<MantenanceService> {
         Text(
           value,
           style: GoogleFonts.outfit(
-            fontSize: 16.sp,
+            fontSize: 17.sp,
             fontWeight: FontWeight.w500,
             color: Color(0xFF000000),
           ),
@@ -461,7 +461,7 @@ class _MantenanceServiceState extends State<MantenanceService> {
         Text(
           status,
           style: GoogleFonts.outfit(
-            fontSize: 13.sp,
+            fontSize: 14.sp,
             fontWeight: FontWeight.w500,
             color: Color(0xFFB8860B),
             height: 1,
@@ -505,7 +505,7 @@ class _MantenanceServiceState extends State<MantenanceService> {
               maxLines: 1,
               overflow: TextOverflow.ellipsis,
               style: GoogleFonts.outfit(
-                fontSize: 16.sp,
+                fontSize: 17.sp,
                 fontWeight: FontWeight.w500,
                 color: Colors.black,
                 height: 1,
@@ -518,7 +518,7 @@ class _MantenanceServiceState extends State<MantenanceService> {
               maxLines: 2,
               overflow: TextOverflow.ellipsis,
               style: GoogleFonts.outfit(
-                fontSize: 11.sp,
+                fontSize: 12.sp,
                 fontWeight: FontWeight.w500,
                 color: Color.fromRGBO(0, 0, 0, 0.6),
                 height: 1.15,
@@ -560,7 +560,7 @@ class _MantenanceServiceState extends State<MantenanceService> {
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
                 style: GoogleFonts.outfit(
-                  fontSize: 16.sp,
+                  fontSize: 17.sp,
                   fontWeight: FontWeight.w500,
                   color: Colors.white,
                   height: 1,
@@ -573,7 +573,7 @@ class _MantenanceServiceState extends State<MantenanceService> {
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
                 style: GoogleFonts.outfit(
-                  fontSize: 16.sp,
+                  fontSize: 17.sp,
                   fontWeight: FontWeight.w500,
                   color: Color.fromRGBO(255, 255, 255, 0.7),
                   height: 1,
@@ -588,7 +588,7 @@ class _MantenanceServiceState extends State<MantenanceService> {
         Text(
           status,
           style: GoogleFonts.outfit(
-            fontSize: 16.sp,
+            fontSize: 17.sp,
             fontWeight: FontWeight.w500,
             color: Color(0xFF000000),
             height: 1,
@@ -658,7 +658,7 @@ class ServiceCard extends StatelessWidget {
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
                         style: GoogleFonts.outfit(
-                          fontSize: 16.sp,
+                          fontSize: 17.sp,
                           fontWeight: FontWeight.w500,
                           color: Colors.black,
                           height: 1.1,
@@ -671,7 +671,7 @@ class ServiceCard extends StatelessWidget {
                         maxLines: 2,
                         overflow: TextOverflow.ellipsis,
                         style: GoogleFonts.outfit(
-                          fontSize: 12.sp,
+                          fontSize: 13.sp,
                           fontWeight: FontWeight.w400,
                           color: Colors.black,
                           height: 1.15,
@@ -714,7 +714,7 @@ class ServiceCard extends StatelessWidget {
                   child: Text(
                     bottomLeft,
                     style: GoogleFonts.outfit(
-                      fontSize: 13.sp,
+                      fontSize: 14.sp,
                       fontWeight: FontWeight.w500,
                       color: Colors.black,
                       letterSpacing: -0.2,
@@ -724,7 +724,7 @@ class ServiceCard extends StatelessWidget {
                 Text(
                   bottomRight,
                   style: GoogleFonts.outfit(
-                    fontSize: 12.sp,
+                    fontSize: 13.sp,
                     fontWeight: FontWeight.w700,
                     color: Colors.black,
                     letterSpacing: -0.2,

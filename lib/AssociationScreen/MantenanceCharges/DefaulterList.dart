@@ -67,7 +67,7 @@ class _DefaulterListState extends State<DefaulterList> {
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                     style: GoogleFonts.outfit(
-                      fontSize: 13.sp,
+                      fontSize: 14.sp,
                       fontWeight: FontWeight.w500,
                       color: const Color(0xFF2A2933),
                       letterSpacing: -0.2,
@@ -103,7 +103,7 @@ class _DefaulterListState extends State<DefaulterList> {
                       Text(
                         "OVERDUE MAINTENANCE",
                         style: GoogleFonts.outfit(
-                          fontSize: 13.sp,
+                          fontSize: 14.sp,
                           fontWeight: FontWeight.w500,
                           color: Colors.black,
                           letterSpacing: -0.2,
@@ -112,7 +112,7 @@ class _DefaulterListState extends State<DefaulterList> {
                       Text(
                         "AUGUST 2026",
                         style: GoogleFonts.outfit(
-                          fontSize: 13.sp,
+                          fontSize: 14.sp,
                           fontWeight: FontWeight.w700,
                           color: const Color(0xFF24B06A),
                           letterSpacing: -0.2,
@@ -144,7 +144,7 @@ class _DefaulterListState extends State<DefaulterList> {
                             Text(
                               "Defaulters",
                               style: GoogleFonts.outfit(
-                                fontSize: 16.sp,
+                                fontSize: 17.sp,
                                 fontWeight: FontWeight.w500,
                                 color: Colors.black,
                                 height: 1.05,
@@ -155,7 +155,7 @@ class _DefaulterListState extends State<DefaulterList> {
                             Text(
                               "Units with overdue maintenance charges",
                               style: GoogleFonts.outfit(
-                                fontSize: 12.sp,
+                                fontSize: 13.sp,
                                 fontWeight: FontWeight.w400,
                                 color: const Color(0xFF4A4A4A),
                                 height: 1.05,
@@ -222,7 +222,7 @@ class _DefaulterListState extends State<DefaulterList> {
                 Text(
                   "Defaulters",
                   style: GoogleFonts.outfit(
-                    fontSize: 16.sp,
+                    fontSize: 17.sp,
                     fontWeight: FontWeight.w500,
                     color: Colors.black,
                     letterSpacing: -0.2,
@@ -231,7 +231,7 @@ class _DefaulterListState extends State<DefaulterList> {
                 Text(
                   "11 units",
                   style: GoogleFonts.outfit(
-                    fontSize: 12.sp,
+                    fontSize: 13.sp,
                     fontWeight: FontWeight.w400,
                     color: const Color(0xFF999999),
                   ),
@@ -256,14 +256,14 @@ class _DefaulterListState extends State<DefaulterList> {
                   Expanded(
                     child: TextField(
                       style: GoogleFonts.outfit(
-                        fontSize: 13.sp,
+                        fontSize: 14.sp,
                         fontWeight: FontWeight.w400,
                         color: Colors.black,
                       ),
                       decoration: InputDecoration(
                         hintText: "Search service or provider..",
                         hintStyle: GoogleFonts.outfit(
-                          fontSize: 13.sp,
+                          fontSize: 14.sp,
                           fontWeight: FontWeight.w400,
                           color: const Color(0xFF666666),
                         ),
@@ -355,7 +355,7 @@ class _DefaulterListState extends State<DefaulterList> {
         Text(
           label,
           style: GoogleFonts.outfit(
-            fontSize: 11.sp,
+            fontSize: 12.sp,
             fontWeight: FontWeight.w500,
             color: const Color(0xFF999999),
             letterSpacing: -0.2,
@@ -365,7 +365,7 @@ class _DefaulterListState extends State<DefaulterList> {
         Text(
           value,
           style: GoogleFonts.outfit(
-            fontSize: 16.sp,
+            fontSize: 17.sp,
             fontWeight: FontWeight.w500,
             color: Colors.black,
             letterSpacing: -0.2,
@@ -375,7 +375,7 @@ class _DefaulterListState extends State<DefaulterList> {
         Text(
           subValue,
           style: GoogleFonts.outfit(
-            fontSize: 11.sp,
+            fontSize: 12.sp,
             fontWeight: FontWeight.w400,
             color: subValueColor,
             letterSpacing: -0.2,
@@ -398,7 +398,7 @@ class _DefaulterListState extends State<DefaulterList> {
           Text(
             title,
             style: GoogleFonts.outfit(
-              fontSize: 10.sp,
+              fontSize: 12.sp,
               fontWeight: FontWeight.w400,
               color: const Color(0xFF666666),
               letterSpacing: -0.2,
@@ -408,7 +408,7 @@ class _DefaulterListState extends State<DefaulterList> {
           Text(
             amount,
             style: GoogleFonts.outfit(
-              fontSize: 16.sp,
+              fontSize: 17.sp,
               fontWeight: FontWeight.w500,
               color: Colors.black,
             ),
@@ -417,7 +417,7 @@ class _DefaulterListState extends State<DefaulterList> {
           Text(
             subtitle,
             style: GoogleFonts.outfit(
-              fontSize: 10.sp,
+              fontSize: 12.sp,
               fontWeight: FontWeight.w400,
               color: const Color(0xFF666666),
             ),
@@ -448,7 +448,7 @@ class _DefaulterListState extends State<DefaulterList> {
         child: Text(
           label,
           style: GoogleFonts.outfit(
-            fontSize: 13.sp,
+            fontSize: 14.sp,
             fontWeight: FontWeight.w500,
             color: isSelected ? Colors.white : Colors.black,
             letterSpacing: -0.2,
@@ -509,7 +509,7 @@ class _DefaulterListState extends State<DefaulterList> {
                   Text(
                     title,
                     style: GoogleFonts.outfit(
-                      fontSize: 16.sp,
+                      fontSize: 17.sp,
                       fontWeight: FontWeight.w500,
                       color: Colors.black,
                       letterSpacing: -0.2,
@@ -518,7 +518,7 @@ class _DefaulterListState extends State<DefaulterList> {
                   Text(
                     subtitle,
                     style: GoogleFonts.outfit(
-                      fontSize: 11.sp,
+                      fontSize: 12.sp,
                       fontWeight: FontWeight.w400,
                       color: const Color(0xFF666666),
                       letterSpacing: -0.2,
@@ -533,7 +533,7 @@ class _DefaulterListState extends State<DefaulterList> {
                 Text(
                   amount,
                   style: GoogleFonts.outfit(
-                    fontSize: 13.sp,
+                    fontSize: 14.sp,
                     fontWeight: FontWeight.w500,
                     color: Colors.black,
                   ),
@@ -542,7 +542,7 @@ class _DefaulterListState extends State<DefaulterList> {
                 Text(
                   "OVERDUE",
                   style: GoogleFonts.outfit(
-                    fontSize: 9.sp,
+                    fontSize: 12.sp,
                     fontWeight: FontWeight.w400,
                     color: const Color(0xFF666666),
                     letterSpacing: -0.1,

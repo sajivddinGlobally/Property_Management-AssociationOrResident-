@@ -76,7 +76,7 @@ class _PendingMantenaceServiceState extends State<PendingMantenaceService> {
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
                         style: GoogleFonts.outfit(
-                          fontSize: 13.sp,
+                          fontSize: 14.sp,
                           fontWeight: FontWeight.w500,
                           color: Color(0xFF2A2933),
                           letterSpacing: -0.2,
@@ -100,7 +100,7 @@ class _PendingMantenaceServiceState extends State<PendingMantenaceService> {
               child: Text(
                 "Maintenance Overview",
                 style: GoogleFonts.outfit(
-                  fontSize: 16.sp,
+                  fontSize: 17.sp,
                   fontWeight: FontWeight.w500,
                   color: Colors.black,
                   letterSpacing: -0.2,
@@ -112,7 +112,7 @@ class _PendingMantenaceServiceState extends State<PendingMantenaceService> {
               child: Text(
                 "Review and track maintenance requests across the complex.",
                 style: GoogleFonts.outfit(
-                  fontSize: 14.sp,
+                  fontSize: 15.sp,
                   fontWeight: FontWeight.w500,
                   color: Color(0xFF000000),
                   letterSpacing: -0.2,
@@ -137,7 +137,7 @@ class _PendingMantenaceServiceState extends State<PendingMantenaceService> {
                       Text(
                         "PENDING MAINTENANCE",
                         style: GoogleFonts.outfit(
-                          fontSize: 14.sp,
+                          fontSize: 15.sp,
                           fontWeight: FontWeight.w500,
                           color: Color(0xFF000000),
                           letterSpacing: -0.2,
@@ -146,7 +146,7 @@ class _PendingMantenaceServiceState extends State<PendingMantenaceService> {
                       Text(
                         "Needs Attention",
                         style: GoogleFonts.outfit(
-                          fontSize: 14.sp,
+                          fontSize: 15.sp,
                           fontWeight: FontWeight.w500,
                           color: Color.fromRGBO(184, 134, 11, 0.9),
                           letterSpacing: -0.2,
@@ -160,7 +160,7 @@ class _PendingMantenaceServiceState extends State<PendingMantenaceService> {
                       Text(
                         "12",
                         style: GoogleFonts.outfit(
-                          fontSize: 16.sp,
+                          fontSize: 17.sp,
                           fontWeight: FontWeight.w500,
                           color: Color(0xFF000000),
                           letterSpacing: -0.2,
@@ -173,7 +173,7 @@ class _PendingMantenaceServiceState extends State<PendingMantenaceService> {
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
                         style: GoogleFonts.outfit(
-                          fontSize: 12.sp,
+                          fontSize: 13.sp,
                           fontWeight: FontWeight.w500,
                           color: Color.fromRGBO(42, 41, 51, 0.7),
                           height: 1.h,
@@ -232,7 +232,7 @@ class _PendingMantenaceServiceState extends State<PendingMantenaceService> {
                       decoration: InputDecoration(
                         hintText: "Search service or provider...",
                         hintStyle: GoogleFonts.outfit(
-                          fontSize: 16.sp,
+                          fontSize: 17.sp,
                           fontWeight: FontWeight.w500,
                           color: const Color(0xff8B8D8B),
                           letterSpacing: -0.3,
@@ -285,7 +285,7 @@ class _PendingMantenaceServiceState extends State<PendingMantenaceService> {
                         child: Text(
                           filters[index],
                           style: GoogleFonts.outfit(
-                            fontSize: 13.sp,
+                            fontSize: 14.sp,
                             fontWeight: FontWeight.w500,
                             color: isSelected
                                 ? Colors.white
@@ -347,7 +347,7 @@ class _PendingMantenaceServiceState extends State<PendingMantenaceService> {
               child: Text(
                 "Maintenance records can include category, priority, assigned person/vendor, expected and actual completion, status, cost/reference information, supporting documents and before/after images.",
                 style: GoogleFonts.outfit(
-                  fontSize: 10.sp,
+                  fontSize: 12.sp,
                   fontWeight: FontWeight.w500,
                   color: Color.fromRGBO(184, 134, 11, 0.9),
                   letterSpacing: -0.1,
@@ -368,7 +368,7 @@ class _PendingMantenaceServiceState extends State<PendingMantenaceService> {
         Text(
           label,
           style: GoogleFonts.outfit(
-            fontSize: 13.sp,
+            fontSize: 14.sp,
             fontWeight: FontWeight.w500,
             color: Color.fromRGBO(0, 0, 0, 0.7),
             letterSpacing: -0.2,
@@ -378,7 +378,7 @@ class _PendingMantenaceServiceState extends State<PendingMantenaceService> {
         Text(
           value,
           style: GoogleFonts.outfit(
-            fontSize: 16.sp,
+            fontSize: 17.sp,
             fontWeight: FontWeight.w500,
             color: Color(0xFF000000),
           ),
@@ -460,7 +460,7 @@ class ServiceCard extends StatelessWidget {
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                       style: GoogleFonts.outfit(
-                        fontSize: 16.sp,
+                        fontSize: 17.sp,
                         fontWeight: FontWeight.w500,
                         color: Colors.black,
                         height: 1.05,
@@ -473,7 +473,7 @@ class ServiceCard extends StatelessWidget {
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                       style: GoogleFonts.outfit(
-                        fontSize: 12.sp,
+                        fontSize: 13.sp,
                         fontWeight: FontWeight.w400,
                         color: const Color(0xFF4A4A4A),
                         height: 1.05,
@@ -501,7 +501,7 @@ class ServiceCard extends StatelessWidget {
               Text(
                 'Property / Unit',
                 style: GoogleFonts.outfit(
-                  fontSize: 10.5.sp,
+                  fontSize: 12.sp,
                   fontWeight: FontWeight.w400,
                   color: const Color(0xFF222222),
                 ),
@@ -513,7 +513,7 @@ class ServiceCard extends StatelessWidget {
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                   style: GoogleFonts.outfit(
-                    fontSize: 10.5.sp,
+                    fontSize: 12.sp,
                     fontWeight: FontWeight.w500,
                     color: Colors.black,
                   ),
@@ -523,7 +523,7 @@ class ServiceCard extends StatelessWidget {
               Text(
                 raisedDate,
                 style: GoogleFonts.outfit(
-                  fontSize: 9.5.sp,
+                  fontSize: 12.sp,
                   fontWeight: FontWeight.w400,
                   color: Colors.black,
                 ),
@@ -604,7 +604,7 @@ class ServiceCard extends StatelessWidget {
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                       style: GoogleFonts.outfit(
-                        fontSize: 10.sp,
+                        fontSize: 12.sp,
                         fontWeight: FontWeight.w400,
                         color: const Color(0xFF333333),
                         height: 1,
@@ -616,7 +616,7 @@ class ServiceCard extends StatelessWidget {
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                       style: GoogleFonts.outfit(
-                        fontSize: 13.sp,
+                        fontSize: 14.sp,
                         fontWeight: FontWeight.w500,
                         color: Colors.black,
                         height: 1,
@@ -641,7 +641,7 @@ class ServiceCard extends StatelessWidget {
                     child: Text(
                       'View Details →',
                       style: GoogleFonts.outfit(
-                        fontSize: 9.5.sp,
+                        fontSize: 12.sp,
                         fontWeight: FontWeight.w500,
                         color: Colors.black,
                         letterSpacing: -0.15,
@@ -683,7 +683,7 @@ class _InfoItem extends StatelessWidget {
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.outfit(
-            fontSize: 11.sp,
+            fontSize: 12.sp,
             fontWeight: FontWeight.w400,
             color: const Color.fromRGBO(42, 41, 51, 0.60),
             height: 1,
@@ -698,7 +698,7 @@ class _InfoItem extends StatelessWidget {
           maxLines: 1,
           overflow: TextOverflow.ellipsis,
           style: GoogleFonts.outfit(
-            fontSize: 16.sp,
+            fontSize: 17.sp,
             fontWeight: FontWeight.w500,
             color: valueColor ?? Colors.black,
             height: 1,
@@ -745,7 +745,7 @@ class _PriorityBadge extends StatelessWidget {
       child: Text(
         priority.toUpperCase(),
         style: GoogleFonts.outfit(
-          fontSize: 12.sp,
+          fontSize: 13.sp,
           fontWeight: FontWeight.w400,
           color: borderColor,
           height: 1,
