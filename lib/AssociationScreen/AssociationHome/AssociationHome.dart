@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:property_association_or_resident/AssociationScreen/AssociationAIProperty/AIPropertyAssistantScreen.dart';
+import 'package:property_association_or_resident/AssociationScreen/AssociationCalender/AssociationCalender.dart';
 import 'package:property_association_or_resident/AssociationScreen/AssociationDocument/AssociationDocument.dart';
 import 'package:property_association_or_resident/AssociationScreen/AssociationHome/AssociationComplexInfo.dart';
 import 'package:property_association_or_resident/AssociationScreen/AssociationNotification/Notificaion.dart';
@@ -298,7 +299,14 @@ class _AssociationHomeState extends State<AssociationHome> {
                     icon: Icons.calendar_month_outlined,
                     title: "Association",
                     subtitle: "Calendar",
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        CupertinoPageRoute(
+                          builder: (context) => Associationcalender(),
+                        ),
+                      );
+                    },
                   ),
                   _quickAction(
                     icon: Icons.chat_bubble_outline,
