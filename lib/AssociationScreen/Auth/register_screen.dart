@@ -4,6 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:property_association_or_resident/AssociationScreen/Auth/AssociationLogin.dart';
 import 'package:property_association_or_resident/Core/Constant/appColor.dart';
+import 'package:property_association_or_resident/ResidentScreen/ResidentLoginScreen.dart';
 
 class RegisterScreen extends StatefulWidget {
   const RegisterScreen({super.key});
@@ -404,14 +405,183 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       ],
                     ),
                   )
-                : Center(child: Text("Comming Soon.......")),
+                : Container(
+                    margin: EdgeInsets.symmetric(horizontal: 10.w),
+                    padding: EdgeInsets.fromLTRB(14.w, 14.h, 14.w, 16.h),
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        color: const Color(0xFF101C16),
+                        width: 1.w,
+                      ),
+                      borderRadius: BorderRadius.circular(8.r),
+                    ),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          "ACCOUNT INFORMATION",
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
+                          style: GoogleFonts.outfit(
+                            fontSize: 17.sp,
+                            fontWeight: FontWeight.w500,
+                            color: const Color(0xFF101C16),
+                          ),
+                        ),
+
+                        SizedBox(height: 15.h),
+
+                        fieldLabel("FULL NAME"),
+                        customTextField(
+                          controller: nameController,
+                          hintText: "Enter Your Full Name",
+                        ),
+
+                        SizedBox(height: 10.h),
+
+                        fieldLabel("EMAIL ADDRESS"),
+                        customTextField(
+                          controller: emailController,
+                          hintText: "Enter Your Email Address",
+                          keyboardType: TextInputType.emailAddress,
+                        ),
+
+                        SizedBox(height: 10.h),
+
+                        fieldLabel("MOBILE NUMBER"),
+                        customTextField(
+                          controller: mobileController,
+                          hintText: "Enter Your Mobile Number",
+                          keyboardType: TextInputType.phone,
+                        ),
+
+                        SizedBox(height: 10.h),
+
+                        fieldLabel("PASSWORD"),
+                        customTextField(
+                          controller: passwordController,
+                          hintText: "Current Password",
+                          obscureText: !isPasswordVisible,
+                          showVisibilityIcon: true,
+                          onVisibilityTap: () {
+                            setState(() {
+                              isPasswordVisible = !isPasswordVisible;
+                            });
+                          },
+                        ),
+
+                        SizedBox(height: 10.h),
+
+                        fieldLabel("CONFIRM PASSWORD"),
+                        customTextField(
+                          controller: confirmPasswordController,
+                          hintText: "Confirm Your Password",
+                          obscureText: !isConfirmPasswordVisible,
+                          showVisibilityIcon: true,
+                          onVisibilityTap: () {
+                            setState(() {
+                              isConfirmPasswordVisible =
+                                  !isConfirmPasswordVisible;
+                            });
+                          },
+                        ),
+
+                        SizedBox(height: 16.h),
+
+                        Row(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            SizedBox(
+                              width: 27.w,
+                              height: 27.w,
+                              child: Checkbox(
+                                value: associationAgreeTerms,
+                                onChanged: (value) {
+                                  setState(() {
+                                    associationAgreeTerms = value ?? false;
+                                  });
+                                },
+                                materialTapTargetSize:
+                                    MaterialTapTargetSize.shrinkWrap,
+                                visualDensity: VisualDensity.compact,
+                                side: const BorderSide(
+                                  color: Color(0xFF101C16),
+                                  width: 1,
+                                ),
+                              ),
+                            ),
+
+                            SizedBox(width: 8.w),
+
+                            Expanded(
+                              child: Text(
+                                "I agree to the Terms & Conditions and Privacy Policy.",
+                                maxLines: 2,
+                                overflow: TextOverflow.ellipsis,
+                                style: GoogleFonts.outfit(
+                                  fontSize: 13.sp,
+                                  fontWeight: FontWeight.w500,
+                                  color: const Color(0xFF101C16),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+
+                        SizedBox(height: 15.h),
+
+                        SizedBox(
+                          width: double.infinity,
+                          height: 40.h,
+                          child: ElevatedButton(
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                CupertinoPageRoute(
+                                  builder: (context) => Residentloginscreen(),
+                                ),
+                              );
+                            },
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: const Color(0xFF101C16),
+                              elevation: 0,
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(6.r),
+                              ),
+                            ),
+                            child: Text(
+                              "Create Account",
+                              maxLines: 1,
+                              overflow: TextOverflow.ellipsis,
+                              style: GoogleFonts.outfit(
+                                fontSize: 13.sp,
+                                fontWeight: FontWeight.w500,
+                                color: Colors.white,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
             SizedBox(height: 20.h),
             InkWell(
               onTap: () {
-                Navigator.push(
-                  context,
-                  CupertinoPageRoute(builder: (context) => AssociationLogin()),
-                );
+                if (selectIndex == 0) {
+                  Navigator.push(
+                    context,
+                    CupertinoPageRoute(
+                      builder: (context) => AssociationLogin(),
+                    ),
+                  );
+                } else {
+                  Navigator.push(
+                    context,
+                    CupertinoPageRoute(
+                      builder: (context) => Residentloginscreen(),
+                    ),
+                  );
+                }
               },
               child: Center(
                 child: RichText(

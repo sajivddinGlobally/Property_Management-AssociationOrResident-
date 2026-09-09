@@ -6,6 +6,7 @@ import 'package:property_association_or_resident/AssociationScreen/AssociationAI
 import 'package:property_association_or_resident/AssociationScreen/AssociationCalender/AssociationCalender.dart';
 import 'package:property_association_or_resident/AssociationScreen/AssociationDocument/AssociationDocument.dart';
 import 'package:property_association_or_resident/AssociationScreen/AssociationHome/AssociationComplexInfo.dart';
+import 'package:property_association_or_resident/AssociationScreen/AssociationImportantAlertsScreen/ImportantAlertsScreen.dart';
 import 'package:property_association_or_resident/AssociationScreen/AssociationNotification/Notificaion.dart';
 import 'package:property_association_or_resident/AssociationScreen/AssociationProfile/AssociationProfile.dart';
 import 'package:property_association_or_resident/AssociationScreen/AssociationProperty/AssociationProperty.dart';
@@ -285,76 +286,85 @@ class _AssociationHomeState extends State<AssociationHome> {
       ),
 
       body: SingleChildScrollView(
-        child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 20.w),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              SizedBox(height: 20.h),
-              _buildPropertyCard(),
-              SizedBox(height: 15.h),
-              Row(
-                children: [
-                  _quickAction(
-                    icon: Icons.calendar_month_outlined,
-                    title: "Association",
-                    subtitle: "Calendar",
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        CupertinoPageRoute(
-                          builder: (context) => Associationcalender(),
-                        ),
-                      );
-                    },
-                  ),
-                  _quickAction(
-                    icon: Icons.chat_bubble_outline,
-                    title: "Open",
-                    subtitle: "Complaints",
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        CupertinoPageRoute(builder: (context) => Complaint()),
-                      );
-                    },
-                  ),
-                  _quickAction(
-                    icon: Icons.build_outlined,
-                    title: "Pending",
-                    subtitle: "Maintenance",
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        CupertinoPageRoute(
-                          builder: (context) => PendingMantenaceService(),
-                        ),
-                      );
-                    },
-                  ),
-                  _quickAction(
-                    icon: Icons.currency_rupee,
-                    title: "Maintenance",
-                    subtitle: "Charges",
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        CupertinoPageRoute(
-                          builder: (context) => MantenanceCharges(),
-                        ),
-                      );
-                    },
-                  ),
-                  _quickAction(
-                    icon: Icons.description_outlined,
-                    title: "Documents",
-                    subtitle: "",
-                    onTap: widget.onDocumentTap,
-                  ),
-                ],
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            SizedBox(height: 20.h),
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 18.w),
+              child: _buildPropertyCard(),
+            ),
+            SizedBox(height: 15.h),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Padding(
+                padding: EdgeInsets.only(left: 18.w),
+                child: Row(
+                  children: [
+                    _quickAction(
+                      icon: Icons.calendar_month_outlined,
+                      title: "Association",
+                      subtitle: "Calendar",
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          CupertinoPageRoute(
+                            builder: (context) => Associationcalender(),
+                          ),
+                        );
+                      },
+                    ),
+                    _quickAction(
+                      icon: Icons.chat_bubble_outline,
+                      title: "Open",
+                      subtitle: "Complaints",
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          CupertinoPageRoute(builder: (context) => Complaint()),
+                        );
+                      },
+                    ),
+                    _quickAction(
+                      icon: Icons.build_outlined,
+                      title: "Pending",
+                      subtitle: "Maintenance",
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          CupertinoPageRoute(
+                            builder: (context) => PendingMantenaceService(),
+                          ),
+                        );
+                      },
+                    ),
+                    _quickAction(
+                      icon: Icons.currency_rupee,
+                      title: "Maintenance",
+                      subtitle: "Charges",
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          CupertinoPageRoute(
+                            builder: (context) => MantenanceCharges(),
+                          ),
+                        );
+                      },
+                    ),
+                    _quickAction(
+                      icon: Icons.description_outlined,
+                      title: "Documents",
+                      subtitle: "",
+                      onTap: widget.onDocumentTap,
+                    ),
+                  ],
+                ),
               ),
-              SizedBox(height: 16.h),
-              Row(
+            ),
+            SizedBox(height: 16.h),
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 20.w),
+              child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Expanded(
@@ -407,17 +417,20 @@ class _AssociationHomeState extends State<AssociationHome> {
                   ),
                 ],
               ),
+            ),
 
-              SizedBox(height: 20.h),
-              InkWell(
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    CupertinoPageRoute(
-                      builder: (context) => AiPropertyAssistantScreen(),
-                    ),
-                  );
-                },
+            SizedBox(height: 20.h),
+            InkWell(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  CupertinoPageRoute(
+                    builder: (context) => AiPropertyAssistantScreen(),
+                  ),
+                );
+              },
+              child: Padding(
+                padding: EdgeInsets.symmetric(horizontal: 20.w),
                 child: Container(
                   width: double.infinity,
                   padding: EdgeInsets.symmetric(
@@ -540,9 +553,12 @@ class _AssociationHomeState extends State<AssociationHome> {
                   ),
                 ),
               ),
+            ),
 
-              SizedBox(height: 12.h),
-              Row(
+            SizedBox(height: 12.h),
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 20.w),
+              child: Row(
                 children: [
                   Text(
                     "Complex Overview",
@@ -581,9 +597,12 @@ class _AssociationHomeState extends State<AssociationHome> {
                   ),
                 ],
               ),
+            ),
 
-              SizedBox(height: 12.h),
-              Container(
+            SizedBox(height: 12.h),
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 20.w),
+              child: Container(
                 width: double.infinity,
                 decoration: BoxDecoration(
                   color: const Color(0xFF0E2118),
@@ -743,20 +762,20 @@ class _AssociationHomeState extends State<AssociationHome> {
                   ],
                 ),
               ),
-              SizedBox(height: 12.h),
-              _buildServicePerformance(),
+            ),
+            SizedBox(height: 12.h),
+            _buildServicePerformance(),
 
-              SizedBox(height: 12.h),
+            SizedBox(height: 12.h),
 
-              _buildMaintenanceCharges(),
+            _buildMaintenanceCharges(),
 
-              SizedBox(height: 12.h),
+            SizedBox(height: 12.h),
 
-              _buildImportantAlerts(),
+            _buildImportantAlerts(),
 
-              SizedBox(height: 15.h),
-            ],
-          ),
+            SizedBox(height: 15.h),
+          ],
         ),
       ),
     );
@@ -1056,43 +1075,41 @@ class _AssociationHomeState extends State<AssociationHome> {
     required String subtitle,
     required VoidCallback onTap,
   }) {
-    return Expanded(
-      child: InkWell(
-        onTap: onTap,
-        child: Container(
-          margin: EdgeInsets.only(right: 5.w),
-          padding: EdgeInsets.symmetric(vertical: 7.h, horizontal: 2.w),
-          decoration: BoxDecoration(
-            color: Colors.white,
-            borderRadius: BorderRadius.circular(7.r),
-            border: Border.all(color: Color(0xffE8E5DC)),
-          ),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Icon(icon, size: 19.sp, color: Color(0xffD5A52C)),
-              SizedBox(height: 3.h),
-              Text(
-                title,
-                textAlign: TextAlign.center,
-                style: GoogleFonts.outfit(
-                  fontSize: 11.sp,
-                  fontWeight: FontWeight.w500,
-                  color: Color(0xff0D241B),
-                  letterSpacing: -0.3,
-                ),
+    return InkWell(
+      onTap: onTap,
+      child: Container(
+        margin: EdgeInsets.only(right: 8.w),
+        padding: EdgeInsets.symmetric(vertical: 10.h, horizontal: 10.w),
+        decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(7.r),
+          border: Border.all(color: Color(0xffE8E5DC)),
+        ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Icon(icon, size: 19.sp, color: Color(0xffD5A52C)),
+            SizedBox(height: 3.h),
+            Text(
+              title,
+              textAlign: TextAlign.center,
+              style: GoogleFonts.outfit(
+                fontSize: 13.sp,
+                fontWeight: FontWeight.w500,
+                color: Color(0xff0D241B),
+                letterSpacing: -0.3,
               ),
-              // if (subtitle.isNotEmpty)
-              Text(
-                subtitle,
-                textAlign: TextAlign.center,
-                style: GoogleFonts.outfit(
-                  fontSize: 11.sp,
-                  color: Color(0xff0D241B),
-                ),
+            ),
+            // if (subtitle.isNotEmpty)
+            Text(
+              subtitle,
+              textAlign: TextAlign.center,
+              style: GoogleFonts.outfit(
+                fontSize: 13.sp,
+                color: Color(0xff0D241B),
               ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );
@@ -1156,6 +1173,7 @@ class _AssociationHomeState extends State<AssociationHome> {
         children: [
           Expanded(
             child: Container(
+              margin: EdgeInsets.symmetric(horizontal: 18.w),
               width: double.infinity,
               padding: EdgeInsets.all(12.w),
               decoration: BoxDecoration(
@@ -1508,47 +1526,50 @@ class _AssociationHomeState extends State<AssociationHome> {
   }
 
   Widget _buildMaintenanceCharges() {
-    return _sectionContainer(
-      title: "Maintenance Charges (Monthly)",
-      action: "View Details",
-      child: Padding(
-        padding: EdgeInsets.only(top: 5.h),
-        child: Row(
-          children: [
-            Container(
-              width: 32.w,
-              height: 32.w,
-              decoration: BoxDecoration(
-                border: Border.all(color: Color(0xffD5A52C)),
-                borderRadius: BorderRadius.circular(6.r),
+    return Padding(
+      padding: EdgeInsets.symmetric(horizontal: 18.w),
+      child: _sectionContainer(
+        title: "Maintenance Charges (Monthly)",
+        action: "View Details",
+        child: Padding(
+          padding: EdgeInsets.only(top: 5.h),
+          child: Row(
+            children: [
+              Container(
+                width: 32.w,
+                height: 32.w,
+                decoration: BoxDecoration(
+                  border: Border.all(color: Color(0xffD5A52C)),
+                  borderRadius: BorderRadius.circular(6.r),
+                ),
+                child: Icon(
+                  Icons.currency_rupee,
+                  size: 16.sp,
+                  color: Color(0xffD5A52C),
+                ),
               ),
-              child: Icon(
-                Icons.currency_rupee,
-                size: 16.sp,
-                color: Color(0xffD5A52C),
+              SizedBox(width: 10.w),
+              _chargeStat(title: "Status", value: "Tracking"),
+
+              _chargeStat(
+                title: "Paid Units",
+                value: "113",
+                valueColor: Color(0xff4D9B51),
               ),
-            ),
-            SizedBox(width: 10.w),
-            _chargeStat(title: "Status", value: "Tracking"),
 
-            _chargeStat(
-              title: "Paid Units",
-              value: "113",
-              valueColor: Color(0xff4D9B51),
-            ),
+              _chargeStat(
+                title: "Unpaid Units",
+                value: "15",
+                valueColor: Color(0xffD94A42),
+              ),
 
-            _chargeStat(
-              title: "Unpaid Units",
-              value: "15",
-              valueColor: Color(0xffD94A42),
-            ),
-
-            _chargeStat(
-              title: "Defaulters",
-              value: "08",
-              valueColor: Color(0xffD94A42),
-            ),
-          ],
+              _chargeStat(
+                title: "Defaulters",
+                value: "08",
+                valueColor: Color(0xffD94A42),
+              ),
+            ],
+          ),
         ),
       ),
     );
@@ -1592,48 +1613,51 @@ class _AssociationHomeState extends State<AssociationHome> {
   // ============================================================
 
   Widget _buildImportantAlerts() {
-    return _sectionContainer(
-      title: "Important Alerts",
-      action: "View All",
-      child: Padding(
-        padding: EdgeInsets.only(top: 5.h),
-        child: SingleChildScrollView(
-          scrollDirection: Axis.horizontal,
-          child: Row(
-            children: [
-              SizedBox(
-                width: 200.w,
-                child: _alertItem(
-                  icon: Icons.report_problem_outlined,
-                  count: "8",
-                  title: "complaints require attention",
-                  description: "Review and take necessary action",
-                  color: Color(0xffD94A42),
+    return Padding(
+      padding: EdgeInsets.symmetric(horizontal: 18.w),
+      child: _sectionContainer(
+        title: "Important Alerts",
+        action: "View All",
+        child: Padding(
+          padding: EdgeInsets.only(top: 5.h),
+          child: SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            child: Row(
+              children: [
+                SizedBox(
+                  width: 200.w,
+                  child: _alertItem(
+                    icon: Icons.report_problem_outlined,
+                    count: "8",
+                    title: "complaints require attention",
+                    description: "Review and take necessary action",
+                    color: Color(0xffD94A42),
+                  ),
                 ),
-              ),
-              SizedBox(width: 8.w),
-              SizedBox(
-                width: 200.w,
-                child: _alertItem(
-                  icon: Icons.build_outlined,
-                  count: "12",
-                  title: "maintenance items pending",
-                  description: "Pending maintenance requires approval",
-                  color: Color(0xffD5A52C),
+                SizedBox(width: 8.w),
+                SizedBox(
+                  width: 200.w,
+                  child: _alertItem(
+                    icon: Icons.build_outlined,
+                    count: "12",
+                    title: "maintenance items pending",
+                    description: "Pending maintenance requires approval",
+                    color: Color(0xffD5A52C),
+                  ),
                 ),
-              ),
-              SizedBox(width: 8.w),
-              SizedBox(
-                width: 200.w,
-                child: _alertItem(
-                  icon: Icons.currency_rupee,
-                  count: "15",
-                  title: "units have outstanding charges",
-                  description: "Follow up for payment collection",
-                  color: Color(0xffD5A52C),
+                SizedBox(width: 8.w),
+                SizedBox(
+                  width: 200.w,
+                  child: _alertItem(
+                    icon: Icons.currency_rupee,
+                    count: "15",
+                    title: "units have outstanding charges",
+                    description: "Follow up for payment collection",
+                    color: Color(0xffD5A52C),
+                  ),
                 ),
-              ),
-            ],
+              ],
+            ),
           ),
         ),
       ),
@@ -1759,12 +1783,22 @@ class _AssociationHomeState extends State<AssociationHome> {
                   ),
                 ),
               ),
-              Text(
-                action,
-                style: GoogleFonts.outfit(
-                  fontSize: 11.sp,
-                  color: const Color(0xFF9B7627),
-                  letterSpacing: -0.2,
+              GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    CupertinoPageRoute(
+                      builder: (context) => Importantalertsscreen(),
+                    ),
+                  );
+                },
+                child: Text(
+                  action,
+                  style: GoogleFonts.outfit(
+                    fontSize: 11.sp,
+                    color: const Color(0xFF9B7627),
+                    letterSpacing: -0.2,
+                  ),
                 ),
               ),
               if (action.isNotEmpty)

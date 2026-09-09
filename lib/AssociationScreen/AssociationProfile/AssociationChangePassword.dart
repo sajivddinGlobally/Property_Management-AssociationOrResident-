@@ -114,30 +114,33 @@ class _AssociationChangePasswordState extends State<AssociationChangePassword> {
                       ),
                     ),
                     SizedBox(width: 11.w),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          "Security & Password",
-                          style: GoogleFonts.outfit(
-                            fontSize: 17.sp,
-                            fontWeight: FontWeight.w500,
-                            color: Color(0xFF000000),
-                            letterSpacing: -0.2,
+                    Expanded(
+                      child: Column(
+                        mainAxisSize: MainAxisSize.min,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            "Security & Password",
+                            style: GoogleFonts.outfit(
+                              fontSize: 17.sp,
+                              fontWeight: FontWeight.w500,
+                              color: Color(0xFF000000),
+                              letterSpacing: -0.2,
+                            ),
                           ),
-                        ),
-                        Text(
-                          "Manage password and account security",
-                          style: GoogleFonts.outfit(
-                            fontSize: 14.sp,
-                            fontWeight: FontWeight.w500,
-                            color: Color.fromRGBO(0, 0, 0, 0.7),
-                            letterSpacing: -0.3,
+                          Text(
+                            "Manage password and account security",
+                            style: GoogleFonts.outfit(
+                              fontSize: 14.sp,
+                              fontWeight: FontWeight.w500,
+                              color: Color.fromRGBO(0, 0, 0, 0.7),
+                              letterSpacing: -0.3,
+                            ),
                           ),
-                        ),
-                      ],
+                        ],
+                      ),
                     ),
-                    Spacer(),
+                    SizedBox(width: 8.w),
                     Container(
                       padding: EdgeInsets.symmetric(
                         horizontal: 16.w,

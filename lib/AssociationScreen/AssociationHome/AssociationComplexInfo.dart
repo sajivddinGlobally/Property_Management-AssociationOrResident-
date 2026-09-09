@@ -305,7 +305,7 @@ class _AssociationComplexInfoState extends State<AssociationComplexInfo> {
                   crossAxisCount: 2,
                   crossAxisSpacing: 20.w,
                   mainAxisSpacing: 10.h,
-                  childAspectRatio: 1.7,
+                  childAspectRatio: 1.5,
                 ),
                 itemBuilder: (context, index) {
                   return _documentCard(

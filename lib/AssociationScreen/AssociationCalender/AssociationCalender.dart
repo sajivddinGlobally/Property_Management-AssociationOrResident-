@@ -174,7 +174,7 @@ class _AssociationcalenderState extends State<Associationcalender> {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 20.w),
+          padding: EdgeInsets.symmetric(horizontal: 18.w),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -312,12 +312,12 @@ class _AssociationcalenderState extends State<Associationcalender> {
                           icon: Icons.person_outline,
                           title: "Meeting",
                         ),
-
+                        SizedBox(width: 6.w),
                         _eventButton(
                           icon: Icons.person_outline,
                           title: "Maintenance",
                         ),
-
+                        SizedBox(width: 6.w),
                         _eventButton(
                           icon: Icons.people_outline,
                           title: "Community",
@@ -656,7 +656,7 @@ class _AssociationcalenderState extends State<Associationcalender> {
           Text(
             title,
             style: GoogleFonts.inter(
-              fontSize: 14.sp,
+              fontSize: 13.sp,
               fontWeight: FontWeight.w500,
               color: Colors.black,
               letterSpacing: -0.2,
@@ -673,6 +673,8 @@ class _AssociationcalenderState extends State<Associationcalender> {
     required IconData icon,
     required VoidCallback onTap,
   }) {
+    final isHint = value == "DD / MM / YYYY" || value == "00:00";
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -687,22 +689,40 @@ class _AssociationcalenderState extends State<Associationcalender> {
           ),
         ),
 
-        SizedBox(height: 12.h),
+        SizedBox(height: 8.h),
+
         TextField(
           controller: TextEditingController(text: value),
           readOnly: true,
           onTap: onTap,
 
-          // textAlignVertical: TextAlignVertical.center,
+          maxLines: 1,
+          textAlignVertical: TextAlignVertical.center,
+
           style: GoogleFonts.outfit(
-            fontSize: 15.sp,
+            fontSize: 14.sp,
             fontWeight: FontWeight.w500,
-            color: (value == "DD / MM / YYYY" || value == "00:00")
-                ? const Color(0xFF666666)
-                : const Color(0xFF101C16),
+            color: isHint ? const Color(0xFF666666) : const Color(0xFF101C16),
           ),
 
           decoration: InputDecoration(
+            isDense: true,
+
+            prefixIcon: Padding(
+              padding: EdgeInsets.only(left: 12.w, right: 8.w),
+              child: Icon(icon, size: 19.sp, color: const Color(0xFF777777)),
+            ),
+
+            prefixIconConstraints: const BoxConstraints(
+              minWidth: 0,
+              minHeight: 0,
+            ),
+
+            contentPadding: EdgeInsets.symmetric(
+              horizontal: 10.w,
+              vertical: 14.h,
+            ),
+
             hintText: "DD / MM / YYYY",
 
             hintStyle: GoogleFonts.outfit(
@@ -711,17 +731,9 @@ class _AssociationcalenderState extends State<Associationcalender> {
               color: const Color(0xFF666666),
             ),
 
-            prefixIcon: Icon(icon, size: 20.sp, color: const Color(0xFF777777)),
-
-            prefixIconConstraints: BoxConstraints(
-              minWidth: 30.w,
-              minHeight: 30.h,
-            ),
-            contentPadding: EdgeInsets.only(left: 5.w),
-
             enabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(7.r),
-              borderSide: const BorderSide(color: Color(0xFF777777)),
+              borderSide: const BorderSide(color: Color(0xFF777777), width: 1),
             ),
 
             focusedBorder: OutlineInputBorder(
@@ -736,11 +748,12 @@ class _AssociationcalenderState extends State<Associationcalender> {
 
   Widget _buildSummaryCards() {
     return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Expanded(child: _summaryCard(index: 0, title: "Residents")),
-        SizedBox(width: 6.w),
+        SizedBox(width: 10.w),
         Expanded(child: _summaryCard(index: 1, title: "Committee")),
-        SizedBox(width: 6.w),
+        SizedBox(width: 10.w),
         Expanded(child: _summaryCard(index: 2, title: "All")),
       ],
     );
@@ -758,7 +771,7 @@ class _AssociationcalenderState extends State<Associationcalender> {
       },
       child: AnimatedContainer(
         duration: const Duration(milliseconds: 200),
-        padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 12.h),
+        padding: EdgeInsets.symmetric(horizontal: 12.w, vertical: 12.h),
         decoration: BoxDecoration(
           color: isSelected ? AppColors.heading : Colors.transparent,
           borderRadius: BorderRadius.circular(10.r),
@@ -772,7 +785,7 @@ class _AssociationcalenderState extends State<Associationcalender> {
             Text(
               title,
               style: GoogleFonts.outfit(
-                fontSize: 15.sp,
+                fontSize: 14.sp,
                 fontWeight: FontWeight.w500,
                 color: isSelected ? Colors.white : Color(0xff6A6A6A),
               ),

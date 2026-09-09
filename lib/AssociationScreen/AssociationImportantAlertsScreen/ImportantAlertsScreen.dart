@@ -352,6 +352,8 @@ class _ImportantalertsscreenState extends State<Importantalertsscreen> {
                   ],
                 ),
               ),
+              SizedBox(height: 20.h),
+              serviceCard(),
             ],
           ),
         ),
@@ -380,6 +382,131 @@ class _ImportantalertsscreenState extends State<Importantalertsscreen> {
               color: const Color(0xff777777),
               letterSpacing: -0.2,
             ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget serviceCard() {
+    return Container(
+      width: double.infinity,
+      padding: EdgeInsets.symmetric(horizontal: 11.w, vertical: 16.h),
+      decoration: BoxDecoration(
+        color: const Color(0xFFFFFDF0),
+        border: Border.all(color: const Color(0xFF101C16), width: 1.2),
+        borderRadius: BorderRadius.circular(10.r),
+      ),
+      child: Column(
+        children: [
+          Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Container(
+                width: 36.w,
+                height: 36.h,
+                decoration: BoxDecoration(
+                  color: const Color(0xFFFFF8D9),
+                  borderRadius: BorderRadius.circular(4.r),
+                ),
+                child: Icon(
+                  Icons.plumbing_outlined,
+                  color: const Color(0xFFD99B00),
+                  size: 18.sp,
+                ),
+              ),
+
+              SizedBox(width: 6.w),
+
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      "ABC Plumbing Services",
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      style: GoogleFonts.outfit(
+                        fontSize: 16.sp,
+                        fontWeight: FontWeight.w500,
+                        color: const Color(0xFF101C16),
+                        letterSpacing: -0.2,
+                      ),
+                    ),
+                    Text(
+                      "Assigned Service Provider",
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      style: GoogleFonts.outfit(
+                        fontSize: 14.sp,
+                        fontWeight: FontWeight.w500,
+                        color: const Color(0xFF666666),
+                        letterSpacing: -0.2,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+
+              SizedBox(width: 8.w),
+
+              Text(
+                "1h ago",
+                maxLines: 1,
+                style: GoogleFonts.outfit(
+                  fontSize: 13.sp,
+                  fontWeight: FontWeight.w400,
+                  color: const Color(0xFF777777),
+                ),
+              ),
+            ],
+          ),
+
+          SizedBox(height: 12.h),
+
+          Divider(height: 1, thickness: 1, color: const Color(0xFFBDBDBD)),
+
+          SizedBox(height: 12.h),
+
+          Row(
+            children: [
+              Container(
+                padding: EdgeInsets.symmetric(horizontal: 12.w, vertical: 4.h),
+                decoration: BoxDecoration(
+                  border: Border.all(color: const Color(0xff1E5993), width: 1),
+                  borderRadius: BorderRadius.circular(20.r),
+                ),
+                child: Text(
+                  "MAINTENANCE",
+                  style: GoogleFonts.outfit(
+                    fontSize: 13.sp,
+                    fontWeight: FontWeight.w500,
+                    color: const Color(0xFF1261A0),
+                    letterSpacing: -0.2,
+                  ),
+                ),
+              ),
+
+              const Spacer(),
+
+              Text(
+                "VIEW DETAILS",
+                style: GoogleFonts.outfit(
+                  fontSize: 13.sp,
+                  fontWeight: FontWeight.w500,
+                  color: const Color(0xFF101C16),
+                  letterSpacing: -0.2,
+                ),
+              ),
+
+              SizedBox(width: 5.w),
+
+              Icon(
+                Icons.arrow_forward,
+                size: 14.sp,
+                color: const Color(0xFF101C16),
+              ),
+            ],
           ),
         ],
       ),

@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:property_association_or_resident/AssociationScreen/AssociationInspectionReport/InspectionReport_Screen.dart';
 import 'package:property_association_or_resident/AssociationScreen/AssociationProperty/AssociationOccupancePropertyStatus.dart';
 import 'package:property_association_or_resident/AssociationScreen/Mantenance&Service/MantenanceService.dart';
 import 'package:property_association_or_resident/Core/Constant/appColor.dart';
@@ -471,14 +472,14 @@ class _AssociationPropertyUnitDetailsState
                 child: Row(
                   children: [
                     SizedBox(
-                      width: 50.w,
-                      height: 50.w,
+                      width: 60.w,
+                      height: 60.w,
                       child: Stack(
                         alignment: Alignment.center,
                         children: [
                           SizedBox(
-                            width: 45.w,
-                            height: 45.w,
+                            width: 55.w,
+                            height: 55.w,
                             child: CircularProgressIndicator(
                               value: 0.86,
                               strokeWidth: 5.w,
@@ -491,7 +492,7 @@ class _AssociationPropertyUnitDetailsState
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Text(
-                                "86%",
+                                "86",
                                 style: GoogleFonts.outfit(
                                   fontSize: 17.sp,
                                   fontWeight: FontWeight.w500,
@@ -502,7 +503,7 @@ class _AssociationPropertyUnitDetailsState
                               ),
                               SizedBox(height: 2.h),
                               Text(
-                                "/100%",
+                                "/100",
                                 style: GoogleFonts.outfit(
                                   fontSize: 12.sp,
                                   fontWeight: FontWeight.w500,
@@ -653,7 +654,14 @@ class _AssociationPropertyUnitDetailsState
                     title: "Inspection",
                     description: "View inspection records and findings.",
                     buttonText: "View Records →",
-                    onTap: () {},
+                    onTap: () {
+                       Navigator.push(
+                        context,
+                        CupertinoPageRoute(
+                          builder: (context) => InspectionreportScreen(),
+                        ),
+                      );
+                    },
                   ),
                   _recordCard(
                     icon: "⚒",

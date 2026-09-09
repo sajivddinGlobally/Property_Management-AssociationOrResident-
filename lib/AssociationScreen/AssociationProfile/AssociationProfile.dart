@@ -2,12 +2,13 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:property_association_or_resident/AssociationScreen/AssociationAddResident/AddResidentScreen.dart';
 import 'package:property_association_or_resident/AssociationScreen/AssociationAuditReport/AssociationReport.dart';
 import 'package:property_association_or_resident/AssociationScreen/AssociationCalender/AssociationCalender.dart';
 import 'package:property_association_or_resident/AssociationScreen/AssociationNotification/Notificaion.dart';
 import 'package:property_association_or_resident/AssociationScreen/AssociationProfile/AssociationChangePassword.dart';
 import 'package:property_association_or_resident/AssociationScreen/AssociationProfile/AssociationEditProfile.dart';
-import 'package:property_association_or_resident/AssociationScreen/ImportantAlertsScreen/ImportantAlertsScreen.dart';
+import 'package:property_association_or_resident/AssociationScreen/AssociationImportantAlertsScreen/ImportantAlertsScreen.dart';
 import 'package:property_association_or_resident/Core/Constant/appColor.dart';
 import 'package:svg_flutter/svg.dart';
 
@@ -314,17 +315,24 @@ class _AssociationProfileState extends State<AssociationProfile> {
                     ),
                     Divider(color: Color.fromRGBO(42, 41, 51, 0.6)),
                     _accountSettingTab(
-                      image: "assets/SvgImage/history.svg",
-                      name: "Maintenance History",
-                      title: "Audit Reports history",
+                      image: "assets/SvgImage/add.svg",
+                      name: "Add Resident ",
+                      title: "All Resident add/List",
                       callback: () {
                         Navigator.push(
                           context,
                           CupertinoPageRoute(
-                            builder: (context) => Importantalertsscreen(),
+                            builder: (context) => Addresidentscreen(),
                           ),
                         );
                       },
+                    ),
+                    Divider(color: Color.fromRGBO(42, 41, 51, 0.6)),
+                    _accountSettingTab(
+                      image: "assets/SvgImage/history.svg",
+                      name: "Maintenance History",
+                      title: "Audit Reports history",
+                      callback: () {},
                     ),
                     Divider(color: Color.fromRGBO(42, 41, 51, 0.6)),
                     _accountSettingTab(
