@@ -3,59 +3,115 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:property_association_or_resident/Core/Constant/appColor.dart';
-import 'package:property_association_or_resident/ResidentScreen/ResidentAssociationCalendarScreen/Resident_Calendar_Screen.dart';
-import 'package:property_association_or_resident/ResidentScreen/ResidentBottomScreen/ResidentProfileScreen/ResidentChangePassword.dart';
-import 'package:property_association_or_resident/ResidentScreen/ResidentBottomScreen/ResidentProfileScreen/Resident_MyProfile.dart';
-import 'package:property_association_or_resident/ResidentScreen/ResidentHomeScreen/ResidentNotification_Screen.dart';
-import 'package:property_association_or_resident/ResidentScreen/ResidentLoginScreen.dart';
 
-class Residentprofilescreen extends StatefulWidget {
-  const Residentprofilescreen({super.key});
+class ResidentMyprofile extends StatefulWidget {
+  const ResidentMyprofile({super.key});
 
   @override
-  State<Residentprofilescreen> createState() => _ResidentprofilescreenState();
+  State<ResidentMyprofile> createState() => _ResidentMyprofileState();
 }
 
-class _ResidentprofilescreenState extends State<Residentprofilescreen> {
+class _ResidentMyprofileState extends State<ResidentMyprofile> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.scaffoldBg,
-      appBar: AppBar(
-        backgroundColor: AppColors.scaffoldBg,
-        automaticallyImplyLeading: false,
-        titleSpacing: 20.w,
-        title: Align(
-          alignment: Alignment.centerLeft,
-          child: Row(
-            children: [
-              SizedBox(width: 10.w),
-              Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    "Account",
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(65.h),
+        child: AppBar(
+          backgroundColor: AppColors.scaffoldBg,
+          automaticallyImplyLeading: false,
+          elevation: 0,
+          surfaceTintColor: Colors.transparent,
+
+          titleSpacing: 0,
+
+          title: Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20.w),
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                GestureDetector(
+                  onTap: () {
+                    Navigator.pop(context);
+                  },
+                  child: Container(
+                    width: 41.w,
+                    height: 41.h,
+                    alignment: Alignment.center,
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        color: const Color.fromRGBO(16, 28, 22, 0.3),
+                      ),
+                      borderRadius: BorderRadius.circular(4.r),
+                    ),
+                    child: Icon(
+                      Icons.arrow_back,
+                      color: const Color(0xff101C16),
+                      size: 16.sp,
+                    ),
+                  ),
+                ),
+
+                SizedBox(width: 10.w),
+                Expanded(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        "My Profile",
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                        style: GoogleFonts.outfit(
+                          fontSize: 18.sp,
+                          fontWeight: FontWeight.w500,
+                          color: const Color(0xff292832),
+                          letterSpacing: -0.64,
+                        ),
+                      ),
+
+                      SizedBox(height: 2.h),
+
+                      Text(
+                        "Account Setting",
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                        style: GoogleFonts.outfit(
+                          fontSize: 14.sp,
+                          fontWeight: FontWeight.w400,
+                          color: const Color.fromRGBO(42, 41, 51, 0.6),
+                          letterSpacing: -0.24,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+
+                SizedBox(width: 10.w),
+                Container(
+                  padding: EdgeInsets.symmetric(
+                    horizontal: 10.w,
+                    vertical: 6.h,
+                  ),
+                  decoration: BoxDecoration(
+                    color: Color.fromRGBO(184, 134, 11, 0.3),
+                    borderRadius: BorderRadius.circular(50.r),
+                  ),
+                  child: Text(
+                    "Show Event",
+                    maxLines: 1,
+                    overflow: TextOverflow.ellipsis,
                     style: GoogleFonts.outfit(
-                      fontSize: 18.sp,
                       fontWeight: FontWeight.w500,
-                      color: const Color(0xff292832),
-                      letterSpacing: -0.64,
-                    ),
-                  ),
-                  SizedBox(height: 2.h),
-                  Text(
-                    "Manage your account and profile",
-                    style: GoogleFonts.outfit(
+                      color: const Color(0xffB8860B),
                       fontSize: 14.sp,
-                      fontWeight: FontWeight.w400,
-                      color: Color.fromRGBO(42, 41, 51, 0.6),
-                      letterSpacing: -0.24,
+                      letterSpacing: -0.2,
                     ),
                   ),
-                ],
-              ),
-            ],
+                ),
+              ],
+            ),
           ),
         ),
       ),
@@ -152,7 +208,7 @@ class _ResidentprofilescreenState extends State<Residentprofilescreen> {
               ),
               SizedBox(height: 16.h),
               Text(
-                "Upcoming Events",
+                "Personal Information",
                 style: GoogleFonts.outfit(
                   fontSize: 17.sp,
                   fontWeight: FontWeight.w500,
@@ -170,24 +226,17 @@ class _ResidentprofilescreenState extends State<Residentprofilescreen> {
                   children: [
                     menuItem(
                       icon: Icons.person_outline,
-                      title: "My Profile",
-                      subtitle: "View and manage your resident information",
-                      onTap: () {
-                        Navigator.push(
-                          context,
-                          CupertinoPageRoute(
-                            builder: (context) => ResidentMyprofile(),
-                          ),
-                        );
-                      },
+                      title: "Full Name",
+                      subtitle: "Ahmed Rahman",
+                      onTap: () {},
                     ),
 
                     Divider(height: 1, color: const Color(0xff555555)),
 
                     menuItem(
                       icon: Icons.home_outlined,
-                      title: "My Apartment",
-                      subtitle: "Green Valley · Building A · A-204",
+                      title: "Email Address",
+                      subtitle: "ahmed.rahman@email.com",
                       onTap: () {},
                     ),
 
@@ -195,38 +244,14 @@ class _ResidentprofilescreenState extends State<Residentprofilescreen> {
 
                     menuItem(
                       icon: Icons.calendar_month_outlined,
-                      title: "Community Contacts",
-                      subtitle: "Caretaker & Association Representative",
+                      title: "Phone Number",
+                      subtitle: "+91 98•••• 4521",
                       onTap: () {},
-                    ),
-
-                    Divider(height: 1, color: const Color(0xff555555)),
-                    menuItem(
-                      icon: Icons.calendar_month_outlined,
-                      title: "Visitor Pass Request",
-                      subtitle: "Visitor Pass Request",
-                      onTap: () {},
-                    ),
-
-                    Divider(height: 1, color: const Color(0xff555555)),
-
-                    menuItem(
-                      icon: Icons.person_outline,
-                      title: "Association Calendar",
-                      subtitle: "Property Owner & Association coordination",
-                      onTap: () {
-                        Navigator.push(
-                          context,
-                          CupertinoPageRoute(
-                            builder: (context) => ResidentCalendarScreen(),
-                          ),
-                        );
-                      },
                     ),
                   ],
                 ),
               ),
-              SizedBox(height: 20.h),
+              SizedBox(height: 25.h),
               Text(
                 "Current Access",
                 style: GoogleFonts.outfit(
@@ -238,69 +263,33 @@ class _ResidentprofilescreenState extends State<Residentprofilescreen> {
               ),
               SizedBox(height: 16.h),
               residentAccess(),
-              SizedBox(height: 20.h),
-              Text(
-                "Preferences & Security",
-                style: GoogleFonts.outfit(
-                  fontSize: 17.sp,
-                  fontWeight: FontWeight.w500,
-                  color: AppColors.heading,
-                  letterSpacing: -0.2,
+              SizedBox(height: 25.h),
+              SizedBox(
+                width: double.infinity,
+                height: 36.h,
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: const Color(0xFF101C16),
+                    foregroundColor: Colors.white,
+                    elevation: 0,
+                    padding: EdgeInsets.zero,
+                    fixedSize: Size(double.infinity, 44.h),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(5.r),
+                    ),
+                  ),
+                  onPressed: () {},
+                  child: Text(
+                    "Save Changes",
+                    style: GoogleFonts.outfit(
+                      fontSize: 15.sp,
+                      color: Colors.white,
+                      fontWeight: FontWeight.w500,
+                      letterSpacing: -0.2,
+                    ),
+                  ),
                 ),
               ),
-              SizedBox(height: 16.h),
-              Container(
-                decoration: BoxDecoration(
-                  border: Border.all(color: const Color(0xff888888)),
-                  borderRadius: BorderRadius.circular(12.r),
-                ),
-                child: Column(
-                  children: [
-                    menuItem(
-                      icon: Icons.notifications_none_sharp,
-                      title: "Notification",
-                      subtitle: "Association announcements & updates",
-                      onTap: () {
-                        Navigator.push(
-                          context,
-                          CupertinoPageRoute(
-                            builder: (context) => ResidentnotificationScreen(),
-                          ),
-                        );
-                      },
-                    ),
-
-                    Divider(height: 1, color: const Color(0xff555555)),
-
-                    menuItem(
-                      icon: Icons.lock_outline,
-                      title: "Security & Password",
-                      subtitle: "Change password / account security",
-                      onTap: () {
-                        Navigator.push(
-                          context,
-                          CupertinoPageRoute(
-                            builder: (context) => Residentchangepassword(),
-                          ),
-                        );
-                      },
-                    ),
-                  ],
-                ),
-              ),
-              SizedBox(height: 20.h),
-              signOutCard(
-                onTap: () {
-                  Navigator.pushAndRemoveUntil(
-                    context,
-                    CupertinoPageRoute(
-                      builder: (context) => Residentloginscreen(),
-                    ),
-                    (route) => false,
-                  );
-                },
-              ),
-              SizedBox(height: 20.h),
             ],
           ),
         ),
@@ -340,19 +329,22 @@ class _ResidentprofilescreenState extends State<Residentprofilescreen> {
                     title,
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
-                    style: GoogleFonts.inter(
-                      fontSize: 16.sp,
+                    style: GoogleFonts.outfit(
+                      fontSize: 14.sp,
                       fontWeight: FontWeight.w500,
-                      color: const Color(0xff101C16),
+                      color: const Color(0xff777777),
+                      letterSpacing: -0.2,
                     ),
                   ),
                   Text(
                     subtitle,
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
-                    style: GoogleFonts.inter(
-                      fontSize: 14.sp,
-                      color: const Color(0xff777777),
+                    style: GoogleFonts.outfit(
+                      fontSize: 16.sp,
+                      fontWeight: FontWeight.w500,
+                      color: AppColors.heading,
+                      letterSpacing: -0.2,
                     ),
                   ),
                 ],
@@ -366,47 +358,6 @@ class _ResidentprofilescreenState extends State<Residentprofilescreen> {
             ),
           ],
         ),
-      ),
-    );
-  }
-
-  Widget _accessItem(String title, String value) {
-    return Container(
-      padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 12.h),
-      decoration: BoxDecoration(
-        color: const Color(0xFFFFF7C9),
-        borderRadius: BorderRadius.circular(14.r),
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Text(
-            title,
-            maxLines: 1,
-            overflow: TextOverflow.ellipsis,
-            style: GoogleFonts.outfit(
-              fontSize: 13.sp,
-              fontWeight: FontWeight.w500,
-              color: const Color(0xFF666666),
-              letterSpacing: -0.2,
-            ),
-          ),
-
-          SizedBox(height: 3.h),
-
-          Text(
-            value,
-            maxLines: 1,
-            overflow: TextOverflow.ellipsis,
-            style: GoogleFonts.outfit(
-              fontSize: 17.sp,
-              fontWeight: FontWeight.w500,
-              color: const Color(0xFF101C16),
-              letterSpacing: -0.2,
-            ),
-          ),
-        ],
       ),
     );
   }
@@ -479,45 +430,43 @@ class _ResidentprofilescreenState extends State<Residentprofilescreen> {
     );
   }
 
-  Widget signOutCard({required VoidCallback onTap}) {
-    return GestureDetector(
-      onTap: onTap,
-      child: Container(
-        width: double.infinity,
-        padding: EdgeInsets.symmetric(horizontal: 18.w, vertical: 10.h),
-        decoration: BoxDecoration(
-          border: Border.all(color: const Color(0xffCCB4B4), width: 1.5.w),
-          borderRadius: BorderRadius.circular(11.r),
-        ),
-        child: Row(
-          children: [
-            Container(
-              height: 40.w,
-              width: 40.w,
-              decoration: BoxDecoration(
-                color: Color.fromRGBO(210, 36, 36, 0.3),
-                borderRadius: BorderRadius.circular(10.r),
-              ),
-              child: Icon(
-                Icons.logout,
-                size: 20.sp,
-                color: const Color(0xffD22424),
-              ),
+  Widget _accessItem(String title, String value) {
+    return Container(
+      padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 12.h),
+      decoration: BoxDecoration(
+        color: const Color(0xFFFFF7C9),
+        borderRadius: BorderRadius.circular(14.r),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Text(
+            title,
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
+            style: GoogleFonts.outfit(
+              fontSize: 13.sp,
+              fontWeight: FontWeight.w500,
+              color: const Color(0xFF666666),
+              letterSpacing: -0.2,
             ),
+          ),
 
-            SizedBox(width: 15.w),
+          SizedBox(height: 3.h),
 
-            Text(
-              "Sign Out",
-              style: GoogleFonts.inter(
-                fontSize: 17.sp,
-                fontWeight: FontWeight.w500,
-                color: const Color(0xffD91F1F),
-                letterSpacing: -0.2,
-              ),
+          Text(
+            value,
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
+            style: GoogleFonts.outfit(
+              fontSize: 17.sp,
+              fontWeight: FontWeight.w500,
+              color: const Color(0xFF101C16),
+              letterSpacing: -0.2,
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }

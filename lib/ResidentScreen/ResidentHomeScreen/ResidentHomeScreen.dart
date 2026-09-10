@@ -2,15 +2,19 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:property_association_or_resident/AssociationScreen/AssociationCalender/AssociationCalender.dart';
 import 'package:property_association_or_resident/Core/Constant/appColor.dart';
 import 'package:property_association_or_resident/ResidentScreen/RaiseComplaintScreen/RaiseComplaint.dart';
 import 'package:property_association_or_resident/ResidentScreen/ResidentAIPropertyAssistantScreen/Resident_Ai_PropertyAssistant.dart';
+import 'package:property_association_or_resident/ResidentScreen/ResidentAssociationCalendarScreen/Resident_Calendar_Screen.dart';
 import 'package:property_association_or_resident/ResidentScreen/ResidentBottomScreen/ResidentApartmentScreen/ApartmentScreen.dart';
 import 'package:property_association_or_resident/ResidentScreen/ResidentBottomScreen/ResidentProfileScreen/ResidentProfileScreen.dart';
 import 'package:property_association_or_resident/ResidentScreen/ResidentBottomScreen/ResidentRequestScreen/ResidentRequestScreen.dart';
 import 'package:property_association_or_resident/ResidentScreen/ResidentComplaintScreen/CommunityContactsScreen.dart';
 import 'package:property_association_or_resident/ResidentScreen/ResidentEmergencyContactScreen/Emergency_ContactScreen.dart';
+import 'package:property_association_or_resident/ResidentScreen/ResidentHomeScreen/ResidentNotification_Screen.dart';
 import 'package:property_association_or_resident/ResidentScreen/ResidentMmcStatusScreen/MMC_StatusScreen.dart';
+import 'package:property_association_or_resident/ResidentScreen/ResidentVisitorPassRequest/ResidentVisitorPassRequest.dart';
 import 'package:svg_flutter/svg.dart';
 
 class ResidentBottomNavBar extends StatefulWidget {
@@ -204,12 +208,14 @@ class _ResidenthomescreenState extends State<Residenthomescreen> {
                 clipBehavior: Clip.none,
                 children: [
                   InkWell(
-                    // onTap: () {
-                    //   Navigator.push(
-                    //     context,
-                    //     CupertinoPageRoute(builder: (context) => Notificaion()),
-                    //   );
-                    // },
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        CupertinoPageRoute(
+                          builder: (context) => ResidentnotificationScreen(),
+                        ),
+                      );
+                    },
                     child: Container(
                       width: 40.w,
                       height: 40.w,
@@ -512,10 +518,20 @@ class _ResidenthomescreenState extends State<Residenthomescreen> {
                 ),
               ),
               SizedBox(height: 16.h),
-              associationCard(
-                title: "Association Calendar",
-                subtitle: "Upcoming community events",
-                icon: Icons.calendar_month_outlined,
+              GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    CupertinoPageRoute(
+                      builder: (context) => ResidentCalendarScreen(),
+                    ),
+                  );
+                },
+                child: associationCard(
+                  title: "Association Calendar",
+                  subtitle: "Upcoming community events",
+                  icon: Icons.calendar_month_outlined,
+                ),
               ),
 
               SizedBox(height: 16.h),
@@ -536,46 +552,49 @@ class _ResidenthomescreenState extends State<Residenthomescreen> {
                 ),
               ),
               SizedBox(height: 16.h),
-              Row(
-                children: [
-                  Expanded(
-                    child: GestureDetector(
-                      onTap: () {
-                        Navigator.push(
-                          context,
-                          CupertinoPageRoute(
-                            builder: (context) => Communitycontactsscreen(),
-                          ),
-                        );
-                      },
-                      child: supportCard(
-                        title: "Support",
-                        subtitle: "Caretaker & Association Representative",
-                        icon: Icons.headset_mic_outlined,
-                      ),
-                    ),
-                  ),
-
-                  SizedBox(width: 28.w),
-
-                  GestureDetector(
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        CupertinoPageRoute(
-                          builder: (context) => EmergencyContactscreen(),
+              IntrinsicHeight(
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    Expanded(
+                      child: GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            CupertinoPageRoute(
+                              builder: (context) => Communitycontactsscreen(),
+                            ),
+                          );
+                        },
+                        child: supportCard(
+                          title: "Support",
+                          subtitle: "Caretaker & Association Representative",
+                          icon: Icons.headset_mic_outlined,
                         ),
-                      );
-                    },
-                    child: Expanded(
-                      child: supportCard(
-                        title: "Emergency Contact",
-                        subtitle: "Call for immediate assistance",
-                        icon: Icons.phone_outlined,
                       ),
                     ),
-                  ),
-                ],
+
+                    SizedBox(width: 28.w),
+
+                    Expanded(
+                      child: GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            CupertinoPageRoute(
+                              builder: (context) => EmergencyContactscreen(),
+                            ),
+                          );
+                        },
+                        child: supportCard(
+                          title: "Emergency Contact",
+                          subtitle: "Call for immediate assistance",
+                          icon: Icons.phone_outlined,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
               ),
               SizedBox(height: 20.h),
               Text(
@@ -720,7 +739,17 @@ class _ResidenthomescreenState extends State<Residenthomescreen> {
                 ),
               ),
               SizedBox(height: 16.h),
-              visitorPassCard(),
+              InkWell(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    CupertinoPageRoute(
+                      builder: (context) => Residentvisitorpassrequest(),
+                    ),
+                  );
+                },
+                child: visitorPassCard(),
+              ),
               SizedBox(height: 30.h),
             ],
           ),
@@ -884,7 +913,8 @@ class _ResidenthomescreenState extends State<Residenthomescreen> {
     required IconData icon,
   }) {
     return Container(
-      padding: EdgeInsets.all(12),
+      width: double.infinity,
+      padding: EdgeInsets.all(12.w),
       decoration: BoxDecoration(
         border: Border.all(color: const Color(0xFFD9D5C9), width: 1.2),
         borderRadius: BorderRadius.circular(10.r),
@@ -893,15 +923,16 @@ class _ResidenthomescreenState extends State<Residenthomescreen> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
-            width: 30.w,
-            height: 30.w,
+            padding: EdgeInsets.all(7.w),
             decoration: BoxDecoration(
               color: const Color(0xffEEE6D2),
               borderRadius: BorderRadius.circular(7.r),
             ),
             child: Icon(icon, size: 18.sp, color: const Color(0xFFB8860B)),
           ),
+
           SizedBox(height: 5.h),
+
           Text(
             title,
             maxLines: 1,
@@ -921,7 +952,7 @@ class _ResidenthomescreenState extends State<Residenthomescreen> {
             maxLines: 2,
             overflow: TextOverflow.ellipsis,
             style: GoogleFonts.outfit(
-              fontSize: 14.sp,
+              fontSize: 13.sp,
               fontWeight: FontWeight.w500,
               color: const Color(0xFF666666),
               letterSpacing: -0.2,
@@ -967,9 +998,10 @@ class _ResidenthomescreenState extends State<Residenthomescreen> {
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                   style: GoogleFonts.outfit(
-                    fontSize: 15.sp,
-                    fontWeight: FontWeight.w400,
+                    fontSize: 16.sp,
+                    fontWeight: FontWeight.w500,
                     color: Colors.white,
+                    letterSpacing: -0.2,
                   ),
                 ),
 
